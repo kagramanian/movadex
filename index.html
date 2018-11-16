@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Main Page</title>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand" href="#"><img src="image/logo/movadex_logo_font_desert.png"
+                                                    id="movadexLogo"></div>
+        </div>
+        <div class="navbar-collapse collapse" id="menu">
+            <ul class="nav navbar-nav navbar-left" id="nav">
+                <li><a href="#page-2">SERVICES</a></li>
+                <li><a href="#page-3">WORK</a></li>
+                <li><a href="#page-4">CONTACT</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <button id="navBtn">WRITE US</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<img id="desertImg" src="image/icons/ui:ux_icon.png">
+<div class="container centered">
+    <h3 class="mainTxt">We code <span class="textChanged">your</span> ideas.</h3>
+    <h2 class="secondTxt">Build beautiful mobile/web applications with us</h2>
+</div>
+<hr id="hr1">
+<div class="container" id="page-2">
+    <div class="vl"></div>
+    <h3 class="page-text">WE SPECIALISE IN</h3>
+    <div class="row">
+        <div class="first centered col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1">
+            <img id="web-logo" src="image/logo/web_logo_desert%20copy.png">
+            <a href="#"><h3 class="under-logo-text">WEB</h3></a>
+        </div>
+        <div class="second centered col-lg-4 col-md-4 col-sm-4 ">
+            <img id="web-logo2" src="image/icons/phones_logo%20desert.png">
+            <a href="#">
+                <div class="under-logo-text">MOBILE</div>
+            </a>
+        </div>
+        <div class="third centered col-lg-4 col-md-4 col-sm-4 ">
+            <img id="web-logo3" src="image/icons/uiux_icon%20desert'.png">
+            <a href="#"><h3 class="under-logo-text">UI/UX</h3></a>
+        </div>
+    </div>
+    <h3 class="teg-text">MOBILE</h3>
+    <p id="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat.
+    </p>
+</div>
+<hr id="hr2">
+<div class="container" id="page-3">
+    <h3 class="page-text">NOTICEABLE PROJECTS</h3>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <img id="u-price" src="image/icons/uprice.png">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <img id="gold-fish" src="image/icons/goldfish_.png">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <img id="face-card" src="image/icons/facecard%20(2).png">
+        </div>
+    </div>
+</div>
+
+
+<hr id="hr2">
+<div class="container" id="page-4">
+    <div class="vl2"></div>
+    <h3 class="page-text">GET IN TOUCH</h3>
+    <div class="row">
+        <div class=" col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-1">
+            <button class="Btn">WEB</button>
+        </div>
+        <div class=" col-lg-2 col-md-2  col-sm-2 ">
+            <button id="btnCH" class="Btn">MOBILE</button>
+        </div>
+        <div class=" col-lg-2  col-md-2  col-sm-2 ">
+            <button id="btnCH2" class="Btn">UI/UX</button>
+        </div>
+    </div>
+    <form>
+
+        <div class="group" id="group">
+            <input type="text" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Name</label>
+        </div>
+
+        <div class="group">
+            <input type="text" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Email</label>
+        </div>
+        <div class="group">
+            <input type="text" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Idea</label>
+        </div>
+    </form>
+</div>
+<div class="footer">
+    <div class="container">
+        <div id="footerTxt">Company © All rights reserved</div>
+        </a>
+        <div class="block">
+            <div class="footerTxt-2">About</div>
+            <div class="footerTxt-2">Contact</div>
+            <div class="footerTxt-2">Help</div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script>
+    $("a").click(function () {
+        $("a").css("background-color", "");
+        $(this).css("background-color", "transparent");
+
+    });
+
+
+    document.getElementById("web-logo2").onclick = function () {
+        document.getElementById("paragraph").innerHTML = '<p>Nor </p>';
+    };
+    document.getElementById("web-logo").onclick = function () {
+        document.getElementById("paragraph").innerHTML = '<p>Nor </p>';
+    };
+    document.getElementById("web-logo3").onclick = function () {
+        document.getElementById("paragraph").innerHTML = '<p>Nor </p>';
+    };
+
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 1000);
+    });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,2441 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Spectral");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+    background-color: white;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+
+#movadexLogo {
+    width: 195px;
+    margin-top: -85px;
+}
+
+.navbar {
+    font-size: 16px;
+    padding-top: 10px;
+    border-radius: 0;
+    position: fixed; /* Set the navbar to fixed position */
+    width: 100%;
+    z-index: 100;
+    background-color: white;
+    height: 70px;
+    opacity: 0.6;
+}
+
+.navbar a {
+    color: black;
+    font-family: 'Montserrat';
+    display: block;
+    border-bottom: 3px solid transparent;
+    margin-bottom: 40px;
+}
+
+.navbar .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+
+.icon-bar {
+    color: black;
+}
+
+.navbar .navbar-nav li a:hover {
+    color: black !important;
+    background-color: transparent;
+}
+
+
+
+.navbar .navbar-nav li a:focus-within {
+    border-bottom: 3px solid #254c82;
+    padding-bottom: 5px;
+}
+
+#navBtn {
+    width: 140px;
+    height: 45px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.0px;
+    font-weight: 600;
+    color: #254c82;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+#navBtn:hover {
+    background-color: #2a4c8b;
+    box-shadow: 0px 5px 20px rgba(72, 229, 194, 0.4);
+    color: #fff;
+    transform: translateY(-2px);
+
+}
+
+#navBtn:hover .rainbow {
+    color: white;
+
+}
+
+/*#navBtn {*/
+/*border: 2px solid transparent;*/
+/*background-color: white;*/
+/*border-radius: 20px;*/
+/*color: #254c82;*/
+/*box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);*/
+/*width: 120px;*/
+/*height: 40px;*/
+/*z-index: 11;*/
+/*}*/
+
+#desertImg {
+    position: absolute;
+    height: 450px;
+    display: none;
+}
+
+.centered {
+    text-align: center;
+}
+
+.mainTxt {
+    margin-top: 460px;
+    color: black;
+    font-family: 'Montserrat';
+    font-size: 44px;
+    font-weight: bold;
+}
+
+.secondTxt {
+    margin-top: 30px;
+    color: black;
+    font-family: 'Montserrat';
+    font-size: 30px;
+}
+
+.textChanged {
+    font-size: 44px;
+    background: linear-gradient(to right, #9dacc5 0%, #2a4c8b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#hr1 {
+    margin-top: 370px;
+    box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+
+}
+
+.page-text {
+    margin-top: 160px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    color: black;
+    margin-left: 170px;
+}
+
+.under-logo-text {
+    font-family: 'Montserrat';
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#web-logo {
+    margin-top: 100px;
+    width: 160px;
+    transform: rotate(-30deg);
+    margin-bottom: 20px;
+}
+
+#web-logo2 {
+    margin-top: 86px;
+    width: 160px;
+    margin-bottom: -13px;
+
+}
+
+#web-logo3 {
+    margin-top: 80px;
+    width: 100px;
+    margin-bottom: 19px;
+}
+
+.vl {
+    margin-left: 30px;
+    margin-top: 170px;
+    border-left: 4px solid #2a4c8b;
+    height: 565px;
+    position: absolute;
+}
+
+.teg-text {
+    margin-top: 80px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 34px;
+    margin-left: 160px;
+}
+
+#paragraph {
+    width: 900px;
+    margin-left: 160px;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    margin-top: 50px;
+}
+
+#u-price {
+    margin-top: 85px;
+}
+
+#gold-fish {
+    margin-top: 20px;
+}
+
+#face-card {
+    margin-top: 20px;
+    margin-left: -90px;
+}
+
+#hr2 {
+    margin-top: 160px;
+    box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+
+}
+
+.Btn {
+    margin-top: 40px;
+    margin-left: -20px;
+    margin-right: -100px;
+    border: 2px solid transparent;
+    background-color: white;
+    border-radius: 20px;
+    color: #254c82;
+    box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+    width: 100px;
+    height: 30px;
+    z-index: 11;
+}
+
+#btnCH {
+    margin-left: -70px;
+}
+
+#btnCH2 {
+    margin-left: -120px;
+}
+
+.Btn:hover {
+    background: linear-gradient(to right, #9dacc5, #2a4c8b);
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h2 small {
+    font-weight: normal;
+    color: #888;
+    display: block;
+}
+
+.group {
+    margin-top: 50px;
+    margin-left: 170px;
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.vl2 {
+    margin-left: 30px;
+    margin-top: 170px;
+    border-left: 4px solid #2a4c8b;
+    height: 400px;
+    position: absolute;
+}
+
+input {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 400px;
+    border: none;
+    border-bottom: 1px solid #757575;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* LABEL ======================================= */
+label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+.bar {
+    position: relative;
+    display: block;
+    width: 400px;
+}
+
+.bar:before, .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@-moz-keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+.footer {
+    margin-top: 100px;
+    color: white;
+    padding: 15px;
+    background: black;
+    height: 50px;
+}
+
+#footerTxt {
+    float: left;
+}
+
+.footerTxt-2 {
+    float: right;
+    margin-left: 30px;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+
+    #movadexLogo {
+        width: 195px;
+        margin-top: -85px;
+    }
+
+    .navbar {
+        font-size: 16px;
+        padding-top: 10px;
+        border-radius: 0;
+
+        position: fixed; /* Set the navbar to fixed position */
+        top: 0; /* Position the navbar at the top of the page */
+        width: 100%;
+        z-index: 100;
+        background-color: white;
+        height: 70px;
+        opacity: 0.6;
+    }
+
+    .navbar a {
+        color: black;
+        font-family: 'Montserrat';
+        display: block;
+        border-bottom: 3px solid transparent;
+        margin-bottom: 40px;
+    }
+
+    .navbar .navbar-toggle .icon-bar {
+        background-color: #000;
+    }
+
+    .icon-bar {
+        color: black;
+    }
+
+    .navbar .navbar-nav li a:hover {
+        color: black !important;
+        background-color: transparent;
+    }
+
+    .active {
+        border-bottom: 3px solid #254c82;
+        padding-bottom: 5px;
+    }
+
+    .navbar a:hover {
+        border-bottom: 3px solid #254c82;
+        padding-bottom: 5px;
+    }
+
+    .navbar .navbar-nav li a:focus-within {
+        border-bottom: 3px solid #254c82;
+        padding-bottom: 5px;
+    }
+
+    #navBtn {
+        width: 140px;
+        height: 45px;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1.0px;
+        font-weight: 600;
+        color: #254c82;
+        background-color: #fff;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+    }
+
+    #navBtn:hover {
+        background-color: #2a4c8b;
+        box-shadow: 0px 5px 20px rgba(72, 229, 194, 0.4);
+        color: #fff;
+        transform: translateY(-2px);
+
+    }
+
+    #navBtn:hover .rainbow {
+        color: white;
+
+    }
+
+    /*#navBtn {*/
+    /*border: 2px solid transparent;*/
+    /*background-color: white;*/
+    /*border-radius: 20px;*/
+    /*color: #254c82;*/
+    /*box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);*/
+    /*width: 120px;*/
+    /*height: 40px;*/
+    /*z-index: 11;*/
+    /*}*/
+    #desertImg {
+        position: absolute;
+        height: 450px;
+        display: none;
+    }
+
+    .centered {
+        text-align: center;
+    }
+
+    .mainTxt {
+        margin-top: 460px;
+        color: black;
+        font-family: 'Montserrat';
+        font-size: 44px;
+        font-weight: bold;
+    }
+
+    .secondTxt {
+        margin-top: 30px;
+        color: black;
+        font-family: 'Montserrat';
+        font-size: 30px;
+    }
+
+    .textChanged {
+        font-size: 44px;
+        background: linear-gradient(to right, #9dacc5 0%, #2a4c8b 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    #hr1 {
+        margin-top: 370px;
+        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+
+    }
+
+    .page-text {
+        margin-top: 160px;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Montserrat';
+        color: black;
+        margin-left: 130px;
+    }
+
+    .under-logo-text {
+        font-family: 'Montserrat';
+        color: black;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    #web-logo {
+        margin-top: 100px;
+        width: 160px;
+        transform: rotate(-30deg);
+        margin-bottom: 20px;
+    }
+
+    #web-logo2 {
+        margin-top: 86px;
+        width: 160px;
+        margin-bottom: -13px;
+
+    }
+
+    #web-logo3 {
+        margin-top: 80px;
+        width: 100px;
+        margin-bottom: 19px;
+    }
+
+    .vl {
+        margin-left: 30px;
+        margin-top: 170px;
+        border-left: 4px solid #2a4c8b;
+        height: 565px;
+        position: absolute;
+    }
+
+    .teg-text {
+        margin-top: 80px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        font-size: 34px;
+        margin-left: 130px;
+    }
+
+    #paragraph {
+        width: 800px;
+        margin-left: 130px;
+        font-size: 18px;
+        font-family: 'Montserrat';
+        margin-top: 50px;
+    }
+
+    #u-price {
+        margin-top: 85px;
+        width: 900px;
+    }
+
+    #gold-fish {
+        margin-top: 20px;
+        width: 440px;
+    }
+
+    #face-card {
+        margin-top: 20px;
+        margin-left: -20px;
+        width: 440px;
+    }
+
+    #hr2 {
+        margin-top: 160px;
+        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+
+    }
+
+    .Btn {
+        margin-top: 40px;
+        margin-left: 50px;
+        margin-right: -100px;
+        border: 2px solid transparent;
+        background-color: white;
+        border-radius: 20px;
+        color: #254c82;
+        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+        width: 100px;
+        height: 30px;
+        z-index: 11;
+    }
+
+    #btnCH {
+        margin-left: 20px;
+    }
+
+    #btnCH2 {
+        margin-left: -10px;
+    }
+
+    .Btn:hover {
+        background: linear-gradient(to right, #9dacc5, #2a4c8b);
+        color: white;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    h2 small {
+        font-weight: normal;
+        color: #888;
+        display: block;
+    }
+
+    .group {
+        margin-top: 50px;
+        margin-left: 130px;
+        position: relative;
+        margin-bottom: 45px;
+    }
+
+    .vl2 {
+        margin-left: 30px;
+        margin-top: 170px;
+        border-left: 4px solid #2a4c8b;
+        height: 400px;
+        position: absolute;
+    }
+
+    input {
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 400px;
+        border: none;
+        border-bottom: 1px solid #757575;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    /* LABEL ======================================= */
+    label {
+        color: #999;
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 5px;
+        top: 10px;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+
+    /* active state */
+    input:focus ~ label, input:valid ~ label {
+        top: -20px;
+        font-size: 14px;
+        color: #5264AE;
+    }
+
+    /* BOTTOM BARS ================================= */
+    .bar {
+        position: relative;
+        display: block;
+        width: 400px;
+    }
+
+    .bar:before, .bar:after {
+        content: '';
+        height: 2px;
+        width: 0;
+        bottom: 1px;
+        position: absolute;
+        background: #5264AE;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+
+    .bar:before {
+        left: 50%;
+    }
+
+    .bar:after {
+        right: 50%;
+    }
+
+    /* active state */
+    input:focus ~ .bar:before, input:focus ~ .bar:after {
+        width: 50%;
+    }
+
+    /* HIGHLIGHTER ================================== */
+    .highlight {
+        position: absolute;
+        height: 60%;
+        width: 100px;
+        top: 25%;
+        left: 0;
+        pointer-events: none;
+        opacity: 0.5;
+    }
+
+    /* active state */
+    input:focus ~ .highlight {
+        -webkit-animation: inputHighlighter 0.3s ease;
+        -moz-animation: inputHighlighter 0.3s ease;
+        animation: inputHighlighter 0.3s ease;
+    }
+
+    /* ANIMATIONS ================ */
+    @-webkit-keyframes inputHighlighter {
+        from {
+            background: #5264AE;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+
+    @-moz-keyframes inputHighlighter {
+        from {
+            background: #5264AE;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+
+    @keyframes inputHighlighter {
+        from {
+            background: #5264AE;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+
+    .footer {
+        margin-top: 100px;
+        color: white;
+        padding: 15px;
+        background: black;
+        height: 50px;
+    }
+
+    .footerTxt {
+        float: left;
+    }
+
+    .footerTxt-2 {
+        float: right;
+        margin-left: 30px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 999px) {
+
+    #movadexLogo {
+        width: 195px;
+        margin-top: -85px;
+    }
+
+    .navbar {
+        font-size: 16px;
+        padding-top: 10px;
+        border-radius: 0;
+
+        position: fixed; /* Set the navbar to fixed position */
+        top: 0; /* Position the navbar at the top of the page */
+        width: 100%;
+        z-index: 100;
+        background-color: white;
+        height: 70px;
+        opacity: 0.6;
+    }
+
+    .navbar a {
+        color: black;
+        font-family: 'Montserrat';
+        display: block;
+        border-bottom: 3px solid transparent;
+        margin-bottom: 40px;
+    }
+
+    .navbar .navbar-toggle .icon-bar {
+        background-color: #000;
+    }
+
+    .icon-bar {
+        color: black;
+    }
+
+    .navbar .navbar-nav li a:hover {
+        color: black !important;
+        background-color: transparent;
+    }
+
+    .active {
+        border-bottom: 3px solid #254c82;
+        padding-bottom: 5px;
+    }
+
+    .navbar a:hover {
+        border-bottom: 3px solid #254c82;
+        padding-bottom: 5px;
+    }
+
+    .navbar .navbar-nav li a:focus-within {
+        border-bottom: 3px solid #254c82;
+        padding-bottom: 5px;
+    }
+
+    #navBtn {
+        width: 140px;
+        height: 45px;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1.0px;
+        font-weight: 600;
+        color: #254c82;
+        background-color: #fff;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+    }
+
+    #navBtn:hover {
+        background-color: #2a4c8b;
+        box-shadow: 0px 5px 20px rgba(72, 229, 194, 0.4);
+        color: #fff;
+        transform: translateY(-2px);
+
+    }
+
+    #navBtn:hover .rainbow {
+        color: white;
+
+    }
+
+    /*#navBtn {*/
+    /*border: 2px solid transparent;*/
+    /*background-color: white;*/
+    /*border-radius: 20px;*/
+    /*color: #254c82;*/
+    /*box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);*/
+    /*width: 120px;*/
+    /*height: 40px;*/
+    /*z-index: 11;*/
+    /*}*/
+    #desertImg {
+        position: absolute;
+        height: 450px;
+        display: none;
+    }
+
+    .centered {
+        text-align: center;
+    }
+
+    .mainTxt {
+        margin-top: 460px;
+        color: black;
+        font-family: 'Montserrat';
+        font-size: 38px;
+        font-weight: bold;
+    }
+
+    .secondTxt {
+        margin-top: 30px;
+        color: black;
+        font-family: 'Montserrat';
+        font-size: 26px;
+    }
+
+    .textChanged {
+        font-size: 44px;
+        background: linear-gradient(to right, #9dacc5 0%, #2a4c8b 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    #hr1 {
+        margin-top: 370px;
+        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+
+    }
+
+    .page-text {
+        margin-top: 160px;
+        font-size: 34px;
+        font-weight: bold;
+        font-family: 'Montserrat';
+        color: black;
+        margin-left: 100px;
+    }
+
+    .under-logo-text {
+        font-family: 'Montserrat';
+        color: black;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    #web-logo {
+        margin-top: 100px;
+        width: 160px;
+        transform: rotate(-30deg);
+        margin-bottom: 20px;
+    }
+
+    #web-logo2 {
+        margin-top: 86px;
+        width: 160px;
+        margin-bottom: -13px;
+
+    }
+
+    #web-logo3 {
+        margin-top: 80px;
+        width: 100px;
+        margin-bottom: 19px;
+    }
+
+    .vl {
+        margin-left: 30px;
+        margin-top: 170px;
+        border-left: 4px solid #2a4c8b;
+        height: 565px;
+        position: absolute;
+    }
+
+    .teg-text {
+        margin-top: 80px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        font-size: 30px;
+        margin-left: 100px;
+    }
+
+    #paragraph {
+        width: 620px;
+        margin-left: 100px;
+        font-size: 18px;
+        font-family: 'Montserrat';
+        margin-top: 50px;
+    }
+
+    #u-price {
+        margin-top: 85px;
+        width: 720px;
+    }
+
+    #gold-fish {
+        margin-top: 20px;
+        width: 355px;
+    }
+
+    #face-card {
+        margin-top: 20px;
+        margin-left: -10px;
+        width: 355px;
+    }
+
+    #hr2 {
+        margin-top: 160px;
+        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+
+    }
+
+    .Btn {
+        margin-top: 40px;
+        margin-left: 40px;
+        margin-right: -100px;
+        border: 2px solid transparent;
+        background-color: white;
+        border-radius: 20px;
+        color: #254c82;
+        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+        width: 100px;
+        height: 30px;
+        z-index: 11;
+    }
+
+    #btnCH {
+        margin-left: 30px;
+    }
+
+    #btnCH2 {
+        margin-left: 20px;
+    }
+
+    .Btn:hover {
+        background: linear-gradient(to right, #9dacc5, #2a4c8b);
+        color: white;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    h2 small {
+        font-weight: normal;
+        color: #888;
+        display: block;
+    }
+
+    .group {
+        margin-top: 50px;
+        margin-left: 100px;
+        position: relative;
+        margin-bottom: 45px;
+    }
+
+    .vl2 {
+        margin-left: 30px;
+        margin-top: 170px;
+        border-left: 4px solid #2a4c8b;
+        height: 400px;
+        position: absolute;
+    }
+
+    input {
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 350px;
+        border: none;
+        border-bottom: 1px solid #757575;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    /* LABEL ======================================= */
+    label {
+        color: #999;
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 5px;
+        top: 10px;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+
+    /* active state */
+    input:focus ~ label, input:valid ~ label {
+        top: -20px;
+        font-size: 14px;
+        color: #5264AE;
+    }
+
+    /* BOTTOM BARS ================================= */
+    .bar {
+        position: relative;
+        display: block;
+        width: 350px;
+    }
+
+    .bar:before, .bar:after {
+        content: '';
+        height: 2px;
+        width: 0;
+        bottom: 1px;
+        position: absolute;
+        background: #5264AE;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+
+    .bar:before {
+        left: 50%;
+    }
+
+    .bar:after {
+        right: 50%;
+    }
+
+    /* active state */
+    input:focus ~ .bar:before, input:focus ~ .bar:after {
+        width: 50%;
+    }
+
+    /* HIGHLIGHTER ================================== */
+    .highlight {
+        position: absolute;
+        height: 60%;
+        width: 100px;
+        top: 25%;
+        left: 0;
+        pointer-events: none;
+        opacity: 0.5;
+    }
+
+    /* active state */
+    input:focus ~ .highlight {
+        -webkit-animation: inputHighlighter 0.3s ease;
+        -moz-animation: inputHighlighter 0.3s ease;
+        animation: inputHighlighter 0.3s ease;
+    }
+
+    /* ANIMATIONS ================ */
+    @-webkit-keyframes inputHighlighter {
+        from {
+            background: #5264AE;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+
+    @-moz-keyframes inputHighlighter {
+        from {
+            background: #5264AE;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+
+    @keyframes inputHighlighter {
+        from {
+            background: #5264AE;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+
+    .footer {
+        margin-top: 100px;
+        color: white;
+        padding: 15px;
+        background: black;
+        height: 50px;
+    }
+
+    .footerTxt {
+        float: left;
+    }
+
+    .footerTxt-2 {
+        float: right;
+        margin-left: 30px;
+    }
+
+}
+
+@media screen and (min-width: 650px) and (max-width: 767px) {
+
+    #movadexLogo {
+        width: 195px;
+        margin-top: -85px;
+    }
+
+    .navbar {
+        font-size: 16px;
+        padding-top: 10px;
+        border-radius: 0;
+
+        position: fixed; /* Set the navbar to fixed position */
+        top: 0; /* Position the navbar at the top of the page */
+        width: 100%;
+        z-index: 100;
+        background-color: white;
+        height: 70px;
+        opacity: 0.6;
+    }
+
+    .navbar a {
+        color: black;
+        font-family: 'Montserrat';
+        display: block;
+        border-bottom: 3px solid transparent;
+        margin-bottom: 40px;
+    }
+
+    .navbar .navbar-toggle .icon-bar {
+        background-color: #000;
+    }
+
+    .icon-bar {
+        color: black;
+    }
+
+    .navbar .navbar-nav li a:hover {
+        color: black !important;
+        background-color: transparent;
+    }
+
+    .active {
+        border-bottom: 3px solid #254c82;
+        padding-bottom: 5px;
+    }
+
+    .navbar a:hover {
+        border-bottom: 3px solid #254c82;
+        padding-bottom: 5px;
+    }
+
+    .navbar .navbar-nav li a:focus-within {
+        border-bottom: 3px solid #254c82;
+        padding-bottom: 5px;
+    }
+
+    #navBtn {
+        width: 140px;
+        height: 45px;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1.0px;
+        font-weight: 600;
+        color: #254c82;
+        background-color: #fff;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+    }
+
+    #navBtn:hover {
+        background-color: #2a4c8b;
+        box-shadow: 0px 5px 20px rgba(72, 229, 194, 0.4);
+        color: #fff;
+        transform: translateY(-2px);
+
+    }
+
+    #navBtn:hover .rainbow {
+        color: white;
+
+    }
+
+    /*#navBtn {*/
+    /*border: 2px solid transparent;*/
+    /*background-color: white;*/
+    /*border-radius: 20px;*/
+    /*color: #254c82;*/
+    /*box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);*/
+    /*width: 120px;*/
+    /*height: 40px;*/
+    /*z-index: 11;*/
+    /*}*/
+    #desertImg {
+        position: absolute;
+        height: 450px;
+        display: none;
+    }
+
+    .centered {
+        text-align: center;
+    }
+
+    .mainTxt {
+        margin-top: 460px;
+        color: black;
+        font-family: 'Montserrat';
+        font-size: 34px;
+        font-weight: bold;
+    }
+
+    .secondTxt {
+        margin-top: 30px;
+        color: black;
+        font-family: 'Montserrat';
+        font-size: 23px;
+    }
+
+    .textChanged {
+        font-size: 44px;
+        background: linear-gradient(to right, #9dacc5 0%, #2a4c8b 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    #hr1 {
+        margin-top: 370px;
+        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+
+    }
+
+    .page-text {
+        margin-top: 160px;
+        font-size: 34px;
+        font-weight: bold;
+        font-family: 'Montserrat';
+        color: black;
+        margin-left: 100px;
+    }
+
+    .under-logo-text {
+        font-family: 'Montserrat';
+        color: black;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    #web-logo {
+        margin-top: 100px;
+        width: 180px;
+        transform: rotate(-30deg);
+        margin-bottom: 20px;
+    }
+
+    #web-logo2 {
+        margin-top: 86px;
+        width: 180px;
+        margin-bottom: -13px;
+
+    }
+
+    #web-logo3 {
+        margin-top: 80px;
+        width: 120px;
+        margin-bottom: 19px;
+    }
+
+    .vl {
+        margin-left: 30px;
+        margin-top: 170px;
+        border-left: 4px solid #2a4c8b;
+        height: 1200px;
+        position: absolute;
+    }
+
+    .teg-text {
+        margin-top: 80px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        font-size: 30px;
+        margin-left: 100px;
+    }
+
+    #paragraph {
+        width: 500px;
+        margin-left: 100px;
+        font-size: 18px;
+        font-family: 'Montserrat';
+        margin-top: 50px;
+    }
+
+    #u-price {
+        margin-top: 85px;
+        width: 600px;
+    }
+
+    #gold-fish {
+        margin-top: 20px;
+        width: 600px;
+    }
+
+    #face-card {
+        margin-top: 20px;
+        margin-left: 0;
+        width: 600px;
+    }
+
+    #hr2 {
+        margin-top: 160px;
+        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+
+    }
+
+    .Btn {
+        margin-top: 20px;
+        left: 130px;
+        margin-right: -100px;
+        border: 2px solid transparent;
+        background-color: white;
+        border-radius: 20px;
+        color: #254c82;
+        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+        width: 100px;
+        height: 30px;
+        z-index: 11;
+        position: absolute;
+    }
+
+    #btnCH {
+        position: absolute;
+        left: 300px;
+    }
+
+    #btnCH2 {
+        position: absolute;
+        left: 470px;
+    }
+
+    .Btn:hover {
+        background: linear-gradient(to right, #9dacc5, #2a4c8b);
+        color: white;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    h2 small {
+        font-weight: normal;
+        color: #888;
+        display: block;
+    }
+
+    #group {
+        margin-top: 100px;
+    }
+
+    .group {
+        margin-top: 50px;
+        margin-left: 100px;
+        position: relative;
+        margin-bottom: 45px;
+    }
+
+    .vl2 {
+        margin-left: 30px;
+        margin-top: 170px;
+        border-left: 4px solid #2a4c8b;
+        height: 400px;
+        position: absolute;
+    }
+
+    input {
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 350px;
+        border: none;
+        border-bottom: 1px solid #757575;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    /* LABEL ======================================= */
+    label {
+        color: #999;
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 5px;
+        top: 10px;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+
+    /* active state */
+    input:focus ~ label, input:valid ~ label {
+        top: -20px;
+        font-size: 14px;
+        color: #5264AE;
+    }
+
+    /* BOTTOM BARS ================================= */
+    .bar {
+        position: relative;
+        display: block;
+        width: 350px;
+    }
+
+    .bar:before, .bar:after {
+        content: '';
+        height: 2px;
+        width: 0;
+        bottom: 1px;
+        position: absolute;
+        background: #5264AE;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+
+    .bar:before {
+        left: 50%;
+    }
+
+    .bar:after {
+        right: 50%;
+    }
+
+    /* active state */
+    input:focus ~ .bar:before, input:focus ~ .bar:after {
+        width: 50%;
+    }
+
+    /* HIGHLIGHTER ================================== */
+    .highlight {
+        position: absolute;
+        height: 60%;
+        width: 100px;
+        top: 25%;
+        left: 0;
+        pointer-events: none;
+        opacity: 0.5;
+    }
+
+    /* active state */
+    input:focus ~ .highlight {
+        -webkit-animation: inputHighlighter 0.3s ease;
+        -moz-animation: inputHighlighter 0.3s ease;
+        animation: inputHighlighter 0.3s ease;
+    }
+
+    /* ANIMATIONS ================ */
+    @-webkit-keyframes inputHighlighter {
+        from {
+            background: #5264AE;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+
+    @-moz-keyframes inputHighlighter {
+        from {
+            background: #5264AE;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+
+    @keyframes inputHighlighter {
+        from {
+            background: #5264AE;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+
+    .footer {
+        margin-top: 100px;
+        color: white;
+        padding: 15px;
+        background: black;
+        height: 50px;
+    }
+
+    .footerTxt {
+        float: left;
+    }
+
+    .footerTxt-2 {
+        float: right;
+        margin-left: 30px;
+    }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 649px) {
+
+    #movadexLogo {
+        width: 195px;
+        margin-top: -85px;
+    }
+
+    .navbar {
+        font-size: 16px;
+        padding-top: 10px;
+        border-radius: 0;
+        position: fixed; /* Set the navbar to fixed position */
+        top: 0; /* Position the navbar at the top of the page */
+        width: 100%;
+        z-index: 100;
+        background-color: white;
+        height: 70px;
+        opacity: 0.6;
+    }
+
+    .navbar a {
+        color: black;
+        font-family: 'Montserrat';
+        display: block;
+        border-bottom: 3px solid transparent;
+        margin-bottom: 40px;
+    }
+
+    .navbar .navbar-toggle .icon-bar {
+        background-color: #000;
+    }
+
+    .icon-bar {
+        color: black;
+    }
+
+    .navbar .navbar-nav li a:hover {
+        color: black !important;
+        background-color: transparent;
+    }
+
+    .active {
+        border-bottom: 3px solid #254c82;
+        padding-bottom: 5px;
+    }
+
+    .navbar a:hover {
+        border-bottom: 3px solid #254c82;
+        padding-bottom: 5px;
+    }
+
+    .navbar .navbar-nav li a:focus-within {
+        border-bottom: 3px solid #254c82;
+        padding-bottom: 5px;
+    }
+
+    #navBtn {
+        width: 140px;
+        height: 45px;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1.0px;
+        font-weight: 600;
+        color: #254c82;
+        background-color: #fff;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+    }
+
+    #navBtn:hover {
+        background-color: #2a4c8b;
+        box-shadow: 0px 5px 20px rgba(72, 229, 194, 0.4);
+        color: #fff;
+        transform: translateY(-2px);
+
+    }
+
+    #navBtn:hover .rainbow {
+        color: white;
+
+    }
+
+    /*#navBtn {*/
+    /*border: 2px solid transparent;*/
+    /*background-color: white;*/
+    /*border-radius: 20px;*/
+    /*color: #254c82;*/
+    /*box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);*/
+    /*width: 120px;*/
+    /*height: 40px;*/
+    /*z-index: 11;*/
+    /*}*/
+    #desertImg {
+        position: absolute;
+        height: 450px;
+        display: none;
+    }
+
+    .centered {
+        text-align: center;
+    }
+
+    .mainTxt {
+        margin-top: 460px;
+        color: black;
+        font-family: 'Montserrat';
+        font-size: 34px;
+        font-weight: bold;
+    }
+
+    .secondTxt {
+        margin-top: 30px;
+        color: black;
+        font-family: 'Montserrat';
+        font-size: 19px;
+    }
+
+    .textChanged {
+        font-size: 44px;
+        background: linear-gradient(to right, #9dacc5 0%, #2a4c8b 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    #hr1 {
+        margin-top: 370px;
+        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+
+    }
+
+    .page-text {
+        margin-top: 160px;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Montserrat';
+        color: black;
+        margin-left: 60px;
+    }
+
+    .under-logo-text {
+        font-family: 'Montserrat';
+        color: black;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    #web-logo {
+        margin-top: 100px;
+        width: 180px;
+        transform: rotate(-30deg);
+        margin-bottom: 20px;
+    }
+
+    #web-logo2 {
+        margin-top: 86px;
+        width: 180px;
+        margin-bottom: -13px;
+
+    }
+
+    #web-logo3 {
+        margin-top: 80px;
+        width: 120px;
+        margin-bottom: 19px;
+    }
+
+    .vl {
+        margin-left: 30px;
+        margin-top: 170px;
+        border-left: 4px solid #2a4c8b;
+        height: 1200px;
+        position: absolute;
+    }
+
+    .teg-text {
+        margin-top: 80px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        font-size: 30px;
+        margin-left: 60px;
+    }
+
+    #paragraph {
+        width: 400px;
+        margin-left: 60px;
+        font-size: 18px;
+        font-family: 'Montserrat';
+        margin-top: 50px;
+    }
+
+    #u-price {
+        margin-top: 85px;
+        width: 480px;
+    }
+
+    #gold-fish {
+        margin-top: 20px;
+        width: 480px;
+    }
+
+    #face-card {
+        margin-top: 20px;
+        width: 480px;
+        margin-left: 0;
+    }
+
+    #hr2 {
+        margin-top: 160px;
+        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+
+    }
+
+    .Btn {
+        margin-top: 20px;
+        left: 100px;
+        border: 2px solid transparent;
+        background-color: white;
+        border-radius: 20px;
+        color: #254c82;
+        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+        width: 100px;
+        height: 30px;
+        z-index: 11;
+        position: absolute;
+    }
+
+    #btnCH {
+        position: absolute;
+        left: 270px;
+    }
+
+    #btnCH2 {
+        position: absolute;
+        left: 440px;
+    }
+
+    .Btn:hover {
+        background: linear-gradient(to right, #9dacc5, #2a4c8b);
+        color: white;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    h2 small {
+        font-weight: normal;
+        color: #888;
+        display: block;
+    }
+
+    #group {
+        margin-top: 100px;
+    }
+
+    .group {
+        margin-top: 50px;
+        margin-left: 60px;
+        position: relative;
+        margin-bottom: 45px;
+    }
+
+    .vl2 {
+        margin-left: 30px;
+        margin-top: 170px;
+        border-left: 4px solid #2a4c8b;
+        height: 400px;
+        position: absolute;
+    }
+
+    input {
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 350px;
+        border: none;
+        border-bottom: 1px solid #757575;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    /* LABEL ======================================= */
+    label {
+        color: #999;
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 5px;
+        top: 10px;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+
+    /* active state */
+    input:focus ~ label, input:valid ~ label {
+        top: -20px;
+        font-size: 14px;
+        color: #5264AE;
+    }
+
+    /* BOTTOM BARS ================================= */
+    .bar {
+        position: relative;
+        display: block;
+        width: 350px;
+    }
+
+    .bar:before, .bar:after {
+        content: '';
+        height: 2px;
+        width: 0;
+        bottom: 1px;
+        position: absolute;
+        background: #5264AE;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+
+    .bar:before {
+        left: 50%;
+    }
+
+    .bar:after {
+        right: 50%;
+    }
+
+    /* active state */
+    input:focus ~ .bar:before, input:focus ~ .bar:after {
+        width: 50%;
+    }
+
+    /* HIGHLIGHTER ================================== */
+    .highlight {
+        position: absolute;
+        height: 60%;
+        width: 100px;
+        top: 25%;
+        left: 0;
+        pointer-events: none;
+        opacity: 0.5;
+    }
+
+    /* active state */
+    input:focus ~ .highlight {
+        -webkit-animation: inputHighlighter 0.3s ease;
+        -moz-animation: inputHighlighter 0.3s ease;
+        animation: inputHighlighter 0.3s ease;
+    }
+
+    /* ANIMATIONS ================ */
+    @-webkit-keyframes inputHighlighter {
+        from {
+            background: #5264AE;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+
+    @-moz-keyframes inputHighlighter {
+        from {
+            background: #5264AE;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+
+    @keyframes inputHighlighter {
+        from {
+            background: #5264AE;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+
+    .footer {
+        margin-top: 100px;
+        color: white;
+        padding: 15px;
+        background: black;
+        height: 50px;
+    }
+
+    .footerTxt {
+        float: left;
+    }
+
+    .footerTxt-2 {
+        float: right;
+        margin-left: 30px;
+    }
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 499px) {
+
+    #movadexLogo {
+        width: 195px;
+        margin-top: -85px;
+    }
+
+    .navbar {
+        font-size: 16px;
+        padding-top: 10px;
+        border-radius: 0;
+
+        position: fixed; /* Set the navbar to fixed position */
+        top: 0; /* Position the navbar at the top of the page */
+        width: 100%;
+        z-index: 100;
+        background-color: white;
+        height: 70px;
+        opacity: 0.6;
+    }
+
+    .navbar a {
+        color: black;
+        font-family: 'Montserrat';
+        display: block;
+        border-bottom: 3px solid transparent;
+        margin-bottom: 40px;
+    }
+
+    .navbar .navbar-toggle .icon-bar {
+        background-color: #000;
+    }
+
+    .icon-bar {
+        color: black;
+    }
+
+    .navbar .navbar-nav li a:hover {
+        color: black !important;
+        background-color: transparent;
+    }
+
+    .active {
+        border-bottom: 3px solid #254c82;
+        padding-bottom: 5px;
+    }
+
+    .navbar a:hover {
+        border-bottom: 3px solid #254c82;
+        padding-bottom: 5px;
+    }
+
+    .navbar .navbar-nav li a:focus-within {
+        border-bottom: 3px solid #254c82;
+        padding-bottom: 5px;
+    }
+
+    #navBtn {
+        width: 140px;
+        height: 45px;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1.0px;
+        font-weight: 600;
+        color: #254c82;
+        background-color: #fff;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+    }
+
+    #navBtn:hover {
+        background-color: #2a4c8b;
+        box-shadow: 0px 5px 20px rgba(72, 229, 194, 0.4);
+        color: #fff;
+        transform: translateY(-2px);
+
+    }
+
+    #navBtn:hover .rainbow {
+        color: white;
+
+    }
+
+    /*#navBtn {*/
+    /*border: 2px solid transparent;*/
+    /*background-color: white;*/
+    /*border-radius: 20px;*/
+    /*color: #254c82;*/
+    /*box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);*/
+    /*width: 120px;*/
+    /*height: 40px;*/
+    /*z-index: 11;*/
+    /*}*/
+    #desertImg {
+        position: absolute;
+        height: 450px;
+        display: none;
+    }
+
+    .centered {
+        text-align: center;
+    }
+
+    .mainTxt {
+        margin-top: 460px;
+        color: black;
+        font-family: 'Montserrat';
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .secondTxt {
+        margin-top: 30px;
+        color: black;
+        font-family: 'Montserrat';
+        font-size: 15px;
+    }
+
+    .textChanged {
+        font-size: 25px;
+        background: linear-gradient(to right, #9dacc5 0%, #2a4c8b 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    #hr1 {
+        margin-top: 370px;
+        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+
+    }
+
+    .page-text {
+        margin-top: 160px;
+        font-size: 26px;
+        font-weight: bold;
+        font-family: 'Montserrat';
+        color: black;
+        margin-left: 30px;
+    }
+
+    .under-logo-text {
+        font-family: 'Montserrat';
+        color: black;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    #web-logo {
+        margin-top: 100px;
+        width: 180px;
+        transform: rotate(-30deg);
+        margin-bottom: 20px;
+    }
+
+    #web-logo2 {
+        margin-top: 86px;
+        width: 180px;
+        margin-bottom: -13px;
+
+    }
+
+    #web-logo3 {
+        margin-top: 80px;
+        width: 120px;
+        margin-bottom: 19px;
+    }
+
+    .vl {
+
+        margin-left: 10px;
+        margin-top: 170px;
+        border-left: 4px solid #2a4c8b;
+        height: 1200px;
+        position: absolute;
+    }
+
+    .teg-text {
+        margin-top: 80px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        font-size: 26px;
+        margin-left: 40px;
+    }
+
+    #paragraph {
+        width: 260px;
+        margin-left: 40px;
+        font-size: 14px;
+        font-family: 'Montserrat';
+        margin-top: 50px;
+    }
+
+    #u-price {
+        margin-top: 85px;
+        width: 280px;
+    }
+
+    #gold-fish {
+        margin-top: 20px;
+        width: 280px;
+    }
+
+    #face-card {
+        margin-top: 20px;
+        width: 280px;
+        margin-left: 0;
+    }
+
+    #hr2 {
+        margin-top: 160px;
+        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+
+    }
+
+    .Btn {
+        margin-top: 20px;
+        margin-left: 50px;
+        border: 2px solid transparent;
+        background-color: white;
+        border-radius: 20px;
+        color: #254c82;
+        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+        width: 100px;
+        height: 30px;
+        z-index: 11;
+
+    }
+
+    #btnCH {
+
+        margin-left: 50px;
+    }
+
+    #btnCH2 {
+
+        margin-left: 50px;
+    }
+
+    .Btn:hover {
+        background: linear-gradient(to right, #9dacc5, #2a4c8b);
+        color: white;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    h2 small {
+        font-weight: normal;
+        color: #888;
+        display: block;
+    }
+
+    #group {
+        margin-top: 100px;
+    }
+
+    .group {
+        margin-top: 50px;
+        margin-left: 40px;
+        position: relative;
+        margin-bottom: 45px;
+    }
+
+    .vl2 {
+
+        margin-left: 10px;
+        margin-top: 165px;
+        border-left: 4px solid #2a4c8b;
+        height: 520px;
+        position: absolute;
+    }
+
+    input {
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 260px;
+        border: none;
+        border-bottom: 1px solid #757575;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    /* LABEL ======================================= */
+    label {
+        color: #999;
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 5px;
+        top: 10px;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+
+    /* active state */
+    input:focus ~ label, input:valid ~ label {
+        top: -20px;
+        font-size: 14px;
+        color: #5264AE;
+    }
+
+    /* BOTTOM BARS ================================= */
+    .bar {
+        position: relative;
+        display: block;
+        width: 260px;
+    }
+
+    .bar:before, .bar:after {
+        content: '';
+        height: 2px;
+        width: 0;
+        bottom: 1px;
+        position: absolute;
+        background: #5264AE;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+
+    .bar:before {
+        left: 50%;
+    }
+
+    .bar:after {
+        right: 50%;
+    }
+
+    /* active state */
+    input:focus ~ .bar:before, input:focus ~ .bar:after {
+        width: 50%;
+    }
+
+    /* HIGHLIGHTER ================================== */
+    .highlight {
+        position: absolute;
+        height: 60%;
+        width: 100px;
+        top: 25%;
+        left: 0;
+        pointer-events: none;
+        opacity: 0.5;
+    }
+
+    /* active state */
+    input:focus ~ .highlight {
+        -webkit-animation: inputHighlighter 0.3s ease;
+        -moz-animation: inputHighlighter 0.3s ease;
+        animation: inputHighlighter 0.3s ease;
+    }
+
+    /* ANIMATIONS ================ */
+    @-webkit-keyframes inputHighlighter {
+        from {
+            background: #5264AE;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+
+    @-moz-keyframes inputHighlighter {
+        from {
+            background: #5264AE;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+
+    @keyframes inputHighlighter {
+        from {
+            background: #5264AE;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+
+    .footer {
+        margin-top: 100px;
+        color: white;
+        padding: 15px;
+        background: black;
+        height: 50px;
+    }
+
+    #footerTxt {
+        font-size: 11px;
+
+    }
+    .footerTxt-2{
+ font-size: 11px;
+    }
+
+
+}
