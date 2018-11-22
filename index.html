@@ -29,48 +29,51 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <button id="navBtn">WRITE US</button>
+                    <a id="a" href="#page-4"><button  id="navBtn">WRITE US</button></a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-
-<img id="desertImg" src="image/icons/ui:ux_icon.png">
+<img id="desertImg2" src="image/blob2.png">
+<img id="desertImg" src="image/blob1.png">
 <div class="container centered">
     <h3 class="mainTxt">We code <span class="textChanged">your</span> ideas.</h3>
     <h2 class="secondTxt">Build beautiful mobile/web applications with us</h2>
 </div>
 <hr id="hr1">
+
 <div class="container" id="page-2">
+
     <div class="vl"></div>
     <h3 class="page-text">WE SPECIALISE IN</h3>
     <div class="row">
         <div class="first centered col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1">
             <img id="web-logo" src="image/logo/web_logo_desert%20copy.png">
-            <a href="#"><h3 class="under-logo-text">WEB</h3></a>
+            <a href="#"><h3 id="text1" class="under-logo-text">WEB</h3></a>
         </div>
         <div class="second centered col-lg-4 col-md-4 col-sm-4 ">
             <img id="web-logo2" src="image/icons/phones_logo%20desert.png">
             <a href="#">
-                <div class="under-logo-text">MOBILE</div>
+                <div id="text2" class="under-logo-text">MOBILE</div>
             </a>
         </div>
         <div class="third centered col-lg-4 col-md-4 col-sm-4 ">
             <img id="web-logo3" src="image/icons/uiux_icon%20desert'.png">
-            <a href="#"><h3 class="under-logo-text">UI/UX</h3></a>
+            <a href="#"><h3 id="text3" class="under-logo-text">UI/UX</h3></a>
         </div>
     </div>
-    <h3 class="teg-text">MOBILE</h3>
+    <h3 id="teg-text" class="teg-text">MOBILE</h3>
     <p id="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
         aliquip ex ea commodo consequat.
     </p>
 </div>
+ <img id="desertImg3" src="image/blob3.png">
 <hr id="hr2">
 <div class="container" id="page-3">
     <h3 class="page-text">NOTICEABLE PROJECTS</h3>
-    <div class="row">
+    <div class="row centered">
         <div class="col-lg-12 col-md-12 col-sm-12">
             <img id="u-price" src="image/icons/uprice.png">
         </div>
@@ -88,7 +91,7 @@
 <div class="container" id="page-4">
     <div class="vl2"></div>
     <h3 class="page-text">GET IN TOUCH</h3>
-    <div class="row">
+    <div  class="row">
         <div class=" col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-1">
             <button class="Btn">WEB</button>
         </div>
@@ -124,13 +127,8 @@
 </div>
 <div class="footer">
     <div class="container">
-        <div id="footerTxt">Company © All rights reserved</div>
+        <div id="footerTxt">Movadex © All rights reserved</div>
         </a>
-        <div class="block">
-            <div class="footerTxt-2">About</div>
-            <div class="footerTxt-2">Contact</div>
-            <div class="footerTxt-2">Help</div>
-        </div>
     </div>
 </div>
 
@@ -143,16 +141,36 @@
 
     });
 
+     document.getElementById("web-logo").onclick = function () {
+        document.getElementById("paragraph").innerHTML = '<p>Nor </p>';
+         document.getElementById("teg-text").innerText  = 'Nor';
+    };
 
     document.getElementById("web-logo2").onclick = function () {
-        document.getElementById("paragraph").innerHTML = '<p>Nor </p>';
+        document.getElementById("paragraph").innerHTML = '<p>Nor gsnedf</p>';
+        document.getElementById("teg-text").innerText  = 'Nor';
     };
-    document.getElementById("web-logo").onclick = function () {
-        document.getElementById("paragraph").innerHTML = '<p>Nor </p>';
-    };
+
     document.getElementById("web-logo3").onclick = function () {
-        document.getElementById("paragraph").innerHTML = '<p>Nor </p>';
+        document.getElementById("paragraph").innerHTML = '<p>Nor sdfsdf</p>';
+        document.getElementById("teg-text").innerText  = 'Nor';
     };
+
+
+     document.getElementById("text1").onclick = function () {
+ document.getElementById("paragraph").innerHTML = '<p>Nor </p>';
+         document.getElementById("teg-text").innerText  = 'Nor';
+     };
+      document.getElementById("text2").onclick = function () {
+ document.getElementById("paragraph").innerHTML = '<p>Nor fsdfsdfsdfsdf</p>';
+         document.getElementById("teg-text").innerText  = 'Nor';
+     };
+       document.getElementById("text3").onclick = function () {
+ document.getElementById("paragraph").innerHTML = '<p>Nor rw423423423</p>';
+         document.getElementById("teg-text").innerText  = 'Nor';
+     };
+
+
 
     $(document).on('click', 'a[href^="#"]', function (event) {
         event.preventDefault();

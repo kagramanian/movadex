@@ -19,14 +19,14 @@ body {
 
 .navbar {
     font-size: 16px;
-    padding-top: 10px;
+    padding-top: 25px;
     border-radius: 0;
     position: fixed; /* Set the navbar to fixed position */
     width: 100%;
     z-index: 100;
-    background-color: white;
-    height: 70px;
-    opacity: 0.6;
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 100px;
+
 }
 
 .navbar a {
@@ -35,6 +35,12 @@ body {
     display: block;
     border-bottom: 3px solid transparent;
     margin-bottom: 40px;
+    z-index: 100;
+
+}
+
+.navbar img {
+    opacity: revert;
 }
 
 .navbar .navbar-toggle .icon-bar {
@@ -50,13 +56,15 @@ body {
     background-color: transparent;
 }
 
-
-
 .navbar .navbar-nav li a:focus-within {
     border-bottom: 3px solid #254c82;
     padding-bottom: 5px;
 }
 
+.navbar .navbar-nav li #a:focus-within {
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+}
 #navBtn {
     width: 140px;
     height: 45px;
@@ -72,6 +80,7 @@ body {
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
+    opacity: 1;
 }
 
 #navBtn:hover {
@@ -98,9 +107,23 @@ body {
 /*z-index: 11;*/
 /*}*/
 
+#desertImg2{
+   right: -1px;
+ position: absolute;
+
+}
+
 #desertImg {
+    top: 450px;
     position: absolute;
     height: 450px;
+    z-index: -2;
+
+}
+
+#desertImg3{
+    margin-top: -110px;
+    float: right;
     display: none;
 }
 
@@ -132,12 +155,13 @@ body {
 
 #hr1 {
     margin-top: 370px;
-    box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+     box-shadow: 0px 3px 10px grey;
+    color: black;
 
 }
 
 .page-text {
-    margin-top: 160px;
+    margin-top: 180px;
     font-size: 40px;
     font-weight: bold;
     font-family: 'Montserrat';
@@ -178,6 +202,7 @@ body {
     border-left: 4px solid #2a4c8b;
     height: 565px;
     position: absolute;
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.1);
 }
 
 .teg-text {
@@ -198,21 +223,31 @@ body {
 
 #u-price {
     margin-top: 85px;
+    height: 300px;
 }
 
 #gold-fish {
     margin-top: 20px;
+    height: 300px;
+    margin-left: 265px;
 }
 
 #face-card {
     margin-top: 20px;
-    margin-left: -90px;
+    margin-left: -270px;
+    height: 300px;
 }
 
 #hr2 {
-    margin-top: 160px;
-    box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+    margin-top: 100px;
+     box-shadow: 0px 3px 10px grey;
+    color: black;
+    z-index: 100000000;
 
+}
+
+#page-3{
+    z-index: 100;
 }
 
 .Btn {
@@ -264,8 +299,9 @@ h2 small {
     margin-left: 30px;
     margin-top: 170px;
     border-left: 4px solid #2a4c8b;
-    height: 400px;
+    height: 440px;
     position: absolute;
+     box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.1);
 }
 
 input {
@@ -384,7 +420,7 @@ input:focus ~ .highlight {
 }
 
 .footer {
-    margin-top: 100px;
+    margin-top: 280px;
     color: white;
     padding: 15px;
     background: black;
@@ -416,9 +452,9 @@ input:focus ~ .highlight {
         top: 0; /* Position the navbar at the top of the page */
         width: 100%;
         z-index: 100;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.6);
         height: 70px;
-        opacity: 0.6;
+
     }
 
     .navbar a {
@@ -500,7 +536,6 @@ input:focus ~ .highlight {
     #desertImg {
         position: absolute;
         height: 450px;
-        display: none;
     }
 
     .centered {
@@ -531,7 +566,8 @@ input:focus ~ .highlight {
 
     #hr1 {
         margin-top: 370px;
-        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 3px 10px grey;
+    color: black;
 
     }
 
@@ -574,9 +610,11 @@ input:focus ~ .highlight {
     .vl {
         margin-left: 30px;
         margin-top: 170px;
-        border-left: 4px solid #2a4c8b;
         height: 565px;
         position: absolute;
+        background-color: rgb(37, 76, 130);
+        width: 3px;
+        z-index: 46;
     }
 
     .teg-text {
@@ -597,23 +635,25 @@ input:focus ~ .highlight {
 
     #u-price {
         margin-top: 85px;
-        width: 900px;
+        height: 300px;
     }
 
     #gold-fish {
         margin-top: 20px;
-        width: 440px;
+        height: 300px;
+        margin-left: 165px;
     }
 
     #face-card {
         margin-top: 20px;
-        margin-left: -20px;
-        width: 440px;
+        margin-left: -170px;
+        height: 300px;
     }
 
     #hr2 {
-        margin-top: 160px;
-        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+        margin-top: 100px;
+        box-shadow: 0px 3px 10px grey;
+    color: black;
 
     }
 
@@ -820,9 +860,9 @@ input:focus ~ .highlight {
         top: 0; /* Position the navbar at the top of the page */
         width: 100%;
         z-index: 100;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.6);
         height: 70px;
-        opacity: 0.6;
+
     }
 
     .navbar a {
@@ -904,7 +944,7 @@ input:focus ~ .highlight {
     #desertImg {
         position: absolute;
         height: 450px;
-        display: none;
+
     }
 
     .centered {
@@ -935,12 +975,14 @@ input:focus ~ .highlight {
 
     #hr1 {
         margin-top: 370px;
-        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+         box-shadow: 0px 3px 10px grey;
+    color: black;
 
     }
 
     .page-text {
-        margin-top: 160px;
+        margin-top: 100px;
+        margin-bottom: 100px;
         font-size: 34px;
         font-weight: bold;
         font-family: 'Montserrat';
@@ -956,28 +998,28 @@ input:focus ~ .highlight {
     }
 
     #web-logo {
-        margin-top: 100px;
+        margin-top: 60px;
         width: 160px;
         transform: rotate(-30deg);
         margin-bottom: 20px;
     }
 
     #web-logo2 {
-        margin-top: 86px;
+        margin-top: 46px;
         width: 160px;
         margin-bottom: -13px;
 
     }
 
     #web-logo3 {
-        margin-top: 80px;
+        margin-top: 40px;
         width: 100px;
         margin-bottom: 19px;
     }
 
     .vl {
         margin-left: 30px;
-        margin-top: 170px;
+        margin-top: 200px;
         border-left: 4px solid #2a4c8b;
         height: 565px;
         position: absolute;
@@ -1000,29 +1042,31 @@ input:focus ~ .highlight {
     }
 
     #u-price {
-        margin-top: 85px;
-        width: 720px;
+        margin-top: -20px;
+        height: 300px;
     }
 
     #gold-fish {
         margin-top: 20px;
-        width: 355px;
+        height: 300px;
+        margin-left: 55px;
     }
 
     #face-card {
         margin-top: 20px;
-        margin-left: -10px;
-        width: 355px;
+        margin-left: -58px;
+        height: 300px;
     }
 
     #hr2 {
-        margin-top: 160px;
-        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+        margin-top: 150px;
+        box-shadow: 0px 3px 10px grey;
+    color: black;
 
     }
 
     .Btn {
-        margin-top: 40px;
+        margin-top: -40px;
         margin-left: 40px;
         margin-right: -100px;
         border: 2px solid transparent;
@@ -1224,9 +1268,9 @@ input:focus ~ .highlight {
         top: 0; /* Position the navbar at the top of the page */
         width: 100%;
         z-index: 100;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.6);
         height: 70px;
-        opacity: 0.6;
+
     }
 
     .navbar a {
@@ -1308,7 +1352,7 @@ input:focus ~ .highlight {
     #desertImg {
         position: absolute;
         height: 450px;
-        display: none;
+
     }
 
     .centered {
@@ -1339,12 +1383,13 @@ input:focus ~ .highlight {
 
     #hr1 {
         margin-top: 370px;
-        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+       box-shadow: 0px 3px 10px grey;
+    color: black;
 
     }
 
     .page-text {
-        margin-top: 160px;
+        margin-top: 100px;
         font-size: 34px;
         font-weight: bold;
         font-family: 'Montserrat';
@@ -1360,13 +1405,17 @@ input:focus ~ .highlight {
     }
 
     #web-logo {
-        margin-top: 100px;
-        width: 180px;
+        position: absolute;
+        left: 15%;
+        width: 160px;
         transform: rotate(-30deg);
         margin-bottom: 20px;
     }
 
     #web-logo2 {
+        top: -30px;
+        left: 40%;
+        position: absolute;
         margin-top: 86px;
         width: 180px;
         margin-bottom: -13px;
@@ -1374,6 +1423,9 @@ input:focus ~ .highlight {
     }
 
     #web-logo3 {
+        top: -10px;
+        left: 75%;
+        position: absolute;
         margin-top: 80px;
         width: 120px;
         margin-bottom: 19px;
@@ -1383,16 +1435,34 @@ input:focus ~ .highlight {
         margin-left: 30px;
         margin-top: 170px;
         border-left: 4px solid #2a4c8b;
-        height: 1200px;
+        height: 700px;
         position: absolute;
     }
 
     .teg-text {
-        margin-top: 80px;
+        margin-top: 380px;
         font-family: 'Montserrat';
         font-weight: bold;
         font-size: 30px;
         margin-left: 100px;
+    }
+
+    #text1 {
+        position: absolute;
+        left: 22%;
+        top: 225px;
+    }
+
+    #text2 {
+        position: absolute;
+        left: 46%;
+        top: 239px;
+    }
+
+    #text3 {
+        position: absolute;
+        left: 80%;
+        top: 223px;
     }
 
     #paragraph {
@@ -1404,29 +1474,34 @@ input:focus ~ .highlight {
     }
 
     #u-price {
-        margin-top: 85px;
-        width: 600px;
+        margin-top: 50px;
+        height: 250px;
     }
 
     #gold-fish {
+
         margin-top: 20px;
-        width: 600px;
+        height: 250px;
+
+        margin-bottom: 100px;
     }
 
     #face-card {
-        margin-top: 20px;
-        margin-left: 0;
-        width: 600px;
+
+        margin-top: -472px;
+
+        height: 250px;
     }
 
     #hr2 {
-        margin-top: 160px;
-        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+        margin-top: 400px;
+         box-shadow: 0px 3px 10px grey;
+    color: black;
 
     }
 
     .Btn {
-        margin-top: 20px;
+        margin-top: 30px;
         left: 130px;
         margin-right: -100px;
         border: 2px solid transparent;
@@ -1634,9 +1709,9 @@ input:focus ~ .highlight {
         top: 0; /* Position the navbar at the top of the page */
         width: 100%;
         z-index: 100;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.6);
         height: 70px;
-        opacity: 0.6;
+
     }
 
     .navbar a {
@@ -1721,6 +1796,10 @@ input:focus ~ .highlight {
         display: none;
     }
 
+    #desertImg2{
+        display: none;
+    }
+
     .centered {
         text-align: center;
     }
@@ -1749,7 +1828,8 @@ input:focus ~ .highlight {
 
     #hr1 {
         margin-top: 370px;
-        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 3px 10px grey;
+    color: black;
 
     }
 
@@ -1770,13 +1850,17 @@ input:focus ~ .highlight {
     }
 
     #web-logo {
-        margin-top: 100px;
-        width: 180px;
+        position: absolute;
+        left: 15%;
+        width: 160px;
         transform: rotate(-30deg);
         margin-bottom: 20px;
     }
 
     #web-logo2 {
+        top: -30px;
+        left: 40%;
+        position: absolute;
         margin-top: 86px;
         width: 180px;
         margin-bottom: -13px;
@@ -1784,6 +1868,9 @@ input:focus ~ .highlight {
     }
 
     #web-logo3 {
+        top: -10px;
+        left: 75%;
+        position: absolute;
         margin-top: 80px;
         width: 120px;
         margin-bottom: 19px;
@@ -1793,16 +1880,34 @@ input:focus ~ .highlight {
         margin-left: 30px;
         margin-top: 170px;
         border-left: 4px solid #2a4c8b;
-        height: 1200px;
+        height: 700px;
         position: absolute;
     }
 
     .teg-text {
-        margin-top: 80px;
+        margin-top: 380px;
         font-family: 'Montserrat';
         font-weight: bold;
         font-size: 30px;
         margin-left: 60px;
+    }
+
+    #text1 {
+        position: absolute;
+        left: 22%;
+        top: 225px;
+    }
+
+    #text2 {
+        position: absolute;
+        left: 46%;
+        top: 239px;
+    }
+
+    #text3 {
+        position: absolute;
+        left: 80%;
+        top: 223px;
     }
 
     #paragraph {
@@ -1814,24 +1919,30 @@ input:focus ~ .highlight {
     }
 
     #u-price {
-        margin-top: 85px;
-        width: 480px;
+        margin-top: 50px;
+        height: 200px;
     }
 
     #gold-fish {
+
         margin-top: 20px;
-        width: 480px;
+        height: 200px;
+        margin-left: 208px;
+
+        margin-bottom: 100px;
     }
 
     #face-card {
-        margin-top: 20px;
-        width: 480px;
-        margin-left: 0;
+
+        margin-top: -424px;
+        margin-left: -210px;
+        height: 200px;
     }
 
     #hr2 {
-        margin-top: 160px;
-        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+        margin-top: 100px;
+         box-shadow: 0px 3px 10px grey;
+    color: black;
 
     }
 
@@ -2044,9 +2155,15 @@ input:focus ~ .highlight {
         top: 0; /* Position the navbar at the top of the page */
         width: 100%;
         z-index: 100;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 1);
         height: 70px;
-        opacity: 0.6;
+
+    }
+
+    #menu {
+        background-color: white;
+        text-align: center;
+        padding: 20px;
     }
 
     .navbar a {
@@ -2127,8 +2244,14 @@ input:focus ~ .highlight {
     /*}*/
     #desertImg {
         position: absolute;
-        height: 450px;
-        display: none;
+        height: 200px;
+
+    }
+
+    #desertImg2{
+        height: 300px;
+        position: absolute;
+        right: -1px;
     }
 
     .centered {
@@ -2136,7 +2259,7 @@ input:focus ~ .highlight {
     }
 
     .mainTxt {
-        margin-top: 460px;
+        margin-top: 280px;
         color: black;
         font-family: 'Montserrat';
         font-size: 25px;
@@ -2159,13 +2282,14 @@ input:focus ~ .highlight {
 
     #hr1 {
         margin-top: 370px;
-        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+         box-shadow: 0px 3px 10px grey;
+    color: black;
 
     }
 
     .page-text {
         margin-top: 160px;
-        font-size: 26px;
+        font-size: 24px;
         font-weight: bold;
         font-family: 'Montserrat';
         color: black;
@@ -2173,30 +2297,56 @@ input:focus ~ .highlight {
     }
 
     .under-logo-text {
+        margin-top: 200px;
         font-family: 'Montserrat';
         color: black;
         font-weight: bold;
-        font-size: 24px;
+        font-size: 20px;
     }
 
     #web-logo {
-        margin-top: 100px;
-        width: 180px;
+        position: absolute;
+        top: -50px;
+        width: 70px;
         transform: rotate(-30deg);
-        margin-bottom: 20px;
+        left: 14%;
     }
 
     #web-logo2 {
-        margin-top: 86px;
-        width: 180px;
+        top: -50px;
+        position: absolute;
+
+        width: 70px;
         margin-bottom: -13px;
+        left: 40%;
 
     }
 
     #web-logo3 {
+        top: -40px;
+        position: absolute;
         margin-top: 80px;
-        width: 120px;
+        width: 50px;
         margin-bottom: 19px;
+        left: 73%;
+    }
+
+    #text1 {
+        position: absolute;
+        top: -60px;
+        left: 14%;
+    }
+
+    #text2 {
+        position: absolute;
+        top: -65px;
+        left: 40%;
+    }
+
+    #text3 {
+        position: absolute;
+        top: -64px;
+        left: 73%;
     }
 
     .vl {
@@ -2204,12 +2354,13 @@ input:focus ~ .highlight {
         margin-left: 10px;
         margin-top: 170px;
         border-left: 4px solid #2a4c8b;
-        height: 1200px;
+        height: 500px;
         position: absolute;
     }
 
     .teg-text {
-        margin-top: 80px;
+
+        margin-top: 230px;
         font-family: 'Montserrat';
         font-weight: bold;
         font-size: 26px;
@@ -2217,7 +2368,7 @@ input:focus ~ .highlight {
     }
 
     #paragraph {
-        width: 260px;
+        width: 240px;
         margin-left: 40px;
         font-size: 14px;
         font-family: 'Montserrat';
@@ -2226,48 +2377,53 @@ input:focus ~ .highlight {
 
     #u-price {
         margin-top: 85px;
-        width: 280px;
+        height: 140px;
     }
 
     #gold-fish {
-        margin-top: 20px;
-        width: 280px;
+        margin-top: 10px;
+        height: 140px;
+        margin-left: 145px;
     }
 
     #face-card {
-        margin-top: 20px;
-        width: 280px;
-        margin-left: 0;
+
+        height: 140px;
+        margin-top: -164px;
+        margin-left: -148px;
     }
 
     #hr2 {
         margin-top: 160px;
-        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+       box-shadow: 0px 3px 10px grey;
+    color: black;
 
     }
 
     .Btn {
+        position: absolute;
         margin-top: 20px;
-        margin-left: 50px;
+        left: 60px;
         border: 2px solid transparent;
         background-color: white;
         border-radius: 20px;
         color: #254c82;
         box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
-        width: 100px;
+        width: 80px;
         height: 30px;
         z-index: 11;
 
     }
 
     #btnCH {
-
-        margin-left: 50px;
+        margin-top: 19px;
+        left: 200px;
     }
 
     #btnCH2 {
-
-        margin-left: 50px;
+        margin-top: 18px;
+        left: 340px;
+        margin-right: 50px;
     }
 
     .Btn:hover {
@@ -2302,7 +2458,7 @@ input:focus ~ .highlight {
         margin-left: 10px;
         margin-top: 165px;
         border-left: 4px solid #2a4c8b;
-        height: 520px;
+        height: 400px;
         position: absolute;
     }
 
@@ -2310,7 +2466,7 @@ input:focus ~ .highlight {
         font-size: 18px;
         padding: 10px 10px 10px 5px;
         display: block;
-        width: 260px;
+        width: 240px;
         border: none;
         border-bottom: 1px solid #757575;
     }
@@ -2344,7 +2500,7 @@ input:focus ~ .highlight {
     .bar {
         position: relative;
         display: block;
-        width: 260px;
+        width: 240px;
     }
 
     .bar:before, .bar:after {
@@ -2426,16 +2582,16 @@ input:focus ~ .highlight {
         color: white;
         padding: 15px;
         background: black;
-        height: 50px;
+        height: 45px;
     }
 
     #footerTxt {
         font-size: 11px;
 
     }
-    .footerTxt-2{
- font-size: 11px;
-    }
 
+    .footerTxt-2 {
+        font-size: 8px;
+    }
 
 }
