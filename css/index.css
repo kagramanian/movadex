@@ -62,9 +62,10 @@ body {
 }
 
 .navbar .navbar-nav li #a:focus-within {
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid transparent;
     padding-bottom: 5px;
 }
+
 #navBtn {
     margin-top: -20px;
     width: 140px;
@@ -93,7 +94,7 @@ body {
 }
 
 #navBtn:hover .rainbow {
-    color: white;
+    color: transparent;
 
 }
 
@@ -108,9 +109,9 @@ body {
 /*z-index: 11;*/
 /*}*/
 
-#desertImg2{
-   right: -1px;
- position: absolute;
+#desertImg2 {
+    right: -1px;
+    position: absolute;
 
 }
 
@@ -122,7 +123,7 @@ body {
 
 }
 
-#desertImg3{
+#desertImg3 {
     margin-top: -110px;
     float: right;
     display: none;
@@ -156,7 +157,7 @@ body {
 
 #hr1 {
     margin-top: 370px;
-     box-shadow: 0px 3px 10px grey;
+    box-shadow: 0px 3px 10px grey;
     color: black;
 
 }
@@ -241,13 +242,13 @@ body {
 
 #hr2 {
     margin-top: 100px;
-     box-shadow: 0px 3px 10px grey;
+    box-shadow: 0px 3px 10px grey;
     color: black;
     z-index: 100000000;
 
 }
 
-#page-3{
+#page-3 {
     z-index: 100;
 }
 
@@ -302,7 +303,7 @@ h2 small {
     border-left: 4px solid #2a4c8b;
     height: 440px;
     position: absolute;
-     box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.1);
 }
 
 input {
@@ -494,6 +495,15 @@ input:focus ~ .highlight {
         padding-bottom: 5px;
     }
 
+    .navbar .navbar-nav li #a:focus-within {
+        border-bottom: 3px solid transparent;
+        padding-bottom: 5px;
+    }
+      .navbar .navbar-nav li #a:hover {
+        border-bottom: 3px solid transparent;
+        padding-bottom: 5px;
+    }
+
     #navBtn {
         width: 140px;
         height: 45px;
@@ -520,7 +530,7 @@ input:focus ~ .highlight {
     }
 
     #navBtn:hover .rainbow {
-        color: white;
+        color: transparent;
 
     }
 
@@ -568,7 +578,7 @@ input:focus ~ .highlight {
     #hr1 {
         margin-top: 370px;
         box-shadow: 0px 3px 10px grey;
-    color: black;
+        color: black;
 
     }
 
@@ -654,7 +664,7 @@ input:focus ~ .highlight {
     #hr2 {
         margin-top: 100px;
         box-shadow: 0px 3px 10px grey;
-    color: black;
+        color: black;
 
     }
 
@@ -901,6 +911,14 @@ input:focus ~ .highlight {
         border-bottom: 3px solid #254c82;
         padding-bottom: 5px;
     }
+      .navbar .navbar-nav li #a:focus-within {
+        border-bottom: 3px solid transparent;
+        padding-bottom: 5px;
+    }
+      .navbar .navbar-nav li #a:hover {
+        border-bottom: 3px solid transparent;
+        padding-bottom: 5px;
+    }
 
     #navBtn {
         width: 140px;
@@ -928,7 +946,7 @@ input:focus ~ .highlight {
     }
 
     #navBtn:hover .rainbow {
-        color: white;
+        color: transparent;
 
     }
 
@@ -976,8 +994,8 @@ input:focus ~ .highlight {
 
     #hr1 {
         margin-top: 370px;
-         box-shadow: 0px 3px 10px grey;
-    color: black;
+        box-shadow: 0px 3px 10px grey;
+        color: black;
 
     }
 
@@ -1062,7 +1080,7 @@ input:focus ~ .highlight {
     #hr2 {
         margin-top: 150px;
         box-shadow: 0px 3px 10px grey;
-    color: black;
+        color: black;
 
     }
 
@@ -1309,6 +1327,14 @@ input:focus ~ .highlight {
         border-bottom: 3px solid #254c82;
         padding-bottom: 5px;
     }
+      .navbar .navbar-nav li #a:focus-within {
+        border-bottom: 3px solid transparent;
+        padding-bottom: 5px;
+    }
+      .navbar .navbar-nav li #a:hover {
+        border-bottom: 3px solid transparent;
+        padding-bottom: 5px;
+    }
 
     #navBtn {
         width: 140px;
@@ -1336,8 +1362,13 @@ input:focus ~ .highlight {
     }
 
     #navBtn:hover .rainbow {
-        color: white;
+        color: transparent;
 
+    }
+     #menu {
+        background-color: white;
+        text-align: center;
+        padding: 20px;
     }
 
     /*#navBtn {*/
@@ -1384,8 +1415,8 @@ input:focus ~ .highlight {
 
     #hr1 {
         margin-top: 370px;
-       box-shadow: 0px 3px 10px grey;
-    color: black;
+        box-shadow: 0px 3px 10px grey;
+        color: black;
 
     }
 
@@ -1496,8 +1527,8 @@ input:focus ~ .highlight {
 
     #hr2 {
         margin-top: 400px;
-         box-shadow: 0px 3px 10px grey;
-    color: black;
+        box-shadow: 0px 3px 10px grey;
+        color: black;
 
     }
 
@@ -1735,6 +1766,14 @@ input:focus ~ .highlight {
         color: black !important;
         background-color: transparent;
     }
+      .navbar .navbar-nav li #a:focus-within {
+        border-bottom: 3px solid transparent;
+        padding-bottom: 5px;
+    }
+      .navbar .navbar-nav li #a:hover {
+        border-bottom: 3px solid transparent;
+        padding-bottom: 5px;
+    }
 
     .active {
         border-bottom: 3px solid #254c82;
@@ -1751,6 +1790,11 @@ input:focus ~ .highlight {
         padding-bottom: 5px;
     }
 
+     #menu {
+        background-color: white;
+        text-align: center;
+        padding: 20px;
+    }
     #navBtn {
         width: 140px;
         height: 45px;
@@ -1777,7 +1821,7 @@ input:focus ~ .highlight {
     }
 
     #navBtn:hover .rainbow {
-        color: white;
+        color: transparent;
 
     }
 
@@ -1797,7 +1841,7 @@ input:focus ~ .highlight {
         display: none;
     }
 
-    #desertImg2{
+    #desertImg2 {
         display: none;
     }
 
@@ -1830,7 +1874,7 @@ input:focus ~ .highlight {
     #hr1 {
         margin-top: 370px;
         box-shadow: 0px 3px 10px grey;
-    color: black;
+        color: black;
 
     }
 
@@ -1942,8 +1986,8 @@ input:focus ~ .highlight {
 
     #hr2 {
         margin-top: 100px;
-         box-shadow: 0px 3px 10px grey;
-    color: black;
+        box-shadow: 0px 3px 10px grey;
+        color: black;
 
     }
 
@@ -2185,7 +2229,7 @@ input:focus ~ .highlight {
 
     .navbar .navbar-nav li a:hover {
         color: black !important;
-        background-color: transparent;
+        background-color: white;
     }
 
     .active {
@@ -2200,6 +2244,14 @@ input:focus ~ .highlight {
 
     .navbar .navbar-nav li a:focus-within {
         border-bottom: 3px solid #254c82;
+        padding-bottom: 5px;
+    }
+      .navbar .navbar-nav li #a:focus-within {
+        border-bottom: 3px solid transparent;
+        padding-bottom: 5px;
+    }
+      .navbar .navbar-nav li #a:hover {
+        border-bottom: 3px solid transparent;
         padding-bottom: 5px;
     }
 
@@ -2229,7 +2281,7 @@ input:focus ~ .highlight {
     }
 
     #navBtn:hover .rainbow {
-        color: white;
+        color: transparent;
 
     }
 
@@ -2249,7 +2301,7 @@ input:focus ~ .highlight {
 
     }
 
-    #desertImg2{
+    #desertImg2 {
         height: 300px;
         position: absolute;
         right: -1px;
@@ -2283,8 +2335,8 @@ input:focus ~ .highlight {
 
     #hr1 {
         margin-top: 370px;
-         box-shadow: 0px 3px 10px grey;
-    color: black;
+        box-shadow: 0px 3px 10px grey;
+        color: black;
 
     }
 
@@ -2396,8 +2448,8 @@ input:focus ~ .highlight {
 
     #hr2 {
         margin-top: 160px;
-       box-shadow: 0px 3px 10px grey;
-    color: black;
+        box-shadow: 0px 3px 10px grey;
+        color: black;
 
     }
 
