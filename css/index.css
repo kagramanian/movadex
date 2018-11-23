@@ -66,6 +66,7 @@ body {
     padding-bottom: 5px;
 }
 #navBtn {
+    margin-top: -20px;
     width: 140px;
     height: 45px;
     font-size: 14px;
