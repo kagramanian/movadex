@@ -180,22 +180,22 @@ body {
 
 #web-logo {
     margin-top: 100px;
-    width: 160px;
+    width: 140px;
     transform: rotate(-30deg);
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
 #web-logo2 {
     margin-top: 86px;
-    width: 160px;
+    width: 140px;
     margin-bottom: -13px;
 
 }
 
 #web-logo3 {
-    margin-top: 80px;
-    width: 100px;
-    margin-bottom: 19px;
+    margin-top: 95px;
+    width: 80px;
+    margin-bottom: 8px;
 }
 
 .vl {
@@ -241,7 +241,7 @@ body {
 }
 
 #hr2 {
-    margin-top: 100px;
+    margin-top: 220px;
     box-shadow: 0px 3px 10px grey;
     color: black;
     z-index: 100000000;
@@ -297,11 +297,17 @@ h2 small {
     margin-bottom: 45px;
 }
 
+textarea {
+    margin-top: 50px;
+    width: 400px;
+    height: 200px;
+}
+
 .vl2 {
     margin-left: 30px;
     margin-top: 170px;
     border-left: 4px solid #2a4c8b;
-    height: 440px;
+    height: 640px;
     position: absolute;
     box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.1);
 }
@@ -422,7 +428,7 @@ input:focus ~ .highlight {
 }
 
 .footer {
-    margin-top: 280px;
+    margin-top: 70px;
     color: white;
     padding: 15px;
     background: black;
@@ -499,7 +505,8 @@ input:focus ~ .highlight {
         border-bottom: 3px solid transparent;
         padding-bottom: 5px;
     }
-      .navbar .navbar-nav li #a:hover {
+
+    .navbar .navbar-nav li #a:hover {
         border-bottom: 3px solid transparent;
         padding-bottom: 5px;
     }
@@ -600,22 +607,22 @@ input:focus ~ .highlight {
 
     #web-logo {
         margin-top: 100px;
-        width: 160px;
+        width: 140px;
         transform: rotate(-30deg);
-        margin-bottom: 20px;
+        margin-bottom: 12px;
     }
 
     #web-logo2 {
         margin-top: 86px;
-        width: 160px;
+        width: 140px;
         margin-bottom: -13px;
 
     }
 
     #web-logo3 {
-        margin-top: 80px;
-        width: 100px;
-        margin-bottom: 19px;
+        margin-top: 95px;
+        width: 80px;
+        margin-bottom: 8px;
     }
 
     .vl {
@@ -717,7 +724,7 @@ input:focus ~ .highlight {
         margin-left: 30px;
         margin-top: 170px;
         border-left: 4px solid #2a4c8b;
-        height: 400px;
+        height: 620px;
         position: absolute;
     }
 
@@ -911,11 +918,13 @@ input:focus ~ .highlight {
         border-bottom: 3px solid #254c82;
         padding-bottom: 5px;
     }
-      .navbar .navbar-nav li #a:focus-within {
+
+    .navbar .navbar-nav li #a:focus-within {
         border-bottom: 3px solid transparent;
         padding-bottom: 5px;
     }
-      .navbar .navbar-nav li #a:hover {
+
+    .navbar .navbar-nav li #a:hover {
         border-bottom: 3px solid transparent;
         padding-bottom: 5px;
     }
@@ -1017,23 +1026,23 @@ input:focus ~ .highlight {
     }
 
     #web-logo {
-        margin-top: 60px;
-        width: 160px;
+        margin-top: 100px;
+        width: 120px;
         transform: rotate(-30deg);
-        margin-bottom: 20px;
+        margin-bottom: 12px;
     }
 
     #web-logo2 {
-        margin-top: 46px;
-        width: 160px;
-        margin-bottom: -13px;
+        margin-top: 86px;
+        width: 120px;
+        margin-bottom: -5px;
 
     }
 
     #web-logo3 {
-        margin-top: 40px;
-        width: 100px;
-        margin-bottom: 19px;
+        margin-top: 95px;
+        width: 70px;
+        margin-bottom: 8px;
     }
 
     .vl {
@@ -1131,9 +1140,9 @@ input:focus ~ .highlight {
 
     .vl2 {
         margin-left: 30px;
-        margin-top: 170px;
+        margin-top: 100px;
         border-left: 4px solid #2a4c8b;
-        height: 400px;
+        height: 660px;
         position: absolute;
     }
 
@@ -1144,6 +1153,12 @@ input:focus ~ .highlight {
         width: 350px;
         border: none;
         border-bottom: 1px solid #757575;
+    }
+
+    textarea {
+        margin-top: 50px;
+        width: 350px;
+        height: 200px;
     }
 
     input:focus {
@@ -1287,7 +1302,7 @@ input:focus ~ .highlight {
         top: 0; /* Position the navbar at the top of the page */
         width: 100%;
         z-index: 100;
-        background-color: rgba(255, 255, 255, 0.6);
+        background-color: rgba(255, 255, 255, 1);
         height: 70px;
 
     }
@@ -1327,11 +1342,13 @@ input:focus ~ .highlight {
         border-bottom: 3px solid #254c82;
         padding-bottom: 5px;
     }
-      .navbar .navbar-nav li #a:focus-within {
+
+    .navbar .navbar-nav li #a:focus-within {
         border-bottom: 3px solid transparent;
         padding-bottom: 5px;
     }
-      .navbar .navbar-nav li #a:hover {
+
+    .navbar .navbar-nav li #a:hover {
         border-bottom: 3px solid transparent;
         padding-bottom: 5px;
     }
@@ -1365,7 +1382,8 @@ input:focus ~ .highlight {
         color: transparent;
 
     }
-     #menu {
+
+    #menu {
         background-color: white;
         text-align: center;
         padding: 20px;
@@ -1433,33 +1451,33 @@ input:focus ~ .highlight {
         font-family: 'Montserrat';
         color: black;
         font-weight: bold;
-        font-size: 24px;
+        font-size: 20px;
     }
 
     #web-logo {
         position: absolute;
         left: 15%;
-        width: 160px;
+        width: 120px;
         transform: rotate(-30deg);
         margin-bottom: 20px;
     }
 
     #web-logo2 {
-        top: -30px;
+        top: -15px;
         left: 40%;
         position: absolute;
         margin-top: 86px;
-        width: 180px;
+        width: 120px;
         margin-bottom: -13px;
 
     }
 
     #web-logo3 {
-        top: -10px;
+        top: -1px;
         left: 75%;
         position: absolute;
         margin-top: 80px;
-        width: 120px;
+        width: 70px;
         margin-bottom: 19px;
     }
 
@@ -1481,20 +1499,20 @@ input:focus ~ .highlight {
 
     #text1 {
         position: absolute;
-        left: 22%;
-        top: 225px;
+        left: 20%;
+        top: 190px;
     }
 
     #text2 {
         position: absolute;
-        left: 46%;
-        top: 239px;
+        left: 43%;
+        top: 206px;
     }
 
     #text3 {
         position: absolute;
-        left: 80%;
-        top: 223px;
+        left: 76%;
+        top: 188px;
     }
 
     #paragraph {
@@ -1584,11 +1602,17 @@ input:focus ~ .highlight {
         margin-bottom: 45px;
     }
 
+    textarea {
+        margin-top: 50px;
+        width: 350px;
+        height: 200px;
+    }
+
     .vl2 {
         margin-left: 30px;
-        margin-top: 170px;
+        margin-top: 100px;
         border-left: 4px solid #2a4c8b;
-        height: 400px;
+        height: 600px;
         position: absolute;
     }
 
@@ -1741,7 +1765,7 @@ input:focus ~ .highlight {
         top: 0; /* Position the navbar at the top of the page */
         width: 100%;
         z-index: 100;
-        background-color: rgba(255, 255, 255, 0.6);
+        background-color: rgba(255, 255, 255, 1);
         height: 70px;
 
     }
@@ -1766,11 +1790,13 @@ input:focus ~ .highlight {
         color: black !important;
         background-color: transparent;
     }
-      .navbar .navbar-nav li #a:focus-within {
+
+    .navbar .navbar-nav li #a:focus-within {
         border-bottom: 3px solid transparent;
         padding-bottom: 5px;
     }
-      .navbar .navbar-nav li #a:hover {
+
+    .navbar .navbar-nav li #a:hover {
         border-bottom: 3px solid transparent;
         padding-bottom: 5px;
     }
@@ -1790,11 +1816,12 @@ input:focus ~ .highlight {
         padding-bottom: 5px;
     }
 
-     #menu {
+    #menu {
         background-color: white;
         text-align: center;
         padding: 20px;
     }
+
     #navBtn {
         width: 140px;
         height: 45px;
@@ -1887,37 +1914,38 @@ input:focus ~ .highlight {
         margin-left: 60px;
     }
 
+
     .under-logo-text {
         font-family: 'Montserrat';
         color: black;
         font-weight: bold;
-        font-size: 24px;
+        font-size: 20px;
     }
 
     #web-logo {
         position: absolute;
         left: 15%;
-        width: 160px;
+        width: 120px;
         transform: rotate(-30deg);
         margin-bottom: 20px;
     }
 
     #web-logo2 {
-        top: -30px;
+        top: -15px;
         left: 40%;
         position: absolute;
         margin-top: 86px;
-        width: 180px;
+        width: 120px;
         margin-bottom: -13px;
 
     }
 
     #web-logo3 {
-        top: -10px;
+        top: -1px;
         left: 75%;
         position: absolute;
         margin-top: 80px;
-        width: 120px;
+        width: 70px;
         margin-bottom: 19px;
     }
 
@@ -1934,25 +1962,25 @@ input:focus ~ .highlight {
         font-family: 'Montserrat';
         font-weight: bold;
         font-size: 30px;
-        margin-left: 60px;
+        margin-left: 100px;
     }
 
     #text1 {
         position: absolute;
-        left: 22%;
-        top: 225px;
+        left: 20%;
+        top: 190px;
     }
 
     #text2 {
         position: absolute;
-        left: 46%;
-        top: 239px;
+        left: 43%;
+        top: 206px;
     }
 
     #text3 {
         position: absolute;
-        left: 80%;
-        top: 223px;
+        left: 76%;
+        top: 188px;
     }
 
     #paragraph {
@@ -2042,11 +2070,17 @@ input:focus ~ .highlight {
         margin-bottom: 45px;
     }
 
+    textarea {
+        margin-top: 50px;
+        width: 350px;
+        height: 200px;
+    }
+
     .vl2 {
         margin-left: 30px;
         margin-top: 170px;
         border-left: 4px solid #2a4c8b;
-        height: 400px;
+        height: 590px;
         position: absolute;
     }
 
@@ -2246,11 +2280,13 @@ input:focus ~ .highlight {
         border-bottom: 3px solid #254c82;
         padding-bottom: 5px;
     }
-      .navbar .navbar-nav li #a:focus-within {
+
+    .navbar .navbar-nav li #a:focus-within {
         border-bottom: 3px solid transparent;
         padding-bottom: 5px;
     }
-      .navbar .navbar-nav li #a:hover {
+
+    .navbar .navbar-nav li #a:hover {
         border-bottom: 3px solid transparent;
         padding-bottom: 5px;
     }
@@ -2506,12 +2542,18 @@ input:focus ~ .highlight {
         margin-bottom: 45px;
     }
 
+    textarea {
+        margin-top: 50px;
+        width: 240px;
+        height: 140px;
+    }
+
     .vl2 {
 
         margin-left: 10px;
         margin-top: 165px;
         border-left: 4px solid #2a4c8b;
-        height: 400px;
+        height: 520px;
         position: absolute;
     }
 
