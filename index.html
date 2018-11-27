@@ -29,7 +29,9 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a id="a" href="#page-4"><button  id="navBtn">WRITE US</button></a>
+                    <a id="a" href="#page-4">
+                        <button id="navBtn">WRITE US</button>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -49,28 +51,26 @@
     <h3 class="page-text">WE SPECIALISE IN</h3>
     <div class="row">
         <div class="first centered col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1">
-            <img id="web-logo" src="image/logo/web_logo_desert%20copy.png">
-            <a href="#"><h3 id="text1" class="under-logo-text">WEB</h3></a>
+            <a href="#" onclick="
+           setTextWeb()"> <img id="web-logo" src="image/logo/web_logo_desert%20copy.png">
+                <h3 id="text1" class="under-logo-text">WEB</h3></a>
         </div>
         <div class="second centered col-lg-4 col-md-4 col-sm-4 ">
-            <img id="web-logo2" src="image/icons/phones_logo%20desert.png">
-            <a href="#">
+            <a href="#" onclick="
+            setTextMobile()"> <img id="web-logo2" src="image/icons/phones_logo%20desert.png">
                 <div id="text2" class="under-logo-text">MOBILE</div>
             </a>
         </div>
         <div class="third centered col-lg-4 col-md-4 col-sm-4 ">
-            <img id="web-logo3" src="image/icons/uiux_icon%20desert'.png">
-            <a href="#"><h3 id="text3" class="under-logo-text">UI/UX</h3></a>
+            <a href="#" onclick="setTextUIUX()"> <img id="web-logo3" src="image/icons/uiux_icon%20desert'.png">
+                <h3 id="text3" class="under-logo-text">UI/UX</h3></a>
         </div>
     </div>
-    <h3 id="teg-text" class="teg-text">MOBILE</h3>
-    <p id="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat.
-    </p>
+    <h3 id="teg-text" class="teg-text"></h3>
+    <p id="paragraph"></p>
 </div>
- <img id="desertImg3" src="image/blob3.png">
-<hr id="hr2">
+<img id="desertImg3" src="image/blob3.png">
+<hr class="hr2">
 <div class="container" id="page-3">
     <h3 class="page-text">NOTICEABLE PROJECTS</h3>
     <div class="row centered">
@@ -87,11 +87,11 @@
 </div>
 
 
-<hr id="hr2">
+<hr class="hr2">
 <div class="container" id="page-4">
     <div class="vl2"></div>
     <h3 class="page-text">GET IN TOUCH</h3>
-    <div  class="row">
+    <div class="row">
         <div class=" col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-1">
             <button class="Btn">WEB</button>
         </div>
@@ -118,7 +118,7 @@
             <label>Email</label>
         </div>
         <div class="group">
-            <textarea type="text" required></textarea>
+            <input type="text" required/>
             <span class="highlight"></span>
             <span class="bar"></span>
             <label>Idea</label>
@@ -133,44 +133,34 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 <script>
+
+    setTextMobile();
+
     $("a").click(function () {
         $("a").css("background-color", "");
         $(this).css("background-color", "transparent");
 
     });
 
-     document.getElementById("web-logo").onclick = function () {
-        document.getElementById("paragraph").innerHTML = '<p>Nor </p>';
-         document.getElementById("teg-text").innerText  = 'Nor';
-    };
+    function setTextWeb() {
+        document.getElementById("teg-text").innerText = 'WEB';
+        document.getElementById("paragraph").innerText = 'We will help you to develop the best website for your business, starting from scratch with beautiful UI/UX, and using latest technologies to implement everything you need.';
+    }
 
-    document.getElementById("web-logo2").onclick = function () {
-        document.getElementById("paragraph").innerHTML = '<p>Nor gsnedf</p>';
-        document.getElementById("teg-text").innerText  = 'Nor';
-    };
+    function setTextMobile() {
+        document.getElementById("teg-text").innerText = 'MOBILE';
+        document.getElementById("paragraph").innerText = 'With deep experience in mobile development, both native and cross-platform, we can create apps of any level of complexity using innovative technologies like  mobile vision and AR.'
 
-    document.getElementById("web-logo3").onclick = function () {
-        document.getElementById("paragraph").innerHTML = '<p>Nor sdfsdf</p>';
-        document.getElementById("teg-text").innerText  = 'Nor';
-    };
+    }
 
-
-     document.getElementById("text1").onclick = function () {
- document.getElementById("paragraph").innerHTML = '<p>Nor </p>';
-         document.getElementById("teg-text").innerText  = 'Nor';
-     };
-      document.getElementById("text2").onclick = function () {
- document.getElementById("paragraph").innerHTML = '<p>Nor fsdfsdfsdfsdf</p>';
-         document.getElementById("teg-text").innerText  = 'Nor';
-     };
-       document.getElementById("text3").onclick = function () {
- document.getElementById("paragraph").innerHTML = '<p>Nor rw423423423</p>';
-         document.getElementById("teg-text").innerText  = 'Nor';
-     };
-
-
+    function setTextUIUX() {
+        document.getElementById("teg-text").innerText = 'UI/UX';
+        document.getElementById("paragraph").innerText = 'Calling the user interface  the face of any business, we can also call the UX part it\'s soul. We create beautiful designs with user experience in mind.';
+    }
 
     $(document).on('click', 'a[href^="#"]', function (event) {
         event.preventDefault();
