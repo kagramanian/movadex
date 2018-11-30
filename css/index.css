@@ -240,7 +240,7 @@ body {
     height: 300px;
 }
 
-#hr2 {
+.hr2 {
     margin-top: 220px;
     box-shadow: 0px 3px 10px grey;
     color: black;
@@ -307,7 +307,7 @@ textarea {
     margin-left: 30px;
     margin-top: 170px;
     border-left: 4px solid #2a4c8b;
-    height: 640px;
+    height: 440px;
     position: absolute;
     box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.1);
 }
@@ -668,7 +668,7 @@ input:focus ~ .highlight {
         height: 300px;
     }
 
-    #hr2 {
+    .hr2 {
         margin-top: 100px;
         box-shadow: 0px 3px 10px grey;
         color: black;
@@ -724,7 +724,7 @@ input:focus ~ .highlight {
         margin-left: 30px;
         margin-top: 170px;
         border-left: 4px solid #2a4c8b;
-        height: 620px;
+        height: 520px;
         position: absolute;
     }
 
@@ -1086,7 +1086,7 @@ input:focus ~ .highlight {
         height: 300px;
     }
 
-    #hr2 {
+    .hr2 {
         margin-top: 150px;
         box-shadow: 0px 3px 10px grey;
         color: black;
@@ -1142,7 +1142,7 @@ input:focus ~ .highlight {
         margin-left: 30px;
         margin-top: 100px;
         border-left: 4px solid #2a4c8b;
-        height: 660px;
+        height: 560px;
         position: absolute;
     }
 
@@ -1543,7 +1543,7 @@ input:focus ~ .highlight {
         height: 250px;
     }
 
-    #hr2 {
+    .hr2 {
         margin-top: 400px;
         box-shadow: 0px 3px 10px grey;
         color: black;
@@ -1612,7 +1612,7 @@ input:focus ~ .highlight {
         margin-left: 30px;
         margin-top: 100px;
         border-left: 4px solid #2a4c8b;
-        height: 600px;
+        height: 500px;
         position: absolute;
     }
 
@@ -2012,7 +2012,7 @@ input:focus ~ .highlight {
         height: 200px;
     }
 
-    #hr2 {
+    .hr2 {
         margin-top: 100px;
         box-shadow: 0px 3px 10px grey;
         color: black;
@@ -2080,7 +2080,7 @@ input:focus ~ .highlight {
         margin-left: 30px;
         margin-top: 170px;
         border-left: 4px solid #2a4c8b;
-        height: 590px;
+        height: 490px;
         position: absolute;
     }
 
@@ -2482,7 +2482,7 @@ input:focus ~ .highlight {
         margin-left: -148px;
     }
 
-    #hr2 {
+    .hr2 {
         margin-top: 160px;
         box-shadow: 0px 3px 10px grey;
         color: black;
@@ -2553,7 +2553,7 @@ input:focus ~ .highlight {
         margin-left: 10px;
         margin-top: 165px;
         border-left: 4px solid #2a4c8b;
-        height: 520px;
+        height: 420px;
         position: absolute;
     }
 
