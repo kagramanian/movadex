@@ -155,7 +155,7 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-#hr1 {
+.hr1 {
     margin-top: 370px;
     box-shadow: 0px 3px 10px grey;
     color: black;
@@ -582,7 +582,7 @@ input:focus ~ .highlight {
         -webkit-text-fill-color: transparent;
     }
 
-    #hr1 {
+    .hr1 {
         margin-top: 370px;
         box-shadow: 0px 3px 10px grey;
         color: black;
@@ -1001,7 +1001,7 @@ input:focus ~ .highlight {
         -webkit-text-fill-color: transparent;
     }
 
-    #hr1 {
+    .hr1 {
         margin-top: 370px;
         box-shadow: 0px 3px 10px grey;
         color: black;
@@ -1431,7 +1431,7 @@ input:focus ~ .highlight {
         -webkit-text-fill-color: transparent;
     }
 
-    #hr1 {
+    .hr1 {
         margin-top: 370px;
         box-shadow: 0px 3px 10px grey;
         color: black;
@@ -1898,7 +1898,7 @@ input:focus ~ .highlight {
         -webkit-text-fill-color: transparent;
     }
 
-    #hr1 {
+    .hr1 {
         margin-top: 370px;
         box-shadow: 0px 3px 10px grey;
         color: black;
@@ -2369,7 +2369,7 @@ input:focus ~ .highlight {
         -webkit-text-fill-color: transparent;
     }
 
-    #hr1 {
+    .hr1 {
         margin-top: 370px;
         box-shadow: 0px 3px 10px grey;
         color: black;
