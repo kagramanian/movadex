@@ -24,8 +24,9 @@ body {
     position: fixed; /* Set the navbar to fixed position */
     width: 100%;
     z-index: 100;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 1);
     height: 100px;
+
 
 }
 
@@ -98,7 +99,6 @@ body {
 
 }
 
-
 .sendBtn {
     margin-left: 170px;
     margin-top: 20px;
@@ -131,7 +131,6 @@ body {
     color: transparent;
 
 }
-
 
 /*#navBtn {*/
 /*border: 2px solid transparent;*/
@@ -288,9 +287,8 @@ body {
 }
 
 .Btn {
-    margin-top: 40px;
-    margin-left: -20px;
-    margin-right: -100px;
+
+    margin-left: 40px;
     border: 2px solid transparent;
     background-color: white;
     border-radius: 20px;
@@ -299,17 +297,77 @@ body {
     width: 100px;
     height: 30px;
     z-index: 11;
+    display: inline-block;
+
 }
 
-#btnCH {
-    margin-left: -70px;
+.labelCh {
+    color: black;
+    width: 50px;
+    display: inline-block;
 }
 
-#btnCH2 {
-    margin-left: -120px;
+.inputGroup {
+    margin-top: 30px;
+    margin-left: 140px;
 }
 
-.Btn:hover {
+#btn {
+    margin-left: 30px;
+    border: 2px solid transparent;
+    background-color: white;
+    border-radius: 20px;
+    color: #254c82;
+    box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+    width: 100px;
+    height: 30px;
+    z-index: 11;
+    outline: none;
+}
+
+#btn2 {
+    margin-left: 30px;
+    border: 2px solid transparent;
+    background-color: white;
+    border-radius: 20px;
+    color: #254c82;
+    box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+    width: 100px;
+    height: 30px;
+    z-index: 11;
+    outline: none;
+}
+
+#btn3 {
+
+    margin-left: 30px;
+    border: 2px solid transparent;
+    background-color: white;
+    border-radius: 20px;
+    color: #254c82;
+    box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+    width: 100px;
+    height: 30px;
+    z-index: 11;
+    outline: none;
+
+}
+
+.checkbox {
+    border-radius: 20px;
+}
+
+#btn:hover {
+    background-image: linear-gradient(to right, #9dacc5 0%, #2a4c8b 100%);
+    color: white;
+}
+
+#btn2:hover {
+    background: linear-gradient(to right, #9dacc5, #2a4c8b);
+    color: white;
+}
+
+#btn3:hover {
     background: linear-gradient(to right, #9dacc5, #2a4c8b);
     color: white;
 }
@@ -351,12 +409,6 @@ textarea {
     visibility: hidden;
 }
 
-
-
-
-
-
-
 .searchable-container {
     margin: 20px 0 0 0
 }
@@ -388,12 +440,6 @@ textarea {
 .searchable-container .btn.active span.glyphicon {
     opacity: 1;
 }
-
-
-
-
-
-
 
 input {
     font-size: 18px;
@@ -543,7 +589,7 @@ input:focus ~ .highlight {
         top: 0; /* Position the navbar at the top of the page */
         width: 100%;
         z-index: 100;
-        background-color: rgba(255, 255, 255, 0.6);
+        background-color: rgba(255, 255, 255, 1);
         height: 70px;
 
     }
@@ -759,9 +805,7 @@ input:focus ~ .highlight {
     }
 
     .Btn {
-        margin-top: 40px;
-        margin-left: 50px;
-        margin-right: -100px;
+        margin-left: 30px;
         border: 2px solid transparent;
         background-color: white;
         border-radius: 20px;
@@ -770,19 +814,77 @@ input:focus ~ .highlight {
         width: 100px;
         height: 30px;
         z-index: 11;
+        outline: none;
+        padding: 1px;
     }
 
-    #btnCH {
-        margin-left: 20px;
+    .inputGroup {
+        margin-top: 30px;
+        margin-left: 100px;
     }
 
-    #btnCH2 {
-        margin-left: -10px;
+    #btn {
+        margin-left: 30px;
+        border: 2px solid transparent;
+        background-color: white;
+        border-radius: 20px;
+        color: #254c82;
+        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+        width: 100px;
+        height: 30px;
+        z-index: 11;
+        outline: none;
     }
 
-    .Btn:hover {
+    #btn2 {
+        margin-left: 30px;
+        border: 2px solid transparent;
+        background-color: white;
+        border-radius: 20px;
+        color: #254c82;
+        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+        width: 100px;
+        height: 30px;
+        z-index: 11;
+        outline: none;
+    }
+
+    #btn3 {
+
+        margin-left: 30px;
+        border: 2px solid transparent;
+        background-color: white;
+        border-radius: 20px;
+        color: #254c82;
+        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+        width: 100px;
+        height: 30px;
+        z-index: 11;
+        outline: none;
+
+    }
+
+    .checkbox {
+        border-radius: 20px;
+    }
+
+    #btn:hover {
+        background-image: linear-gradient(to right, #9dacc5 0%, #2a4c8b 100%);
+        color: white;
+    }
+
+    #btn2:hover {
         background: linear-gradient(to right, #9dacc5, #2a4c8b);
         color: white;
+    }
+
+    #btn3:hover {
+        background: linear-gradient(to right, #9dacc5, #2a4c8b);
+        color: white;
+    }
+
+    .sendBtn {
+        margin-left: 130px;
     }
 
     h2 {
@@ -961,7 +1063,7 @@ input:focus ~ .highlight {
         top: 0; /* Position the navbar at the top of the page */
         width: 100%;
         z-index: 100;
-        background-color: rgba(255, 255, 255, 0.6);
+        background-color: rgba(255, 255, 255, 1);
         height: 70px;
 
     }
@@ -1177,7 +1279,7 @@ input:focus ~ .highlight {
     }
 
     .Btn {
-        margin-top: -40px;
+
         margin-left: 40px;
         margin-right: -100px;
         border: 2px solid transparent;
@@ -1188,19 +1290,57 @@ input:focus ~ .highlight {
         width: 100px;
         height: 30px;
         z-index: 11;
+        padding: 1px;
     }
 
-    #btnCH {
+    .inputGroup {
+        margin-top: -40px;
+        margin-left: 75px;
+    }
+
+    #btn {
         margin-left: 30px;
+        border: 2px solid transparent;
+        background-color: white;
+        border-radius: 20px;
+        color: #254c82;
+        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+        width: 100px;
+        height: 30px;
+        z-index: 11;
+        outline: none;
     }
 
-    #btnCH2 {
-        margin-left: 20px;
+    #btn2 {
+        margin-left: 120px;
+        border: 2px solid transparent;
+        background-color: white;
+        border-radius: 20px;
+        color: #254c82;
+        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+        width: 100px;
+        height: 30px;
+        z-index: 11;
+        outline: none;
     }
 
-    .Btn:hover {
-        background: linear-gradient(to right, #9dacc5, #2a4c8b);
-        color: white;
+    #btn3 {
+
+        margin-left: 120px;
+        border: 2px solid transparent;
+        background-color: white;
+        border-radius: 20px;
+        color: #254c82;
+        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+        width: 100px;
+        height: 30px;
+        z-index: 11;
+        outline: none;
+
+    }
+
+    .sendBtn{
+        margin-left: 100px;
     }
 
     h2 {
@@ -1633,10 +1773,12 @@ input:focus ~ .highlight {
 
     }
 
+    .inputGroup{
+        margin-left: 70px;
+    }
+
     .Btn {
-        margin-top: 30px;
-        left: 130px;
-        margin-right: -100px;
+        padding: 1px;
         border: 2px solid transparent;
         background-color: white;
         border-radius: 20px;
@@ -1645,22 +1787,52 @@ input:focus ~ .highlight {
         width: 100px;
         height: 30px;
         z-index: 11;
-        position: absolute;
+
     }
 
-    #btnCH {
-        position: absolute;
-        left: 300px;
+   #btn {
+        margin-left: 30px;
+        border: 2px solid transparent;
+        background-color: white;
+        border-radius: 20px;
+        color: #254c82;
+        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+        width: 100px;
+        height: 30px;
+        z-index: 11;
+        outline: none;
     }
 
-    #btnCH2 {
-        position: absolute;
-        left: 470px;
+    #btn2 {
+        margin-left: 20px;
+        border: 2px solid transparent;
+        background-color: white;
+        border-radius: 20px;
+        color: #254c82;
+        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+        width: 100px;
+        height: 30px;
+        z-index: 11;
+        outline: none;
     }
 
-    .Btn:hover {
-        background: linear-gradient(to right, #9dacc5, #2a4c8b);
-        color: white;
+    #btn3 {
+
+        margin-left: 20px;
+        border: 2px solid transparent;
+        background-color: white;
+        border-radius: 20px;
+        color: #254c82;
+        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+        width: 100px;
+        height: 30px;
+        z-index: 11;
+        outline: none;
+
+    }
+
+    .sendBtn{
+        margin-left: 100px;
     }
 
     h2 {
@@ -1674,9 +1846,7 @@ input:focus ~ .highlight {
         display: block;
     }
 
-    #group {
-        margin-top: 100px;
-    }
+
 
     .group {
         margin-top: 50px;
@@ -2101,9 +2271,14 @@ input:focus ~ .highlight {
 
     }
 
+
+   .inputGroup{
+        margin-left: 30px;
+    }
+
     .Btn {
-        margin-top: 20px;
-        left: 100px;
+        padding: 1px;
+        margin-left: 30px;
         border: 2px solid transparent;
         background-color: white;
         border-radius: 20px;
@@ -2112,17 +2287,52 @@ input:focus ~ .highlight {
         width: 100px;
         height: 30px;
         z-index: 11;
-        position: absolute;
+        outline: none;
     }
 
-    #btnCH {
-        position: absolute;
-        left: 270px;
+   #btn {
+        margin-left: 30px;
+        border: 2px solid transparent;
+        background-color: white;
+        border-radius: 20px;
+        color: #254c82;
+        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+        width: 100px;
+        height: 30px;
+        z-index: 11;
+        outline: none;
     }
 
-    #btnCH2 {
-        position: absolute;
-        left: 440px;
+    #btn2 {
+        margin-left: 20px;
+        border: 2px solid transparent;
+        background-color: white;
+        border-radius: 20px;
+        color: #254c82;
+        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+        width: 100px;
+        height: 30px;
+        z-index: 11;
+        outline: none;
+    }
+
+    #btn3 {
+
+        margin-left: 20px;
+        border: 2px solid transparent;
+        background-color: white;
+        border-radius: 20px;
+        color: #254c82;
+        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+        width: 100px;
+        height: 30px;
+        z-index: 11;
+        outline: none;
+
+    }
+
+    .sendBtn{
+        margin-left: 60px;
     }
 
     .Btn:hover {
@@ -2141,9 +2351,7 @@ input:focus ~ .highlight {
         display: block;
     }
 
-    #group {
-        margin-top: 100px;
-    }
+
 
     .group {
         margin-top: 50px;
@@ -2570,38 +2778,79 @@ input:focus ~ .highlight {
         color: black;
 
     }
+.inputGroup{
+        margin-left: 30px;
+    }
 
     .Btn {
-        position: absolute;
-        margin-top: 20px;
-        left: 60px;
+        padding: 1px;
+        font-size: 11px;
+        margin-left: 5px;
         border: 2px solid transparent;
         background-color: white;
         border-radius: 20px;
         color: #254c82;
         box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
-        width: 80px;
+        width: 90px;
         height: 30px;
         z-index: 11;
+        outline: none;
 
     }
 
-    #btnCH {
-        margin-top: 19px;
-        left: 200px;
+   #btn {
+       font-size: 12px;
+        margin-left: 5px;
+        border: 2px solid transparent;
+        background-color: white;
+        border-radius: 20px;
+        color: #254c82;
+        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+        width: 75px;
+        height: 30px;
+        z-index: 11;
+        outline: none;
     }
 
-    #btnCH2 {
-        margin-top: 18px;
-        left: 340px;
-        margin-right: 50px;
+    #btn2 {
+        font-size: 12px;
+        margin-left: 5px;
+        border: 2px solid transparent;
+        background-color: white;
+        border-radius: 20px;
+        color: #254c82;
+        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+        width: 75px;
+        height: 30px;
+        z-index: 11;
+        outline: none;
+    }
+
+    #btn3 {
+        font-size: 12px;
+        margin-left: 5px;
+        border: 2px solid transparent;
+        background-color: white;
+        border-radius: 20px;
+        color: #254c82;
+        box-shadow: 0px 1px 6.93px 0.07px rgba(0, 0, 0, 0.3);
+        width: 75px;
+        height: 30px;
+        z-index: 11;
+        outline: none;
+
+    }
+
+    .sendBtn{
+        margin-top: -10px;
+        width: 100px;
+        margin-left: 50px;
     }
 
     .Btn:hover {
         background: linear-gradient(to right, #9dacc5, #2a4c8b);
         color: white;
     }
-
     h2 {
         text-align: center;
         margin-bottom: 50px;
@@ -2613,9 +2862,7 @@ input:focus ~ .highlight {
         display: block;
     }
 
-    #group {
-        margin-top: 100px;
-    }
+
 
     .group {
         margin-top: 50px;
