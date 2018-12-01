@@ -26,8 +26,6 @@ body {
     z-index: 100;
     background-color: rgba(255, 255, 255, 1);
     height: 100px;
-
-
 }
 
 .navbar a {
@@ -320,6 +318,10 @@ body {
     margin-left: 140px;
 }
 
+.active {
+    background-color: chartreuse !important;
+}
+
 #btn {
     margin-left: 30px;
     border: 2px solid transparent;
@@ -563,6 +565,10 @@ input:focus ~ .highlight {
         background: transparent;
     }
 }
+.form-invisible{
+    opacity:0;
+    width: 0;
+}
 
 .footer {
     margin-top: 70px;
@@ -621,11 +627,6 @@ input:focus ~ .highlight {
     .navbar .navbar-nav li a:hover {
         color: black !important;
         background-color: transparent;
-    }
-
-    .active {
-        border-bottom: 3px solid #254c82;
-        padding-bottom: 5px;
     }
 
     .navbar a:hover {
@@ -1097,10 +1098,7 @@ input:focus ~ .highlight {
         background-color: transparent;
     }
 
-    .active {
-        border-bottom: 3px solid #254c82;
-        padding-bottom: 5px;
-    }
+
 
     .navbar a:hover {
         border-bottom: 3px solid #254c82;
@@ -1559,10 +1557,6 @@ input:focus ~ .highlight {
         background-color: transparent;
     }
 
-    .active {
-        border-bottom: 3px solid #254c82;
-        padding-bottom: 5px;
-    }
 
     .navbar a:hover {
         border-bottom: 3px solid #254c82;
@@ -2062,10 +2056,6 @@ input:focus ~ .highlight {
         padding-bottom: 5px;
     }
 
-    .active {
-        border-bottom: 3px solid #254c82;
-        padding-bottom: 5px;
-    }
 
     .navbar a:hover {
         border-bottom: 3px solid #254c82;
@@ -2564,10 +2554,7 @@ input:focus ~ .highlight {
         background-color: white;
     }
 
-    .active {
-        border-bottom: 3px solid #254c82;
-        padding-bottom: 5px;
-    }
+
 
     .navbar a:hover {
         border-bottom: 3px solid #254c82;
