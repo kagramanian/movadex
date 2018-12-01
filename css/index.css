@@ -62,10 +62,18 @@ body {
     padding-bottom: 5px;
 }
 
+.navbar .navbar-nav li a:hover {
+    border-bottom: 3px solid #254c82;
+    padding-bottom: 5px;
+}
 .navbar .navbar-nav li #a:focus-within {
     border-bottom: 3px solid transparent;
     padding-bottom: 5px;
 }
+ .navbar .navbar-nav li #a:hover {
+        border-bottom: 3px solid transparent;
+        padding-bottom: 5px;
+    }
 
 #navBtn {
     margin-top: -20px;
