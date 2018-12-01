@@ -195,6 +195,15 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .textChanged {
+        font-size: 44px;
+        color:#2a4c8b;
+        background: white;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
 .hr1 {
     margin-top: 370px;
     box-shadow: 0px 3px 10px grey;
@@ -318,8 +327,24 @@ body {
     margin-left: 140px;
 }
 
+.Btn:hover {
+    background-image: linear-gradient(to right, #9dacc5 0%, #2a4c8b 51%, #9dacc5 100%);
+    flex: 1 1 auto;
+    text-transform: uppercase;
+    background-size: 200% auto;
+    color: white !important;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+}
+
 .active {
-    background-color: chartreuse !important;
+    background-image: linear-gradient(to right, #9dacc5 0%, #2a4c8b 51%, #9dacc5 100%);
+    flex: 1 1 auto;
+    text-transform: uppercase;
+    background-size: 200% auto;
+    color: white !important;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
 }
 
 #btn {
@@ -367,20 +392,7 @@ body {
     border-radius: 20px;
 }
 
-#btn:hover {
-    background-image: linear-gradient(to right, #9dacc5 0%, #2a4c8b 100%);
-    color: white;
-}
 
-#btn2:hover {
-    background: linear-gradient(to right, #9dacc5, #2a4c8b);
-    color: white;
-}
-
-#btn3:hover {
-    background: linear-gradient(to right, #9dacc5, #2a4c8b);
-    color: white;
-}
 
 h2 {
     text-align: center;
@@ -713,12 +725,6 @@ input:focus ~ .highlight {
         font-size: 30px;
     }
 
-    .textChanged {
-        font-size: 44px;
-        background: linear-gradient(to right, #9dacc5 0%, #2a4c8b 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
 
     .hr1 {
         margin-top: 370px;
@@ -875,21 +881,6 @@ input:focus ~ .highlight {
 
     .checkbox {
         border-radius: 20px;
-    }
-
-    #btn:hover {
-        background-image: linear-gradient(to right, #9dacc5 0%, #2a4c8b 100%);
-        color: white;
-    }
-
-    #btn2:hover {
-        background: linear-gradient(to right, #9dacc5, #2a4c8b);
-        color: white;
-    }
-
-    #btn3:hover {
-        background: linear-gradient(to right, #9dacc5, #2a4c8b);
-        color: white;
     }
 
     .sendBtn {
@@ -1185,12 +1176,6 @@ input:focus ~ .highlight {
         font-size: 26px;
     }
 
-    .textChanged {
-        font-size: 44px;
-        background: linear-gradient(to right, #9dacc5 0%, #2a4c8b 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
 
     .hr1 {
         margin-top: 370px;
@@ -1515,6 +1500,7 @@ input:focus ~ .highlight {
 
 }
 
+/*noinspection CssNoGenericFontName*/
 @media screen and (min-width: 650px) and (max-width: 767px) {
 
     #movadexLogo {
@@ -1649,12 +1635,6 @@ input:focus ~ .highlight {
         font-size: 23px;
     }
 
-    .textChanged {
-        font-size: 44px;
-        background: linear-gradient(to right, #9dacc5 0%, #2a4c8b 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
 
     .hr1 {
         margin-top: 370px;
@@ -2142,12 +2122,6 @@ input:focus ~ .highlight {
         font-size: 19px;
     }
 
-    .textChanged {
-        font-size: 44px;
-        background: linear-gradient(to right, #9dacc5 0%, #2a4c8b 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
 
     .hr1 {
         margin-top: 370px;
@@ -2333,10 +2307,6 @@ input:focus ~ .highlight {
         margin-left: 60px;
     }
 
-    .Btn:hover {
-        background: linear-gradient(to right, #9dacc5, #2a4c8b);
-        color: white;
-    }
 
     h2 {
         text-align: center;
@@ -2649,9 +2619,6 @@ input:focus ~ .highlight {
 
     .textChanged {
         font-size: 25px;
-        background: linear-gradient(to right, #9dacc5 0%, #2a4c8b 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
     }
 
     .hr1 {
@@ -2842,10 +2809,6 @@ input:focus ~ .highlight {
         margin-left: 50px;
     }
 
-    .Btn:hover {
-        background: linear-gradient(to right, #9dacc5, #2a4c8b);
-        color: white;
-    }
     h2 {
         text-align: center;
         margin-bottom: 50px;
