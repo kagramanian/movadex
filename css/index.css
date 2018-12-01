@@ -12,6 +12,12 @@ body {
 
 }
 
+#wrapper{
+    position:absolute;
+    height:100%;
+    width:100%;
+}
+
 #movadexLogo {
     width: 195px;
     margin-top: -85px;
@@ -164,9 +170,11 @@ body {
 }
 
 #desertImg3 {
-    margin-top: -110px;
+    margin-top: -190px;
     float: right;
-    display: none;
+      object-fit: contain;
+    overflow:hidden;
+    z-index: -1000;
 }
 
 .centered {
@@ -205,10 +213,25 @@ body {
     }
 }
 .hr1 {
+    height: 5px;
+    padding-top: 25px;
+    -webkit-box-shadow: 0px -3px 20px -8px rgba(130,130,130,1);
+    -moz-box-shadow: 0px -3px 20px -8px rgba(130,130,130,1);
+    box-shadow: 0px -3px 20px -8px rgba(130,130,130,1);
+    background: white;
+    z-index: 9;
+    outline: none;
+    overflow: auto;
     margin-top: 370px;
-    box-shadow: 0px 3px 10px grey;
-    color: black;
-
+}
+.hrhelper {
+    background: white;
+    height: 50px;
+    margin-top: -54px;
+    z-index: 10;
+    width: 100%;
+    outline: none;
+    overflow: auto;
 }
 
 .page-text {
@@ -289,18 +312,15 @@ body {
     height: 300px;
 }
 
-.hr2 {
-    margin-top: 220px;
-    box-shadow: 0px 3px 10px grey;
-    color: black;
-    z-index: 100000000;
 
-}
 
 #page-3 {
     z-index: 100;
 }
 
+#page-4{
+    margin-bottom: 200px;
+}
 .Btn {
 
     margin-left: 40px;
@@ -422,7 +442,7 @@ textarea {
     margin-left: 30px;
     margin-top: 170px;
     border-left: 4px solid #2a4c8b;
-    height: 440px;
+    height: 530px;
     position: absolute;
     box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.1);
 }
@@ -588,6 +608,7 @@ input:focus ~ .highlight {
     padding: 15px;
     background: black;
     height: 50px;
+    z-index: 100;
 }
 
 #footerTxt {
@@ -726,12 +747,6 @@ input:focus ~ .highlight {
     }
 
 
-    .hr1 {
-        margin-top: 370px;
-        box-shadow: 0px 3px 10px grey;
-        color: black;
-
-    }
 
     .page-text {
         margin-top: 160px;
@@ -812,12 +827,8 @@ input:focus ~ .highlight {
         height: 300px;
     }
 
-    .hr2 {
-        margin-top: 100px;
-        box-shadow: 0px 3px 10px grey;
-        color: black;
 
-    }
+
 
     .Btn {
         margin-left: 30px;
@@ -1047,6 +1058,9 @@ input:focus ~ .highlight {
 
 }
 
+#page-4{
+    margin-bottom: 150px;
+}
 @media screen and (min-width: 768px) and (max-width: 999px) {
 
     #movadexLogo {
@@ -1177,12 +1191,7 @@ input:focus ~ .highlight {
     }
 
 
-    .hr1 {
-        margin-top: 370px;
-        box-shadow: 0px 3px 10px grey;
-        color: black;
 
-    }
 
     .page-text {
         margin-top: 100px;
@@ -1262,12 +1271,7 @@ input:focus ~ .highlight {
         height: 300px;
     }
 
-    .hr2 {
-        margin-top: 150px;
-        box-shadow: 0px 3px 10px grey;
-        color: black;
 
-    }
 
     .Btn {
 
@@ -1636,12 +1640,7 @@ input:focus ~ .highlight {
     }
 
 
-    .hr1 {
-        margin-top: 370px;
-        box-shadow: 0px 3px 10px grey;
-        color: black;
 
-    }
 
     .page-text {
         margin-top: 100px;
@@ -1748,12 +1747,6 @@ input:focus ~ .highlight {
         height: 250px;
     }
 
-    .hr2 {
-        margin-top: 400px;
-        box-shadow: 0px 3px 10px grey;
-        color: black;
-
-    }
 
     .inputGroup{
         margin-left: 70px;
@@ -1911,6 +1904,10 @@ input:focus ~ .highlight {
     .bar:after {
         right: 50%;
     }
+
+    #page-4{
+    margin-bottom: 120px;
+}
 
     /* active state */
     input:focus ~ .bar:before, input:focus ~ .bar:after {
@@ -2123,12 +2120,7 @@ input:focus ~ .highlight {
     }
 
 
-    .hr1 {
-        margin-top: 370px;
-        box-shadow: 0px 3px 10px grey;
-        color: black;
 
-    }
 
     .page-text {
         margin-top: 160px;
@@ -2236,12 +2228,6 @@ input:focus ~ .highlight {
         height: 200px;
     }
 
-    .hr2 {
-        margin-top: 100px;
-        box-shadow: 0px 3px 10px grey;
-        color: black;
-
-    }
 
 
    .inputGroup{
@@ -2336,9 +2322,9 @@ input:focus ~ .highlight {
 
     .vl2 {
         margin-left: 30px;
-        margin-top: 170px;
+        margin-top: 160px;
         border-left: 4px solid #2a4c8b;
-        height: 490px;
+        height: 500px;
         position: absolute;
     }
 
@@ -2621,12 +2607,7 @@ input:focus ~ .highlight {
         font-size: 25px;
     }
 
-    .hr1 {
-        margin-top: 370px;
-        box-shadow: 0px 3px 10px grey;
-        color: black;
 
-    }
 
     .page-text {
         margin-top: 160px;
@@ -2734,12 +2715,7 @@ input:focus ~ .highlight {
         margin-left: -148px;
     }
 
-    .hr2 {
-        margin-top: 160px;
-        box-shadow: 0px 3px 10px grey;
-        color: black;
 
-    }
 .inputGroup{
         margin-left: 30px;
     }
@@ -2838,9 +2814,9 @@ input:focus ~ .highlight {
     .vl2 {
 
         margin-left: 10px;
-        margin-top: 165px;
+        margin-top: 160px;
         border-left: 4px solid #2a4c8b;
-        height: 420px;
+        height: 460px;
         position: absolute;
     }
 
