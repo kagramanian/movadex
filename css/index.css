@@ -2,22 +2,142 @@
 @import url("https://fonts.googleapis.com/css?family=Spectral");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 html, body {
-    background-color: white;
+    background-color: black;
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
     margin: 0;
     padding: 0;
     height:  100%;
+
 }
 .page1 {
-    background: url("../image/bg1.png") no-repeat center center;
-    width: 100%;height:  100%;
+    width: 100%;height:  2000px;
     background-size: 100% 100%;
+    background: url("../image/bg1.png") no-repeat fixed center center;
+    position:inherit;
+    z-index:2;
+}
+/*NAVBAR*/
+
+.trueBar {
+     opacity: 0;
+    z-index: 100;
+}
+
+.trueBar:hover {
+    opacity: 1;
+    background-color: white;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    -webkit-padding-start: 0;
+    margin: 0;
+}
+
+.navbarTop {
+    position: fixed;
+    height: 7vh;
+    right: 0;left: 0;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 3.7vh;
+}
+
+.adidas {
+    display: inline;
+}
+
+.movadexBar{
+    margin-left: 4.6vw;
+    display: inline;
 
 }
 
-.title {
+.writeUsBar{
+    float: right;
+    display: inline;
+
+}
+
+.telegram {
+    float: right;
+    margin-left: 0.9vw;
+}
+        /*LEFT*/
+.navbarLeft {
+    z-index: 100;
+    position: fixed;
+    list-style-type: none;
+    top: 0;
+    bottom: 0;
+    padding-left: 2vw;
+}
+.circle {
+    padding-top: 14px;
     position: absolute;
+}
+.dot {
+    width: 6px;
+    height: 6px;
+    background: white;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+
+}
+.indent {
+
+}
+.border {
+}
+
+    /*bottom*/
+
+.navbarBottom  {
+    position: fixed;
+    right: 0;left: 0;
+    bottom: 0;
+    z-index: 5;
+    padding: 2vw 2vw 5.3vh;
+
+}
+
+
+
+.iconFacebook {
+    margin-right: 3.3vw;
+}
+
+.iconsInstagram {
+
+}
+
+.scrollAllwhiteMouseRaton {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.lang {
+    font-size: 15px;
+    font-family: "Montserrat";
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: bold;
+    z-index: 22;
+    float: right;
+    padding-left: 2vh;
+    bottom: 0;
+}
+
+
+
+/*NAVBAR END*/
+
+.title {
+    position: fixed;
     margin: auto;
     top: 0;
     left: 0;
@@ -26,7 +146,62 @@ html, body {
     width: auto;height:  100%;
 }
 
+
+
+/*LEAFS*/
+.containerLeaf {
+    overflow: hidden;
+    position:inherit;
+    z-index:1;
+
+}
 .leaf {
     display: block;
-    position: absolute;
+    position: fixed;
+    background-repeat: no-repeat;
 }
+
+.leaf1 {
+    left: -5px;top: -27px;
+    z-index: 65;
+    width: auto;height:  100%;
+
+}
+
+.leaf2 {
+    left: 6.4%;bottom: 0;
+    z-index: 67;
+    width: 50%;height:  auto;
+}
+
+.leaf3 {
+    right: 0;bottom: 0;
+    width: 45%;height:  auto;
+    z-index: 69;
+
+}
+
+.leaf4 {
+    right: 0;top: 0;
+
+    width: auto;height: 73%;
+    z-index: 71;
+}
+
+.leaf5 {
+    left: 14%;
+    top: 0;
+    width: auto;
+    height: 47%;
+    z-index: 73;
+}
+
+
+
+
+
+
+
+
+
+
