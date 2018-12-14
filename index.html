@@ -1,319 +1,86 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130203260-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-
-        gtag('config', 'UA-130203260-1');
-    </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/index.css">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Movadex - we code your ideas</title>
-
-
-    <!-- use  icons here-->
-    <link rel="icon" href="image/logo/movadex_logo_32.png" sizes="32x32">
-    <link rel="icon" href="image/logo/movadex_logo_192.png" sizes="192x192">
-    <link rel="apple-touch-icon-precomposed" href="image/logo/movadex_logo_180.png">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="msapplication-TileImage" content="image/logo/movadex_logo_270.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-            crossorigin="anonymous"></script>
-
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
-
     <meta name="description"
           content="Create websites and mobile apps with Movadex. We'll help start-ups to build beautiful products and firms to improve their websites.">
     <meta name="subject" content="website and app development for start-ups and e-commerce">
     <meta name="rating" content="General">
 
+    <link rel="stylesheet" href="css/normalize.min.css">
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="image/logo/movadex_logo_32.png" sizes="32x32">
+    <link rel="icon" href="image/logo/movadex_logo_192.png" sizes="192x192">
+    <link rel="apple-touch-icon-precomposed" href="image/logo/movadex_logo_180.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130203260-1"></script>
+
+    <title>Movadex - we code your ideas</title>
 
 </head>
 <body>
 
-<nav class="navbar">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <div class="navbar-brand" href="#"><img src="image/logo/movadex_logo_font_desert.png"
-                                                    id="movadexLogo"></div>
-        </div>
-        <div class="navbar-collapse collapse" id="menu">
-            <ul class="nav navbar-nav navbar-left" id="nav">
-                <li><a href="#page-2">SERVICES</a></li>
-                <li><a href="#page-3">WORK</a></li>
-                <li><a href="#page-4">CONTACT</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a id="a" href="#page-4">
-                        <button id="navBtn">WRITE US</button>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+<div class="navigation" >
+    <nav class="navbarTop" id="navBarT">
+        <img class="adidas" src="image/icons8-menu-filled-90.png">
+        <img class="movadexBar" src="image/MOVADEX.png">
+        <img class="telegram" src="image/telegram.png">
+        <img class="writeUsBar" src="image/writeUs.png">
+    </nav>
 
-<div id="wrapper">
-    <img id="desertImg2" src="image/blob2.png">
-    <img id="desertImg" src="image/blob1.png">
-    <div class="container centered">
-        <h3 class="mainTxt">We code <span class="textChanged">your</span> ideas.</h3>
-        <h2 class="secondTxt">Build beautiful mobile/web applications with us</h2>
+    <div class="navbarLeft " id="navBarL">
+        <ul>
+            <li class="circle">
+                <div class="indent dot"></div>
+            </li>
+            <li class="circle">
+                <div class="dot"></div>
+            </li>
+            <li class="circle">
+                <div class="dot"></div>
+            </li>
+            <li class="circle">
+                <div class="dot"></div>
+            </li>
+
+        </ul>
     </div>
 
-    <hr class="hr1">
-    <hr class="hrhelper">
-    <div class="container" id="page-2">
+    <div class="navbarBottom" id="navBarB">
 
-        <div class="vl"></div>
-        <h3 class="page-text">WE SPECIALISE IN</h3>
-        <div class="row">
-            <div class="first centered col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1">
-                <a href="#" onclick="
-           setTextWeb()"> <img id="web-logo" src="image/icons/web_logo_desert.png">
-                    <h3 id="text1" class="under-logo-text">WEB</h3></a>
-            </div>
-            <div class="second centered col-lg-4 col-md-4 col-sm-4 ">
-                <a href="#" onclick="
-            setTextMobile()"> <img id="web-logo2" src="image/icons/phones_logo%20desert.png">
-                    <div id="text2" class="under-logo-text">MOBILE</div>
-                </a>
-            </div>
-            <div class="third centered col-lg-4 col-md-4 col-sm-4 ">
-                <a href="#" onclick="setTextUIUX()"> <img id="web-logo3" src="image/icons/uiux_icon%20desert'.png">
-                    <h3 id="text3" class="under-logo-text">UI/UX</h3></a>
-            </div>
-        </div>
-        <h3 id="teg-text" class="teg-text"></h3>
-        <p id="paragraph"></p>
-    </div>
+        <a><img class=" iconFacebook" src="image/icon-facebook-.png"></a>
+        <a><img class="iconsInnstagram" src="image/icons-instagram.png"></a>
+        <img class=" scrollAllwhiteMouseRaton" src="image/scroll_allwhite_mouse_raton.png">
 
+            <a class="lang">ENG</a>
+            <a class="lang">УКР</a>
+            <a class="lang">РУС</a>
 
-    <hr class="hr1">
-    <hr class="hrhelper">
-    <div class="container" id="page-3">
-        <h3 class="page-text">NOTICEABLE PROJECTS</h3>
-        <div class="row centered">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <a target="_blank" href="https://play.google.com/store/apps/details?id=co.uprice.uprice&hl=en"><img
-                        id="u-price" src="image/icons/uprice.png"></a>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <img id="gold-fish" src="image/icons/goldfish_.png">
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6">
-                <a target="_blank" href="https://www.facecard.club"><img id="face-card"
-                                                                         src="image/icons/facecard%20(2).png"></a>
-            </div>
-        </div>
-    </div>
-
-
-    <hr class="hr1">
-    <hr class="hrhelper">
-    <div class="container" id="page-4">
-        <div class="vl2"></div>
-        <h3 class="page-text">GET IN TOUCH</h3>
-        <form target="_blank" action="https://formspree.io/nor8111@gmail.com" method="POST">
-
-            <div class="inputGroup">
-
-
-            <span class="button-checkbox">
-        <button type="button" id="btn"> WEB</button>
-        <input name="WEB" class="checkbox" type="checkbox" style="display: none;"/>
-    </span>
-
-
-                <span class="button-checkbox">
-        <button type="button" id="btn2"> MOBILE</button>
-        <input name="MOBILE" type="checkbox" style="display: none;"/>
-    </span>
-
-
-                <span class="button-checkbox">
-        <button type="button" id="btn3"> UI/UX</button>
-        <input name="UI/UX" type="checkbox" style="display: none;"/>
-    </span>
-
-
-            </div>
-
-            <div class="group" id="group">
-                <input name="name" type="text" required>
-                <span class="highlight"></span>
-                <span class="bar"></span>
-                <label>Name</label>
-            </div>
-
-            <div class="group">
-                <input name="email" type="text" required>
-                <span class="highlight"></span>
-                <span class="bar"></span>
-                <label>Email</label>
-            </div>
-            <div class="group">
-                <input name="idea" type="text" required/>
-                <span class="highlight"></span>
-                <span class="bar"></span>
-                <label>Idea</label>
-            </div>
-
-            <button class="sendBtn button-success pure-button button-xlarge">
-                <i class="fa fa-paper-plane"></i>&nbsp;Send
-            </button>
-
-        </form>
-
-    </div>
-
-
-    <div class="footer">
-
-        <div class="container">
-            <div id="footerTxt">Movadex © All rights reserved</div>
-
-        </div>
     </div>
 </div>
 
-<script>
 
-    var __REPLAIN_ = '4c0db722-3dae-4b0f-b3e1-f8d862b96bf7';
-
-    (function (u) {
-        var s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = u;
-        var x = document.getElementsByTagName('script')[0];
-        x.parentNode.insertBefore(s, x);
-    })('https://widget.replain.cc/dist/client.js');
+<section class=" page1">
+    <div class="containerLeaf">
+        <img class="leaf leaf1 leaf11" src="image/leaf11.png">
+        <img class="leaf leaf2 leaf12" src="image/leaf12.png">
+        <img class="leaf leaf3 leaf13" src="image/leaf13.png">
+        <img class="leaf leaf4 leaf14" src="image/leaf14.png">
+        <img class="leaf leaf5 leaf15" src="image/leaf15.png">
+    </div>
+    <img src="image/title.png" class="title"></section>
 
 
-    setTextMobile();
-
-    $("a").click(function () {
-        $("a").css("background-color", "");
-        $(this).css("background-color", "transparent");
-
-    });
-
-    function setTextWeb() {
-        document.getElementById("teg-text").innerText = 'WEB';
-        document.getElementById("paragraph").innerText = 'We will help you to develop the best website for your business, starting from scratch with beautiful UI/UX, and using latest technologies to implement everything you need.';
-    }
-
-    function setTextMobile() {
-        document.getElementById("teg-text").innerText = 'MOBILE';
-        document.getElementById("paragraph").innerText = 'With deep experience in mobile development, both native and cross-platform, we can create apps of any level of complexity using innovative technologies like  mobile vision and AR.'
-
-    }
-
-    function setTextUIUX() {
-        document.getElementById("teg-text").innerText = 'UI/UX';
-        document.getElementById("paragraph").innerText = 'Calling the user interface  the face of any business, we can also call the UX part it\'s soul. We create beautiful designs with user experience in mind.';
-    }
-
-    $(document).on('click', 'a[href^="#"]', function (event) {
-        event.preventDefault();
-
-        $('html, body').animate({
-            scrollTop: $($.attr(this, 'href')).offset().top
-        }, 1000);
-    });
-
-
-    $(function () {
-        $('.button-checkbox').each(function () {
-
-            // Settings
-            let $widget = $(this),
-                $button = $widget.find('button'),
-                $checkbox = $widget.find('input:checkbox'),
-                color = $button.data('color'),
-                settings = {
-                    off: {
-                        icon: 'form-invisible fa fa-square-o'
-                    },
-                    on: {
-                        icon: 'form-invisible fa fa-check-square-o'
-                    }
-                };
-
-            // Event Handlers
-            $button.on('click', function () {
-                $checkbox.prop('checked', !$checkbox.is(':checked'));
-                $checkbox.triggerHandler('change');
-                updateDisplay();
-            });
-            $checkbox.on('change', function () {
-                updateDisplay();
-            });
-
-            // Actions
-            function updateDisplay() {
-                let isChecked = $checkbox.is(':checked');
-
-                // Set the button's state
-                $button.data('state', (isChecked) ? "on" : "off");
-
-                // Set the button's icon
-                $button.find('.state-icon')
-                    .removeClass()
-                    .addClass('state-icon ' + settings[$button.data('state')].icon);
-
-                // Update the button's color
-                if (isChecked) {
-                    $button
-                        .removeClass('btn-default')
-                        .addClass('btn-' + color + ' active');
-                }
-                else {
-                    $button
-                        .removeClass('btn-' + color + ' active')
-                        .addClass('Btn');
-                }
-            }
-
-            // Initialization
-            function init() {
-
-                updateDisplay();
-
-                // Inject the icon if applicable
-                if ($button.find('.state-icon').length === 0) {
-                    $button.prepend('<i class="state-icon ' + settings[$button.data('state')].icon + '"></i>');
-                }
-            }
-
-            init();
-        });
-    });
-
-</script>
-
+<script src="js/index.js"></script>
 
 </body>
 </html>
