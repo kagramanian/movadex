@@ -1,3 +1,5 @@
+/********  LEAF ANIMATION  ********/
+
 var _containerHeight = 4000;
 var _width, _height, _scrollHeight;
 var letters = document.getElementsByTagName('span');
@@ -128,6 +130,11 @@ function prefix() {
     };
 }
 
+/********  LEAF ANIMATION END ********/
+
+
+/********  NAVBAR ANIMATION  ********/
+
 
 $('.topNav').append($('.navigation').clone());
 
@@ -137,3 +144,16 @@ $('.topNav .navigation').hover(function () {
 }, function () {
     $('.topNav').removeClass('is-hover');
 });
+
+/********  NAVBAR ANIMATION END ********/
+
+
+/********  NAVBAR CIRCLE ANIMATION ********/
+
+
+$('.nav-button').hover(function () {
+    if (!$(this).hasClass('selected')) {$(this).find(">:first-child").addClass('circle-off').addClass('circle-on');}
+}, function () {
+    if (!$(this).hasClass('selected')) {$(this).find(">:first-child").removeClass('circle-on');}
+});
+

@@ -21,7 +21,7 @@ html, body {
     z-index: 2;
 }
 
-/*NAVBAR*/
+/********  NAVBAR  ********/
 
 .topNav {
     z-index: 100;
@@ -32,6 +32,7 @@ html, body {
 
 }
 
+/********  navbar animation  ********/
 .is-not-hover {
     opacity: 0;
 
@@ -187,12 +188,9 @@ html, body {
     }
 }
 
-.navigation ul {
-    list-style-type: none;
-    padding: 0;
-    -webkit-padding-start: 0;
-    margin: 0;
-}
+/********  navbar animation end  ********/
+
+/********  top  ********/
 
 .navbarTop {
     position: fixed;
@@ -227,37 +225,171 @@ html, body {
     margin-left: 0.9vw;
 }
 
-/*LEFT*/
+/*left*/
+
 .navbarLeft {
-    z-index: 100;
     position: fixed;
     list-style-type: none;
     top: 0;
     bottom: 0;
     padding-left: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2vw;
 }
 
-.circle {
-    padding-top: 14px;
-    position: absolute;
+.navbarDots {
+    clear: both;
+    width: 8px;
+    padding-bottom: 6vh;
+}
+
+.background-circle {
+    width: 16px;
+    height: 16px;
+}
+
+.marg {
+    margin-top: 6vh;
 }
 
 .dot {
+    margin: 5px;
+    left: 5px;
     width: 6px;
     height: 6px;
-    background: white;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;
 
 }
 
-.indent {
+.nav-button {
+    width: 16px;
+    height: 16px;
 
 }
 
-.border {
+.background-circle {
+    width: 0;
+    height: 0;
 }
+
+.circle-off {
+    /*need this for animation to work*/
+    width: 16px;
+    height: 16px;
+    -webkit-animation: growDown 0.5s forwards;
+    -moz-animation: growDown 0.5s forwards;
+    -ms-animation: growDown 0.5s forwards;
+    -o-animation: growDown 0.5s forwards;
+    animation: growDown 0.5s forwards;
+}
+
+@-webkit-keyframes growDown {
+    0% {
+        -webkit-transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(0);
+    }
+}
+
+@-moz-keyframes growDown {
+    0% {
+        -moz-transform: scale(1);
+    }
+    100% {
+        -moz-transform: scale(0);
+    }
+}
+
+@-o-keyframes growDown {
+    0% {
+        -o-transform: scale(1);
+    }
+    100% {
+        -o-transform: scale(0);
+    }
+}
+
+@-ms-keyframes growDown {
+    0% {
+        -ms-transform: scale(1);
+    }
+    100% {
+        -ms-transform: scale(0);
+    }
+}
+
+@keyframes growDown {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+.circle-on {
+
+    width: 16px;
+    height: 16px;
+    display: block;
+    -webkit-animation: growUp 0.5s;
+    -moz-animation: growUp 0.5s;
+    -ms-animation: growUp 0.5s;
+    -o-animation: growUp 0.5s;
+    animation: growUp 0.5s;
+}
+
+@-webkit-keyframes growUp {
+    0% {
+        -webkit-transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+
+@-moz-keyframes growUp {
+    0% {
+        -moz-transform: scale(0);
+    }
+    100% {
+        -moz-transform: scale(1);
+    }
+}
+
+@-o-keyframes growUp {
+    0% {
+        -o-transform: scale(0);
+    }
+    100% {
+        -o-transform: scale(1);
+    }
+}
+
+@-ms-keyframes growUp {
+    0% {
+        -ms-transform: scale(0);
+    }
+    100% {
+        -ms-transform: scale(1);
+    }
+}
+
+@keyframes growUp {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*left end*/
 
 /*bottom*/
 
@@ -279,19 +411,9 @@ html, body {
 
 }
 
-.scrollAllwhiteMouseRaton {
-    position: fixed;
-    bottom: 0;
-    margin-left: 50%;
-    margin-right: 50%;
-    z-index: 100;
-    padding-bottom: 5.3vh;
-
-}
-
 .lang {
     font-size: 15px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     color: rgba(255, 255, 255, 0.4);
     font-weight: bold;
     z-index: 22;
@@ -300,7 +422,9 @@ html, body {
     bottom: 0;
 }
 
-/*NAVBAR END*/
+/******** NAVBAR END  ********/
+
+/******** SECTION 1  ********/
 
 .title {
     position: fixed;
@@ -370,12 +494,58 @@ html, body {
     z-index: 73;
 }
 
+/******** SECTION END  ********/
 
+/******** ANIMATED MOUSE  ********/
 
+.scroll-downs {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    margin: auto;
+    padding-bottom: 4vh;
+    width: 34px;
+    height: 55px;
+}
 
+.mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+}
 
+.scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+    animation-iteration-count: infinite;
+}
 
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+}
 
+/******** ANIMATED MOUSE END ********/
 
 
 
