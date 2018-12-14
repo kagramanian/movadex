@@ -4,8 +4,8 @@ var letters = document.getElementsByTagName('span');
 var _movingElements = [];
 var _scrollPercent = 0;
 var pre = prefix();
-var _jsPrefix  = pre.lowercase;
-if(_jsPrefix == 'moz') _jsPrefix = 'Moz'
+var _jsPrefix = pre.lowercase;
+if (_jsPrefix == 'moz') _jsPrefix = 'Moz'
 var _cssPrefix = pre.css;
 var _positions = [
     {
@@ -65,7 +65,7 @@ function initMovingElements() {
             x: _positions[i].end.x - _positions[i].start.x,
             y: _positions[i].end.y - _positions[i].start.y,
         }
-        var el = document.getElementsByClassName('leaf '+_positions[i].name)[0];
+        var el = document.getElementsByClassName('leaf ' + _positions[i].name)[0];
         _movingElements.push(el);
     }
 }
@@ -73,34 +73,33 @@ function initMovingElements() {
 function resize() {
     _width = window.innerWidth;
     _height = window.innerHeight;
-    _scrollHeight = _containerHeight-_height;
+    _scrollHeight = _containerHeight - _height;
 }
 
 function rotateLetters() {
     for (var i = 0; i < letters.length; i++) {
-        letters[i].style[_jsPrefix+'Transform'] = 'rotateY('+(_scrollPercent*500)+'deg)'
+        letters[i].style[_jsPrefix + 'Transform'] = 'rotateY(' + (_scrollPercent * 500) + 'deg)'
     }
 }
 
 function updateElements() {
     for (var i = 0; i < _movingElements.length; i++) {
         var p = _positions[i];
-        if(_scrollPercent <= p.start.percent) {
-            _movingElements[i].style[_jsPrefix+'Transform'] = 'translate3d('+(p.start.x*_width)+'px, '+(p.start.y*_containerHeight)+'px, 0px)';
-        } else if(_scrollPercent >= p.end.percent) {
-            _movingElements[i].style[_jsPrefix+'Transform'] = 'translate3d('+(p.end.x*_width)+'px, '+(p.end.y*_containerHeight)+'px, 0px)';
+        if (_scrollPercent <= p.start.percent) {
+            _movingElements[i].style[_jsPrefix + 'Transform'] = 'translate3d(' + (p.start.x * _width) + 'px, ' + (p.start.y * _containerHeight) + 'px, 0px)';
+        } else if (_scrollPercent >= p.end.percent) {
+            _movingElements[i].style[_jsPrefix + 'Transform'] = 'translate3d(' + (p.end.x * _width) + 'px, ' + (p.end.y * _containerHeight) + 'px, 0px)';
         } else {
-            _movingElements[i].style[_jsPrefix+'Transform'] = 'translate3d('+(p.start.x*_width + (p.diff.x*(_scrollPercent-p.start.percent)/p.diff.percent*_width))+'px, '+
-                (p.start.y*_containerHeight + (p.diff.y*(_scrollPercent-p.start.percent)/p.diff.percent*_containerHeight))+'px, 0px)';
+            _movingElements[i].style[_jsPrefix + 'Transform'] = 'translate3d(' + (p.start.x * _width + (p.diff.x * (_scrollPercent - p.start.percent) / p.diff.percent * _width)) + 'px, ' +
+                (p.start.y * _containerHeight + (p.diff.y * (_scrollPercent - p.start.percent) / p.diff.percent * _containerHeight)) + 'px, 0px)';
         }
     }
 }
 
 
-
 function loop() {
     _scrollOffset = window.pageYOffset || window.scrollTop;
-    _scrollPercent = _scrollOffset/_scrollHeight || 0;
+    _scrollPercent = _scrollOffset / _scrollHeight || 0;
     rotateLetters();
     updateElements();
 
@@ -130,18 +129,11 @@ function prefix() {
 }
 
 
+$('.topNav').append($('.navigation').clone());
 
 
-
-function duplicate(id) {
-    $(id).clone().addClass('trueBar').insertAfter('.navigation');
-}
-duplicate('navBarT');
-duplicate('navBarL');
-duplicate('navBarB');
-
-$('#trueBar').on('mouseover', function(){
-    $(this).parent().addClass('trueBarHover');
-}).on('mouseout', function(){
-    $(this).parent().removeClass('trueBarHover');
+$('.topNav .navigation').hover(function () {
+    $('.topNav').addClass('is-not-hover').addClass('is-hover');
+}, function () {
+    $('.topNav').removeClass('is-hover');
 });

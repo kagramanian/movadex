@@ -1,32 +1,190 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Spectral");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+
 html, body {
     background-color: black;
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
     margin: 0;
     padding: 0;
-    height:  100%;
+    height: 100%;
 
 }
+
 .page1 {
-    width: 100%;height:  2000px;
+    width: 100%;
+    height: 2000px;
     background-size: 100% 100%;
     background: url("../image/bg1.png") no-repeat fixed center center;
-    position:inherit;
-    z-index:2;
+    position: inherit;
+    z-index: 2;
 }
+
 /*NAVBAR*/
 
-.trueBar {
-     opacity: 0;
+.topNav {
     z-index: 100;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+
 }
 
-.trueBar:hover {
+.is-not-hover {
+    opacity: 0;
+
+    -webkit-animation: fadeOutFromNone 0.5s ease-out;
+    -moz-animation: fadeOutFromNone 0.5s ease-out;
+    -o-animation: fadeOutFromNone 0.5s ease-out;
+    animation: fadeOutFromNone 0.5s ease-out;
+}
+
+@-webkit-keyframes fadeOutFromNone {
+    0% {
+        display: none;
+        opacity: 1;
+    }
+
+    1% {
+        display: block;
+        opacity: 1;
+    }
+
+    100% {
+        display: block;
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fadeOutFromNone {
+    0% {
+        display: none;
+        opacity: 1;
+    }
+
+    1% {
+        display: block;
+        opacity: 1;
+    }
+
+    100% {
+        display: block;
+        opacity: 0;
+    }
+}
+
+@-o-keyframes fadeOutFromNone {
+    0% {
+        display: none;
+        opacity: 1;
+    }
+
+    1% {
+        display: block;
+        opacity: 1;
+    }
+
+    100% {
+        display: block;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOutFromNone {
+    0% {
+        display: none;
+        opacity: 1;
+    }
+
+    1% {
+        display: block;
+        opacity: 1;
+    }
+
+    100% {
+        display: block;
+        opacity: 0;
+    }
+}
+
+.is-hover {
+    z-index: 100;
     opacity: 1;
-    background-color: white;
+
+    -webkit-animation: fadeInFromNone 0.5s ease-out;
+    -moz-animation: fadeInFromNone 0.5s ease-out;
+    -o-animation: fadeInFromNone 0.5s ease-out;
+    animation: fadeInFromNone 0.5s ease-out;
+}
+
+@-webkit-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
 }
 
 .navigation ul {
@@ -39,23 +197,26 @@ html, body {
 .navbarTop {
     position: fixed;
     height: 7vh;
-    right: 0;left: 0;
+    right: 0;
+    left: 0;
     padding-left: 2vw;
     padding-right: 2vw;
     padding-top: 3.7vh;
+    top: 0;
+    z-index: 5;
 }
 
 .adidas {
     display: inline;
 }
 
-.movadexBar{
+.movadexBar {
     margin-left: 4.6vw;
     display: inline;
 
 }
 
-.writeUsBar{
+.writeUsBar {
     float: right;
     display: inline;
 
@@ -65,7 +226,8 @@ html, body {
     float: right;
     margin-left: 0.9vw;
 }
-        /*LEFT*/
+
+/*LEFT*/
 .navbarLeft {
     z-index: 100;
     position: fixed;
@@ -74,10 +236,12 @@ html, body {
     bottom: 0;
     padding-left: 2vw;
 }
+
 .circle {
     padding-top: 14px;
     position: absolute;
 }
+
 .dot {
     width: 6px;
     height: 6px;
@@ -87,24 +251,25 @@ html, body {
     border-radius: 50px;
 
 }
+
 .indent {
 
 }
+
 .border {
 }
 
-    /*bottom*/
+/*bottom*/
 
-.navbarBottom  {
+.navbarBottom {
     position: fixed;
-    right: 0;left: 0;
+    right: 0;
+    left: 0;
     bottom: 0;
     z-index: 5;
     padding: 2vw 2vw 5.3vh;
 
 }
-
-
 
 .iconFacebook {
     margin-right: 3.3vw;
@@ -115,10 +280,13 @@ html, body {
 }
 
 .scrollAllwhiteMouseRaton {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
+    position: fixed;
+    bottom: 0;
+    margin-left: 50%;
+    margin-right: 50%;
+    z-index: 100;
+    padding-bottom: 5.3vh;
+
 }
 
 .lang {
@@ -132,8 +300,6 @@ html, body {
     bottom: 0;
 }
 
-
-
 /*NAVBAR END*/
 
 .title {
@@ -143,18 +309,18 @@ html, body {
     left: 0;
     right: 0;
     bottom: 0;
-    width: auto;height:  100%;
+    width: auto;
+    height: 100%;
 }
-
-
 
 /*LEAFS*/
 .containerLeaf {
     overflow: hidden;
-    position:inherit;
-    z-index:1;
+    position: inherit;
+    z-index: 1;
 
 }
+
 .leaf {
     display: block;
     position: fixed;
@@ -162,29 +328,37 @@ html, body {
 }
 
 .leaf1 {
-    left: -5px;top: -27px;
+    left: -5px;
+    top: -27px;
     z-index: 65;
-    width: auto;height:  100%;
+    width: auto;
+    height: 100%;
 
 }
 
 .leaf2 {
-    left: 6.4%;bottom: 0;
+    left: 6.4%;
+    bottom: 0;
     z-index: 67;
-    width: 50%;height:  auto;
+    width: 50%;
+    height: auto;
 }
 
 .leaf3 {
-    right: 0;bottom: 0;
-    width: 45%;height:  auto;
+    right: 0;
+    bottom: 0;
+    width: 45%;
+    height: auto;
     z-index: 69;
 
 }
 
 .leaf4 {
-    right: 0;top: 0;
+    right: 0;
+    top: 0;
 
-    width: auto;height: 73%;
+    width: auto;
+    height: 73%;
     z-index: 71;
 }
 
