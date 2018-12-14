@@ -12,16 +12,10 @@ html, body {
 
 }
 
-.page1 {
-    width: 100%;
-    height: 2000px;
-    background-size: 100% 100%;
-    background: url("../image/bg1.png") no-repeat fixed center center;
-    position: inherit;
-    z-index: 2;
-}
-
 /********  NAVBAR  ********/
+
+
+/********  navbar animation  ********/
 
 .topNav {
     z-index: 100;
@@ -31,8 +25,6 @@ html, body {
     position: fixed;
 
 }
-
-/********  navbar animation  ********/
 .is-not-hover {
     opacity: 0;
 
@@ -42,73 +34,6 @@ html, body {
     animation: fadeOutFromNone 0.5s ease-out;
 }
 
-@-webkit-keyframes fadeOutFromNone {
-    0% {
-        display: none;
-        opacity: 1;
-    }
-
-    1% {
-        display: block;
-        opacity: 1;
-    }
-
-    100% {
-        display: block;
-        opacity: 0;
-    }
-}
-
-@-moz-keyframes fadeOutFromNone {
-    0% {
-        display: none;
-        opacity: 1;
-    }
-
-    1% {
-        display: block;
-        opacity: 1;
-    }
-
-    100% {
-        display: block;
-        opacity: 0;
-    }
-}
-
-@-o-keyframes fadeOutFromNone {
-    0% {
-        display: none;
-        opacity: 1;
-    }
-
-    1% {
-        display: block;
-        opacity: 1;
-    }
-
-    100% {
-        display: block;
-        opacity: 0;
-    }
-}
-
-@keyframes fadeOutFromNone {
-    0% {
-        display: none;
-        opacity: 1;
-    }
-
-    1% {
-        display: block;
-        opacity: 1;
-    }
-
-    100% {
-        display: block;
-        opacity: 0;
-    }
-}
 
 .is-hover {
     z-index: 100;
@@ -118,74 +43,6 @@ html, body {
     -moz-animation: fadeInFromNone 0.5s ease-out;
     -o-animation: fadeInFromNone 0.5s ease-out;
     animation: fadeInFromNone 0.5s ease-out;
-}
-
-@-webkit-keyframes fadeInFromNone {
-    0% {
-        display: none;
-        opacity: 0;
-    }
-
-    1% {
-        display: block;
-        opacity: 0;
-    }
-
-    100% {
-        display: block;
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes fadeInFromNone {
-    0% {
-        display: none;
-        opacity: 0;
-    }
-
-    1% {
-        display: block;
-        opacity: 0;
-    }
-
-    100% {
-        display: block;
-        opacity: 1;
-    }
-}
-
-@-o-keyframes fadeInFromNone {
-    0% {
-        display: none;
-        opacity: 0;
-    }
-
-    1% {
-        display: block;
-        opacity: 0;
-    }
-
-    100% {
-        display: block;
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInFromNone {
-    0% {
-        display: none;
-        opacity: 0;
-    }
-
-    1% {
-        display: block;
-        opacity: 0;
-    }
-
-    100% {
-        display: block;
-        opacity: 1;
-    }
 }
 
 /********  navbar animation end  ********/
@@ -266,8 +123,9 @@ html, body {
 }
 
 .nav-button {
-    width: 16px;
-    height: 16px;
+    /*size of the actual clickable area*/
+    width: 22px;
+    height: 22px;
 
 }
 
@@ -287,50 +145,6 @@ html, body {
     animation: growDown 0.5s forwards;
 }
 
-@-webkit-keyframes growDown {
-    0% {
-        -webkit-transform: scale(1);
-    }
-    100% {
-        -webkit-transform: scale(0);
-    }
-}
-
-@-moz-keyframes growDown {
-    0% {
-        -moz-transform: scale(1);
-    }
-    100% {
-        -moz-transform: scale(0);
-    }
-}
-
-@-o-keyframes growDown {
-    0% {
-        -o-transform: scale(1);
-    }
-    100% {
-        -o-transform: scale(0);
-    }
-}
-
-@-ms-keyframes growDown {
-    0% {
-        -ms-transform: scale(1);
-    }
-    100% {
-        -ms-transform: scale(0);
-    }
-}
-
-@keyframes growDown {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(0);
-    }
-}
 
 .circle-on {
 
@@ -344,50 +158,6 @@ html, body {
     animation: growUp 0.5s;
 }
 
-@-webkit-keyframes growUp {
-    0% {
-        -webkit-transform: scale(0);
-    }
-    100% {
-        -webkit-transform: scale(1);
-    }
-}
-
-@-moz-keyframes growUp {
-    0% {
-        -moz-transform: scale(0);
-    }
-    100% {
-        -moz-transform: scale(1);
-    }
-}
-
-@-o-keyframes growUp {
-    0% {
-        -o-transform: scale(0);
-    }
-    100% {
-        -o-transform: scale(1);
-    }
-}
-
-@-ms-keyframes growUp {
-    0% {
-        -ms-transform: scale(0);
-    }
-    100% {
-        -ms-transform: scale(1);
-    }
-}
-
-@keyframes growUp {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
 
 /*left end*/
 
@@ -425,6 +195,17 @@ html, body {
 /******** NAVBAR END  ********/
 
 /******** SECTION 1  ********/
+
+
+.page1 {
+    width: 100%;
+    height: 2000px;
+    background-size: 100% 100%;
+    background: url("../image/bg1.png") no-repeat fixed center center;
+    position: inherit;
+    z-index: 2;
+}
+
 
 .title {
     position: fixed;
@@ -549,3 +330,233 @@ html, body {
 
 
 
+
+@-webkit-keyframes fadeOutFromNone {
+    0% {
+        display: none;
+        opacity: 1;
+    }
+
+    1% {
+        display: block;
+        opacity: 1;
+    }
+
+    100% {
+        display: block;
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fadeOutFromNone {
+    0% {
+        display: none;
+        opacity: 1;
+    }
+
+    1% {
+        display: block;
+        opacity: 1;
+    }
+
+    100% {
+        display: block;
+        opacity: 0;
+    }
+}
+
+@-o-keyframes fadeOutFromNone {
+    0% {
+        display: none;
+        opacity: 1;
+    }
+
+    1% {
+        display: block;
+        opacity: 1;
+    }
+
+    100% {
+        display: block;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOutFromNone {
+    0% {
+        display: none;
+        opacity: 1;
+    }
+
+    1% {
+        display: block;
+        opacity: 1;
+    }
+
+    100% {
+        display: block;
+        opacity: 0;
+    }
+}
+
+
+@-webkit-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+
+
+@-webkit-keyframes growDown {
+    0% {
+        -webkit-transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(0);
+    }
+}
+
+@-moz-keyframes growDown {
+    0% {
+        -moz-transform: scale(1);
+    }
+    100% {
+        -moz-transform: scale(0);
+    }
+}
+
+@-o-keyframes growDown {
+    0% {
+        -o-transform: scale(1);
+    }
+    100% {
+        -o-transform: scale(0);
+    }
+}
+
+@-ms-keyframes growDown {
+    0% {
+        -ms-transform: scale(1);
+    }
+    100% {
+        -ms-transform: scale(0);
+    }
+}
+
+@keyframes growDown {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+
+@-webkit-keyframes growUp {
+    0% {
+        -webkit-transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+
+@-moz-keyframes growUp {
+    0% {
+        -moz-transform: scale(0);
+    }
+    100% {
+        -moz-transform: scale(1);
+    }
+}
+
+@-o-keyframes growUp {
+    0% {
+        -o-transform: scale(0);
+    }
+    100% {
+        -o-transform: scale(1);
+    }
+}
+
+@-ms-keyframes growUp {
+    0% {
+        -ms-transform: scale(0);
+    }
+    100% {
+        -ms-transform: scale(1);
+    }
+}
+
+@keyframes growUp {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
