@@ -1,12 +1,12 @@
 /********  LEAF ANIMATION  ********/
 
-var _containerHeight = $(window).height() * 2.5;
-(function() {
+var _containerHeight = $(window).height() * 3;
+(function () {
     window.onresize = displayWindowSize;
     window.onload = displayWindowSize;
 
     function displayWindowSize() {
-        _containerHeight = window.innerHeight * 2.5;
+        _containerHeight = window.innerHeight * 3;
         // your size calculation code here
     }
 })();
@@ -161,8 +161,38 @@ $('.topNav .navigation').hover(function () {
 
 
 $('.nav-button').hover(function () {
-    if (!$(this).hasClass('selected')) {$(this).find(">:first-child").addClass('circle-off').addClass('circle-on');}
+    if (!$(this).hasClass('selected')) {
+        $(this).find(">:first-child").addClass('circle-off').addClass('circle-on');
+    }
 }, function () {
-    if (!$(this).hasClass('selected')) {$(this).find(">:first-child").removeClass('circle-on');}
+    if (!$(this).hasClass('selected')) {
+        $(this).find(">:first-child").removeClass('circle-on');
+    }
 });
 
+/********  NAVBAR CIRCLE ANIMATION END  ********/
+
+let navbarList = [$(".navbarBottom"), $(".navbarDots"), $(".navbarTop"), $(".mousey") ];
+let listSize = navbarList.length;
+function checkColor() {
+    {
+        for (var i = 0; i < listSize; i++) {
+            var navBarItem = navbarList[i];
+            console.log(navBarItem);
+
+            console.log(navBarItem.offset().top);
+
+            if (navBarItem.offset().top+50 > $(".page2").position().top) {
+
+                navBarItem.removeClass('dis-invert').addClass('invert');
+            } else {
+                if(navBarItem.hasClass('invert'))navBarItem.removeClass('invert').addClass('dis-invert');
+            }
+        }
+
+    }
+}
+
+/********  NAVBAR COLOR CHANGE  ********/
+
+setInterval(checkColor, 1000);

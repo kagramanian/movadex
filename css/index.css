@@ -14,7 +14,6 @@ html, body {
 
 /********  NAVBAR  ********/
 
-
 /********  navbar animation  ********/
 
 .topNav {
@@ -25,6 +24,7 @@ html, body {
     position: fixed;
 
 }
+
 .is-not-hover {
     opacity: 0;
 
@@ -33,7 +33,6 @@ html, body {
     -o-animation: fadeOutFromNone 0.5s ease-out;
     animation: fadeOutFromNone 0.5s ease-out;
 }
-
 
 .is-hover {
     z-index: 100;
@@ -86,14 +85,15 @@ html, body {
 
 .navbarLeft {
     position: fixed;
-    list-style-type: none;
     top: 0;
+    left: 0;
     bottom: 0;
     padding-left: 2vw;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-right: 2vw;
+    z-index: 5;
 }
 
 .navbarDots {
@@ -145,7 +145,6 @@ html, body {
     animation: growDown 0.5s forwards;
 }
 
-
 .circle-on {
 
     width: 16px;
@@ -157,7 +156,6 @@ html, body {
     -o-animation: growUp 0.5s;
     animation: growUp 0.5s;
 }
-
 
 /*left end*/
 
@@ -192,10 +190,26 @@ html, body {
     bottom: 0;
 }
 
+/*navbar change color*/
+
+.invert {
+    -webkit-filter: invert(100%);
+    -webkit-animation: goBlack 0.5s ease-out;
+    -moz-animation: goBlack 0.5s ease-out;
+    -o-animation: goBlack 0.5s ease-out;
+    animation: goBlack 0.5s ease-out;
+}
+
+.dis-invert {
+    -webkit-animation: goWhite 0.5s ease-out;
+    -moz-animation: goWhite 0.5s ease-out;
+    -o-animation: goWhite 0.5s ease-out;
+    animation: goWhite 0.5s ease-out;
+}
+
 /******** NAVBAR END  ********/
 
 /******** SECTION 1  ********/
-
 
 .page1 {
     width: 100%;
@@ -205,7 +219,6 @@ html, body {
     position: inherit;
     z-index: 2;
 }
-
 
 .title {
     position: fixed;
@@ -225,12 +238,11 @@ html, body {
     top: 250vh;
     height: 250vw;
     width: 100%;
-
+    position: absolute;
     z-index: 4;
     background-size: 100% 100%;
     background: url("../image/bg2.png") no-repeat fixed center center;
 }
-
 
 /*LEAFS*/
 .containerLeaf {
@@ -342,17 +354,9 @@ html, body {
 
 /******** ANIMATED MOUSE END ********/
 
-
-
-
 @-webkit-keyframes fadeOutFromNone {
     0% {
         display: none;
-        opacity: 1;
-    }
-
-    1% {
-        display: block;
         opacity: 1;
     }
 
@@ -368,11 +372,6 @@ html, body {
         opacity: 1;
     }
 
-    1% {
-        display: block;
-        opacity: 1;
-    }
-
     100% {
         display: block;
         opacity: 0;
@@ -382,11 +381,6 @@ html, body {
 @-o-keyframes fadeOutFromNone {
     0% {
         display: none;
-        opacity: 1;
-    }
-
-    1% {
-        display: block;
         opacity: 1;
     }
 
@@ -402,26 +396,15 @@ html, body {
         opacity: 1;
     }
 
-    1% {
-        display: block;
-        opacity: 1;
-    }
-
     100% {
         display: block;
         opacity: 0;
     }
 }
 
-
 @-webkit-keyframes fadeInFromNone {
     0% {
         display: none;
-        opacity: 0;
-    }
-
-    1% {
-        display: block;
         opacity: 0;
     }
 
@@ -437,11 +420,6 @@ html, body {
         opacity: 0;
     }
 
-    1% {
-        display: block;
-        opacity: 0;
-    }
-
     100% {
         display: block;
         opacity: 1;
@@ -451,11 +429,6 @@ html, body {
 @-o-keyframes fadeInFromNone {
     0% {
         display: none;
-        opacity: 0;
-    }
-
-    1% {
-        display: block;
         opacity: 0;
     }
 
@@ -471,18 +444,11 @@ html, body {
         opacity: 0;
     }
 
-    1% {
-        display: block;
-        opacity: 0;
-    }
-
     100% {
         display: block;
         opacity: 1;
     }
 }
-
-
 
 @-webkit-keyframes growDown {
     0% {
@@ -529,7 +495,6 @@ html, body {
     }
 }
 
-
 @-webkit-keyframes growUp {
     0% {
         -webkit-transform: scale(0);
@@ -572,5 +537,99 @@ html, body {
     }
     100% {
         transform: scale(1);
+    }
+}
+
+@-webkit-keyframes goBlack {
+    0% {
+        -webkit-filter: invert(0%);
+
+    }
+
+    100% {
+        -webkit-filter: invert(100%);
+    }
+}
+
+@-moz-keyframes goBlack {
+    0% {
+        -webkit-filter: invert(0%);
+
+    }
+
+    100% {
+        -webkit-filter: invert(100%);
+
+    }
+}
+
+@-o-keyframes goBlack {
+    0% {
+        -webkit-filter: invert(0%);
+
+    }
+
+    100% {
+        -webkit-filter: invert(100%);
+
+    }
+}
+
+@keyframes goBlack {
+    0% {
+        -webkit-filter: invert(0%);
+
+    }
+
+    100% {
+        -webkit-filter: invert(100%);
+
+    }
+}
+
+@-webkit-keyframes goWhite {
+    0% {
+        -webkit-filter: invert(100%);
+
+    }
+
+    100% {
+        -webkit-filter: invert(0%);
+    }
+}
+
+@-moz-keyframes goWhite {
+    0% {
+        -webkit-filter: invert(100%);
+
+    }
+
+    100% {
+        -webkit-filter: invert(0%);
+
+    }
+}
+
+@-o-keyframes goWhite {
+    0% {
+        -webkit-filter: invert(100%);
+
+    }
+
+    100% {
+        -webkit-filter: invert(0%);
+
+    }
+}
+
+@keyframes goWhite {
+    0% {
+        -webkit-filter: invert(100%);
+
+    }
+
+    100% {
+        -webkit-filter: invert(0%);
+
     }
 }
