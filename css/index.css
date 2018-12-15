@@ -317,9 +317,13 @@ html, body {
     left: 0;
     z-index: 100;
     margin: auto;
-    padding-bottom: 4vh;
+    padding-bottom: 5vh;
     width: 34px;
     height: 55px;
+
+      -ms-transform: scale(0.7); /* IE 9 */
+  -webkit-transform: scale(0.7); /* Safari */
+  transform: scale(0.7);
 }
 
 .mousey {

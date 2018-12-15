@@ -195,4 +195,4 @@ function checkColor() {
 
 /********  NAVBAR COLOR CHANGE  ********/
 
-setInterval(checkColor, 1000);
+setInterval(checkColor, 600);
