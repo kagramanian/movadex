@@ -1,77 +1,61 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Spectral");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
-
 html, body {
     background-color: black;
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
     margin: 0;
     padding: 0;
-    height: 100%;
+    height:  100%;
 
 }
+.page1 {
+    width: 100%;height:  2000px;
+    background-size: 100% 100%;
+    background: url("../image/bg1.png") no-repeat fixed center center;
+    position:inherit;
+    z-index:2;
+}
+/*NAVBAR*/
 
-/********  NAVBAR  ********/
-
-
-/********  navbar animation  ********/
-
-.topNav {
+.trueBar {
     z-index: 100;
     opacity: 0;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-
 }
-.is-not-hover {
-    opacity: 0;
-
-    -webkit-animation: fadeOutFromNone 0.5s ease-out;
-    -moz-animation: fadeOutFromNone 0.5s ease-out;
-    -o-animation: fadeOutFromNone 0.5s ease-out;
-    animation: fadeOutFromNone 0.5s ease-out;
+.navigation:hover .navbarTop,
+.navigation:hover .navbarLeft,
+.navigation:hover .navbarBottom{
+    color:red;
 }
 
-
-.is-hover {
-    z-index: 100;
-    opacity: 1;
-
-    -webkit-animation: fadeInFromNone 0.5s ease-out;
-    -moz-animation: fadeInFromNone 0.5s ease-out;
-    -o-animation: fadeInFromNone 0.5s ease-out;
-    animation: fadeInFromNone 0.5s ease-out;
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    -webkit-padding-start: 0;
+    margin: 0;
 }
-
-/********  navbar animation end  ********/
-
-/********  top  ********/
 
 .navbarTop {
     position: fixed;
     height: 7vh;
-    right: 0;
-    left: 0;
+    right: 0;left: 0;
     padding-left: 2vw;
     padding-right: 2vw;
     padding-top: 3.7vh;
-    top: 0;
-    z-index: 5;
 }
 
 .adidas {
     display: inline;
 }
 
-.movadexBar {
+.movadexBar{
     margin-left: 4.6vw;
     display: inline;
 
 }
 
-.writeUsBar {
+.writeUsBar{
     float: right;
     display: inline;
 
@@ -81,97 +65,44 @@ html, body {
     float: right;
     margin-left: 0.9vw;
 }
-
-/*left*/
-
+        /*LEFT*/
 .navbarLeft {
+    z-index: 100;
     position: fixed;
     list-style-type: none;
     top: 0;
     bottom: 0;
     padding-left: 2vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 2vw;
 }
-
-.navbarDots {
-    clear: both;
-    width: 8px;
-    padding-bottom: 6vh;
+.circle {
+    padding-top: 14px;
+    position: absolute;
 }
-
-.background-circle {
-    width: 16px;
-    height: 16px;
-}
-
-.marg {
-    margin-top: 6vh;
-}
-
 .dot {
-    margin: 5px;
-    left: 5px;
     width: 6px;
     height: 6px;
+    background: white;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;
 
 }
-
-.nav-button {
-    /*size of the actual clickable area*/
-    width: 22px;
-    height: 22px;
+.indent {
 
 }
-
-.background-circle {
-    width: 0;
-    height: 0;
+.border {
 }
 
-.circle-off {
-    /*need this for animation to work*/
-    width: 16px;
-    height: 16px;
-    -webkit-animation: growDown 0.5s forwards;
-    -moz-animation: growDown 0.5s forwards;
-    -ms-animation: growDown 0.5s forwards;
-    -o-animation: growDown 0.5s forwards;
-    animation: growDown 0.5s forwards;
-}
+    /*bottom*/
 
-
-.circle-on {
-
-    width: 16px;
-    height: 16px;
-    display: block;
-    -webkit-animation: growUp 0.5s;
-    -moz-animation: growUp 0.5s;
-    -ms-animation: growUp 0.5s;
-    -o-animation: growUp 0.5s;
-    animation: growUp 0.5s;
-}
-
-
-/*left end*/
-
-/*bottom*/
-
-.navbarBottom {
+.navbarBottom  {
     position: fixed;
-    right: 0;
-    left: 0;
+    right: 0;left: 0;
     bottom: 0;
-    z-index: 5;
     padding: 2vw 2vw 5.3vh;
-
 }
+
+
 
 .iconFacebook {
     margin-right: 3.3vw;
@@ -181,9 +112,17 @@ html, body {
 
 }
 
+.scrollAllwhiteMouseRaton {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 99;
+}
+
 .lang {
     font-size: 15px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat";
     color: rgba(255, 255, 255, 0.4);
     font-weight: bold;
     z-index: 22;
@@ -192,20 +131,9 @@ html, body {
     bottom: 0;
 }
 
-/******** NAVBAR END  ********/
-
-/******** SECTION 1  ********/
 
 
-.page1 {
-    width: 100%;
-    height: 2000px;
-    background-size: 100% 100%;
-    background: url("../image/bg1.png") no-repeat fixed center center;
-    position: inherit;
-    z-index: 2;
-}
-
+/*NAVBAR END*/
 
 .title {
     position: fixed;
@@ -214,18 +142,18 @@ html, body {
     left: 0;
     right: 0;
     bottom: 0;
-    width: auto;
-    height: 100%;
+    width: auto;height:  100%;
 }
+
+
 
 /*LEAFS*/
 .containerLeaf {
     overflow: hidden;
-    position: inherit;
-    z-index: 1;
+    position:inherit;
+    z-index:1;
 
 }
-
 .leaf {
     display: block;
     position: fixed;
@@ -233,37 +161,29 @@ html, body {
 }
 
 .leaf1 {
-    left: -5px;
-    top: -27px;
+    left: -5px;top: -27px;
     z-index: 65;
-    width: auto;
-    height: 100%;
+    width: auto;height:  100%;
 
 }
 
 .leaf2 {
-    left: 6.4%;
-    bottom: 0;
+    left: 6.4%;bottom: 0;
     z-index: 67;
-    width: 50%;
-    height: auto;
+    width: 50%;height:  auto;
 }
 
 .leaf3 {
-    right: 0;
-    bottom: 0;
-    width: 45%;
-    height: auto;
+    right: 0;bottom: 0;
+    width: 45%;height:  auto;
     z-index: 69;
 
 }
 
 .leaf4 {
-    right: 0;
-    top: 0;
+    right: 0;top: 0;
 
-    width: auto;
-    height: 73%;
+    width: auto;height: 73%;
     z-index: 71;
 }
 
@@ -275,288 +195,12 @@ html, body {
     z-index: 73;
 }
 
-/******** SECTION END  ********/
-
-/******** ANIMATED MOUSE  ********/
-
-.scroll-downs {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 100;
-    margin: auto;
-    padding-bottom: 4vh;
-    width: 34px;
-    height: 55px;
-}
-
-.mousey {
-    width: 3px;
-    padding: 10px 15px;
-    height: 35px;
-    border: 2px solid #fff;
-    border-radius: 25px;
-    opacity: 0.75;
-    box-sizing: content-box;
-}
-
-.scroller {
-    width: 3px;
-    height: 10px;
-    border-radius: 25%;
-    background-color: #fff;
-    animation-name: scroll;
-    animation-duration: 2.2s;
-    animation-timing-function: cubic-bezier(.15, .41, .69, .94);
-    animation-iteration-count: infinite;
-}
-
-@keyframes scroll {
-    0% {
-        opacity: 0;
-    }
-    10% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(15px);
-        opacity: 0;
-    }
-}
-
-/******** ANIMATED MOUSE END ********/
 
 
 
 
-@-webkit-keyframes fadeOutFromNone {
-    0% {
-        display: none;
-        opacity: 1;
-    }
-
-    1% {
-        display: block;
-        opacity: 1;
-    }
-
-    100% {
-        display: block;
-        opacity: 0;
-    }
-}
-
-@-moz-keyframes fadeOutFromNone {
-    0% {
-        display: none;
-        opacity: 1;
-    }
-
-    1% {
-        display: block;
-        opacity: 1;
-    }
-
-    100% {
-        display: block;
-        opacity: 0;
-    }
-}
-
-@-o-keyframes fadeOutFromNone {
-    0% {
-        display: none;
-        opacity: 1;
-    }
-
-    1% {
-        display: block;
-        opacity: 1;
-    }
-
-    100% {
-        display: block;
-        opacity: 0;
-    }
-}
-
-@keyframes fadeOutFromNone {
-    0% {
-        display: none;
-        opacity: 1;
-    }
-
-    1% {
-        display: block;
-        opacity: 1;
-    }
-
-    100% {
-        display: block;
-        opacity: 0;
-    }
-}
-
-
-@-webkit-keyframes fadeInFromNone {
-    0% {
-        display: none;
-        opacity: 0;
-    }
-
-    1% {
-        display: block;
-        opacity: 0;
-    }
-
-    100% {
-        display: block;
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes fadeInFromNone {
-    0% {
-        display: none;
-        opacity: 0;
-    }
-
-    1% {
-        display: block;
-        opacity: 0;
-    }
-
-    100% {
-        display: block;
-        opacity: 1;
-    }
-}
-
-@-o-keyframes fadeInFromNone {
-    0% {
-        display: none;
-        opacity: 0;
-    }
-
-    1% {
-        display: block;
-        opacity: 0;
-    }
-
-    100% {
-        display: block;
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInFromNone {
-    0% {
-        display: none;
-        opacity: 0;
-    }
-
-    1% {
-        display: block;
-        opacity: 0;
-    }
-
-    100% {
-        display: block;
-        opacity: 1;
-    }
-}
 
 
 
-@-webkit-keyframes growDown {
-    0% {
-        -webkit-transform: scale(1);
-    }
-    100% {
-        -webkit-transform: scale(0);
-    }
-}
-
-@-moz-keyframes growDown {
-    0% {
-        -moz-transform: scale(1);
-    }
-    100% {
-        -moz-transform: scale(0);
-    }
-}
-
-@-o-keyframes growDown {
-    0% {
-        -o-transform: scale(1);
-    }
-    100% {
-        -o-transform: scale(0);
-    }
-}
-
-@-ms-keyframes growDown {
-    0% {
-        -ms-transform: scale(1);
-    }
-    100% {
-        -ms-transform: scale(0);
-    }
-}
-
-@keyframes growDown {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(0);
-    }
-}
 
 
-@-webkit-keyframes growUp {
-    0% {
-        -webkit-transform: scale(0);
-    }
-    100% {
-        -webkit-transform: scale(1);
-    }
-}
-
-@-moz-keyframes growUp {
-    0% {
-        -moz-transform: scale(0);
-    }
-    100% {
-        -moz-transform: scale(1);
-    }
-}
-
-@-o-keyframes growUp {
-    0% {
-        -o-transform: scale(0);
-    }
-    100% {
-        -o-transform: scale(1);
-    }
-}
-
-@-ms-keyframes growUp {
-    0% {
-        -ms-transform: scale(0);
-    }
-    100% {
-        -ms-transform: scale(1);
-    }
-}
-
-@keyframes growUp {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
