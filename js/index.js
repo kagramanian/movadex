@@ -20,7 +20,7 @@ if (_jsPrefix == 'moz') _jsPrefix = 'Moz';
 var _cssPrefix = pre.css;
 var _positions = [
     {
-        name: 'leaf11',
+        name: 'leaf1',
         start: {
             percent: 0, x: 0, y: 0
         },
@@ -29,7 +29,7 @@ var _positions = [
         }
     },
     {
-        name: 'leaf12',
+        name: 'leaf2',
         start: {
             percent: 0, x: 0, y: 0
         },
@@ -38,7 +38,7 @@ var _positions = [
         }
     },
     {
-        name: 'leaf13',
+        name: 'leaf3',
         start: {
             percent: 0, x: 0, y: 0
         },
@@ -47,7 +47,7 @@ var _positions = [
         }
     },
     {
-        name: 'leaf14',
+        name: 'leaf4',
         start: {
             percent: 0, x: 0, y: 0
         },
@@ -56,7 +56,7 @@ var _positions = [
         }
     },
     {
-        name: 'leaf15',
+        name: 'leaf5',
         start: {
             percent: 0, x: 0, y: 0
         },
@@ -206,4 +206,4 @@ setInterval(function () {
     }else {
         content2.removeClass('mask-fixed')
     }
-}, 50);
+}, 5);

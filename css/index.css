@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,700");
 @import url("https://fonts.googleapis.com/css?family=Spectral");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
@@ -265,10 +265,39 @@ html, body {
 
 }
 
+
 .mask-fixed {
     position: fixed;!important;
 
 }
+.section2-description {
+    font-size: 16px;
+    font-family: "Montserrat";
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
+    position: absolute;
+    left: 44vw;
+    top: 69vh;
+    width: 666px;
+    height: 14.7vh;
+    z-index: 55;
+}
+.section2-heading {
+    font-size: 75px;
+
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+
+    position: absolute;
+    left: 20vw;
+    top: 63.0vh;
+    z-index: 21;
+}
+
 /*LEAFS*/
 .containerLeaf {
     overflow: hidden;
@@ -325,6 +354,7 @@ html, body {
     height: 47%;
     z-index: 73;
 }
+
 
 /******** SECTION END  ********/
 
