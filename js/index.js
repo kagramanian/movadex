@@ -1,13 +1,22 @@
 /********  LEAF ANIMATION  ********/
 
-var _containerHeight = 4000;
+var _containerHeight = $(window).height() * 2.5;
+(function() {
+    window.onresize = displayWindowSize;
+    window.onload = displayWindowSize;
+
+    function displayWindowSize() {
+        _containerHeight = window.innerHeight * 2.5;
+        // your size calculation code here
+    }
+})();
 var _width, _height, _scrollHeight;
 var letters = document.getElementsByTagName('span');
 var _movingElements = [];
 var _scrollPercent = 0;
 var pre = prefix();
 var _jsPrefix = pre.lowercase;
-if (_jsPrefix == 'moz') _jsPrefix = 'Moz'
+if (_jsPrefix == 'moz') _jsPrefix = 'Moz';
 var _cssPrefix = pre.css;
 var _positions = [
     {
@@ -66,7 +75,7 @@ function initMovingElements() {
             percent: _positions[i].end.percent - _positions[i].start.percent,
             x: _positions[i].end.x - _positions[i].start.x,
             y: _positions[i].end.y - _positions[i].start.y,
-        }
+        };
         var el = document.getElementsByClassName('leaf ' + _positions[i].name)[0];
         _movingElements.push(el);
     }

@@ -199,7 +199,7 @@ html, body {
 
 .page1 {
     width: 100%;
-    height: 2000px;
+    height: 250vh;
     background-size: 100% 100%;
     background: url("../image/bg1.png") no-repeat fixed center center;
     position: inherit;
@@ -222,14 +222,13 @@ html, body {
 /******** SECTION 2  ********/
 
 .page2 {
-    top: 2000px;
-    height: 2000px;
+    top: 250vh;
+    height: 250vw;
     width: 100%;
 
     z-index: 4;
     background-size: 100% 100%;
     background: url("../image/bg2.png") no-repeat fixed center center;
-    position: inherit;
 }
 
 
