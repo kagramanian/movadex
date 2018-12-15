@@ -244,6 +244,11 @@ html, body {
     background: url("../image/bg2.png") no-repeat fixed center center;
 }
 
+.mask {
+    position: absolute;
+
+    z-index: 11;
+}
 /*LEAFS*/
 .containerLeaf {
     overflow: hidden;
