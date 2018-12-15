@@ -243,11 +243,31 @@ html, body {
     background-size: 100% 100%;
     background: url("../image/bg2.png") no-repeat fixed center center;
 }
+.content2 {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 11;
+
+}
 
 .mask {
     position: absolute;
-
+    height: 68vh;
+    margin: auto;
+    width: auto;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 11;
+
+}
+
+.mask-fixed {
+    position: fixed;!important;
+
 }
 /*LEAFS*/
 .containerLeaf {
@@ -320,6 +340,9 @@ html, body {
     padding-bottom: 4vh;
     width: 34px;
     height: 55px;
+    -ms-transform: scale(0.7); /* IE 9 */
+    -webkit-transform: scale(0.7); /* Safari */
+    transform: scale(0.7);
 }
 
 .mousey {

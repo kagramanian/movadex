@@ -172,17 +172,20 @@ $('.nav-button').hover(function () {
 
 /********  NAVBAR CIRCLE ANIMATION END  ********/
 
+let page2 = $(".page2"),
+    screen = $(document);
+
+/********  NAVBAR COLOR CHANGE  ********/
 let navbarList = [$(".navbarBottom"), $(".navbarDots"), $(".navbarTop"), $(".mousey") ];
 let listSize = navbarList.length;
 function checkColor() {
     {
         for (var i = 0; i < listSize; i++) {
             var navBarItem = navbarList[i];
-            console.log(navBarItem);
 
-            console.log(navBarItem.offset().top);
 
-            if (navBarItem.offset().top+50 > $(".page2").position().top) {
+
+            if (navBarItem.offset().top+50 > page2.position().top) {
 
                 navBarItem.removeClass('dis-invert').addClass('invert');
             } else {
@@ -192,7 +195,15 @@ function checkColor() {
 
     }
 }
+setInterval(checkColor, 500);
+/********  NAVBAR COLOR CHANGE END ********/
+/********  SECTION 2 FIX ********/
+let content2 = $('.content2');
+setInterval(function () {
+    if (page2.offset().top < screen.scrollTop()) {
+        content2.addClass('mask-fixed')
 
-/********  NAVBAR COLOR CHANGE  ********/
-
-setInterval(checkColor, 1000);
+    }else {
+        content2.removeClass('mask-fixed')
+    }
+}, 50);
