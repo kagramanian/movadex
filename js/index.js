@@ -3,7 +3,6 @@
 var _containerHeight = $(window).height() * 3;
 
 var _width, _height, _scrollHeight;
-var letters = document.getElementsByTagName('span');
 var _movingElements = [];
 var _scrollPercent = 0;
 var pre = prefix();
@@ -57,65 +56,61 @@ var _positions = [
         }
     }
 ];
-
 resize();
+initMovingElements();
 
 function initMovingElements() {
-    for (var i = 0; i < _positions.length; i++) {
-        _positions[i].diff = {
-            percent: _positions[i].end.percent - _positions[i].start.percent,
-            x: _positions[i].end.x - _positions[i].start.x,
-            y: _positions[i].end.y - _positions[i].start.y,
-        };
-        console.log(_positions[i].diff);
-        var el = document.getElementsByClassName('leaf ' + _positions[i].name)[0];
-        _movingElements.push(el);
+    for (var ii = 0; ii < 2; ii++) {
+        for (var i = 0; i < _positions.length; i++) {
+
+            _positions[i].diff = {
+                percent: _positions[i].end.percent - _positions[i].start.percent,
+                x: _positions[i].end.x - _positions[i].start.x,
+                y: _positions[i].end.y - _positions[i].start.y,
+            };
+            var el = document.getElementsByClassName('leaf ' + _positions[i].name)[ii];
+            _movingElements.push(el);
+
+        }
     }
+    _positions = _positions.concat(_positions);
+
 }
 
 function resize() {
     _width = window.innerWidth;
     _height = window.innerHeight;
     _containerHeight = window.innerHeight * 3;
-    console.log(_containerHeight);
-    _scrollHeight = (_containerHeight - _height) ;
+    _scrollHeight = (_containerHeight - _height);
 }
 
 
-function updateElements() {
-    try {
+function updateElements(iteration) {
 
-        for (var i = 0; i < _movingElements.length; i++) {
+    for (let i = iteration*5; i < (iteration+1)*5; i++) {
+        let p = _positions[i];
+        if (p != null) {
 
-            var p = _positions[i];
-            if (p != null) {
-                if (_scrollPercent <= p.start.percent) {
-                    _movingElements[i].style[_jsPrefix + 'Transform'] = 'translate3d(' + (p.start.x * _width) + 'px, ' + (p.start.y * _containerHeight) + 'px, 0px)';
-                } else if (_scrollPercent >= p.end.percent) {
-                    _movingElements[i].style[_jsPrefix + 'Transform'] = 'translate3d(' + (p.end.x * _width) + 'px, ' + (p.end.y * _containerHeight) + 'px, 0px)';
-                } else {
-                    _movingElements[i].style[_jsPrefix + 'Transform'] = 'translate3d(' + (p.start.x * _width + (p.diff.x * (_scrollPercent - p.start.percent) / p.diff.percent * _width)) + 'px, ' +
-                        (p.start.y * _containerHeight + (p.diff.y * (_scrollPercent - p.start.percent) / p.diff.percent * _containerHeight)) + 'px, 0px)';
-                }
+            if (_scrollPercent <= p.start.percent) {
+                _movingElements[i].style[_jsPrefix + 'Transform'] = 'translate3d(' + (p.start.x * _width) + 'px, ' + (p.start.y * _containerHeight) + 'px, 0px)';
+            } else if (_scrollPercent >= p.end.percent) {
+                _movingElements[i].style[_jsPrefix + 'Transform'] = 'translate3d(' + (p.end.x * _width) + 'px, ' + (p.end.y * _containerHeight) + 'px, 0px)';
+            } else {
+                _movingElements[i].style[_jsPrefix + 'Transform'] = 'translate3d(' + (p.start.x * _width + (p.diff.x * (_scrollPercent - p.start.percent) / p.diff.percent * _width)) + 'px, ' +
+                    (p.start.y * _containerHeight + (p.diff.y * (_scrollPercent - p.start.percent) / p.diff.percent * _containerHeight)) + 'px, 0px)';
             }
         }
-
-    } catch(e) {
-        console.log(p)
-
-             console.log(e)
-
     }
-
 }
 
 
 function loop() {
-    _scrollOffset = window.pageYOffset || window.scrollTop;
-    _scrollOffset = _scrollOffset *2.5;
-    _scrollPercent = _scrollOffset / _scrollHeight || 0;
-    updateElements();
-    console.log(_scrollOffset)
+    let _scrollOffset = window.pageYOffset || window.scrollTop;
+    let iteration = Math.floor((_scrollOffset) / _scrollHeight);
+    _scrollPercent = ((_scrollOffset) / _scrollHeight - iteration) || 0;
+    updateElements(iteration);
+    console.log((_scrollOffset) / _scrollHeight);
+
     requestAnimationFrame(loop);
 }
 
@@ -178,39 +173,41 @@ let page2 = $(".page2"),
     screen = $(document);
 
 /********  NAVBAR COLOR CHANGE  ********/
-let navbarList = [$(".navbarBottom"), $(".navbarDots"), $(".navbarTop"), $(".mousey") ];
+let navbarList = [$(".navbarBottom"), $(".navbarDots"), $(".navbarTop"), $(".mousey")];
 let listSize = navbarList.length;
+
 function checkColor() {
     {
         for (var i = 0; i < listSize; i++) {
             var navBarItem = navbarList[i];
 
 
-
-            if (navBarItem.offset().top+50 > page2.position().top) {
+            if (navBarItem.offset().top + 50 > page2.position().top) {
 
                 navBarItem.removeClass('dis-invert').addClass('invert');
             } else {
-                if(navBarItem.hasClass('invert'))navBarItem.removeClass('invert').addClass('dis-invert');
+                if (navBarItem.hasClass('invert')) navBarItem.removeClass('invert').addClass('dis-invert');
             }
         }
 
     }
 }
+
 setInterval(checkColor, 500);
 /********  NAVBAR COLOR CHANGE END ********/
 /********  SECTION 2 FIX ********/
+
+
+
 let content2 = $('.content2');
 setInterval(function () {
 
-    if ( page2.offset().top < screen.scrollTop()) {
+    if (page2.offset().top < screen.scrollTop()) {
         if (!content2.hasClass('fixed')) {
             content2.addClass('fixed');
-            console.log('+');
         }
 
-    }else {
+    } else {
         content2.removeClass('fixed')
     }
 }, 5);
-initMovingElements();
