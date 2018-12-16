@@ -1,15 +1,7 @@
 /********  LEAF ANIMATION  ********/
 
 var _containerHeight = $(window).height() * 3;
-(function () {
-    window.onresize = displayWindowSize;
-    window.onload = displayWindowSize;
 
-    function displayWindowSize() {
-        _containerHeight = window.innerHeight * 3;
-        // your size calculation code here
-    }
-})();
 var _width, _height, _scrollHeight;
 var letters = document.getElementsByTagName('span');
 var _movingElements = [];
@@ -67,7 +59,6 @@ var _positions = [
 ];
 
 resize();
-initMovingElements();
 
 function initMovingElements() {
     for (var i = 0; i < _positions.length; i++) {
@@ -76,6 +67,7 @@ function initMovingElements() {
             x: _positions[i].end.x - _positions[i].start.x,
             y: _positions[i].end.y - _positions[i].start.y,
         };
+        console.log(_positions[i].diff);
         var el = document.getElementsByClassName('leaf ' + _positions[i].name)[0];
         _movingElements.push(el);
     }
@@ -84,36 +76,46 @@ function initMovingElements() {
 function resize() {
     _width = window.innerWidth;
     _height = window.innerHeight;
-    _scrollHeight = _containerHeight - _height;
+    _containerHeight = window.innerHeight * 3;
+    console.log(_containerHeight);
+    _scrollHeight = (_containerHeight - _height) ;
 }
 
-function rotateLetters() {
-    for (var i = 0; i < letters.length; i++) {
-        letters[i].style[_jsPrefix + 'Transform'] = 'rotateY(' + (_scrollPercent * 500) + 'deg)'
-    }
-}
 
 function updateElements() {
-    for (var i = 0; i < _movingElements.length; i++) {
-        var p = _positions[i];
-        if (_scrollPercent <= p.start.percent) {
-            _movingElements[i].style[_jsPrefix + 'Transform'] = 'translate3d(' + (p.start.x * _width) + 'px, ' + (p.start.y * _containerHeight) + 'px, 0px)';
-        } else if (_scrollPercent >= p.end.percent) {
-            _movingElements[i].style[_jsPrefix + 'Transform'] = 'translate3d(' + (p.end.x * _width) + 'px, ' + (p.end.y * _containerHeight) + 'px, 0px)';
-        } else {
-            _movingElements[i].style[_jsPrefix + 'Transform'] = 'translate3d(' + (p.start.x * _width + (p.diff.x * (_scrollPercent - p.start.percent) / p.diff.percent * _width)) + 'px, ' +
-                (p.start.y * _containerHeight + (p.diff.y * (_scrollPercent - p.start.percent) / p.diff.percent * _containerHeight)) + 'px, 0px)';
+    try {
+
+        for (var i = 0; i < _movingElements.length; i++) {
+
+            var p = _positions[i];
+            if (p != null) {
+                if (_scrollPercent <= p.start.percent) {
+                    _movingElements[i].style[_jsPrefix + 'Transform'] = 'translate3d(' + (p.start.x * _width) + 'px, ' + (p.start.y * _containerHeight) + 'px, 0px)';
+                } else if (_scrollPercent >= p.end.percent) {
+                    _movingElements[i].style[_jsPrefix + 'Transform'] = 'translate3d(' + (p.end.x * _width) + 'px, ' + (p.end.y * _containerHeight) + 'px, 0px)';
+                } else {
+                    _movingElements[i].style[_jsPrefix + 'Transform'] = 'translate3d(' + (p.start.x * _width + (p.diff.x * (_scrollPercent - p.start.percent) / p.diff.percent * _width)) + 'px, ' +
+                        (p.start.y * _containerHeight + (p.diff.y * (_scrollPercent - p.start.percent) / p.diff.percent * _containerHeight)) + 'px, 0px)';
+                }
+            }
         }
+
+    } catch(e) {
+        console.log(p)
+
+             console.log(e)
+
     }
+
 }
 
 
 function loop() {
     _scrollOffset = window.pageYOffset || window.scrollTop;
+    _scrollOffset = _scrollOffset *2.5;
     _scrollPercent = _scrollOffset / _scrollHeight || 0;
-    rotateLetters();
     updateElements();
-
+    console.log(_scrollOffset)
     requestAnimationFrame(loop);
 }
 
@@ -200,10 +202,15 @@ setInterval(checkColor, 500);
 /********  SECTION 2 FIX ********/
 let content2 = $('.content2');
 setInterval(function () {
-    if (page2.offset().top < screen.scrollTop()) {
-        content2.addClass('fixed')
+
+    if ( page2.offset().top < screen.scrollTop()) {
+        if (!content2.hasClass('fixed')) {
+            content2.addClass('fixed');
+            console.log('+');
+        }
 
     }else {
         content2.removeClass('fixed')
     }
 }, 5);
+initMovingElements();
