@@ -60,7 +60,8 @@ resize();
 initMovingElements();
 
 function initMovingElements() {
-    for (var ii = 0; ii < 2; ii++) {
+    //4 is number of pages with leafs
+    for (var ii = 0; ii < 4; ii++) {
         for (var i = 0; i < _positions.length; i++) {
 
             _positions[i].diff = {
@@ -72,7 +73,10 @@ function initMovingElements() {
             _movingElements.push(el);
 
         }
+
     }
+    _positions = _positions.concat(_positions);
+    _positions = _positions.concat(_positions);
     _positions = _positions.concat(_positions);
 
 }
@@ -87,7 +91,7 @@ function resize() {
 
 function updateElements(iteration) {
 
-    for (let i = iteration*5; i < (iteration+1)*5; i++) {
+    for (let i = iteration * 5; i < (iteration + 1) * 5; i++) {
         let p = _positions[i];
         if (p != null) {
 
@@ -109,8 +113,6 @@ function loop() {
     let iteration = Math.floor((_scrollOffset) / _scrollHeight);
     _scrollPercent = ((_scrollOffset) / _scrollHeight - iteration) || 0;
     updateElements(iteration);
-    console.log((_scrollOffset) / _scrollHeight);
-
     requestAnimationFrame(loop);
 }
 
@@ -142,13 +144,13 @@ function prefix() {
 /********  NAVBAR ANIMATION  ********/
 
 
-$('.topNav').append($('.navigation').clone());
+$('.top-nav').append($('.navigation').clone());
 
 
-$('.topNav .navigation').hover(function () {
-    $('.topNav').addClass('is-not-hover').addClass('is-hover');
+$('.top-nav .navigation').hover(function () {
+    $('.top-nav').addClass('is-not-hover').addClass('is-hover');
 }, function () {
-    $('.topNav').removeClass('is-hover');
+    $('.top-nav').removeClass('is-hover');
 });
 
 /********  NAVBAR ANIMATION END ********/
@@ -169,11 +171,11 @@ $('.nav-button').hover(function () {
 
 /********  NAVBAR CIRCLE ANIMATION END  ********/
 
-let page2 = $(".page2"),
+let page2 = $(".page2"), page3 = $(".page3"), page4 = $(".page4"),
     screen = $(document);
 
 /********  NAVBAR COLOR CHANGE  ********/
-let navbarList = [$(".navbarBottom"), $(".navbarDots"), $(".navbarTop"), $(".mousey")];
+let navbarList = [$(".navbar-bottom"), $(".navbar-dots"), $(".navbar-top"), $(".mousey")];
 let listSize = navbarList.length;
 
 function checkColor() {
@@ -199,15 +201,31 @@ setInterval(checkColor, 500);
 
 
 
-let content2 = $('.content2');
+let content2 = $('.content2'), content3 = $('.content3'), content4 = $('.content4');
 setInterval(function () {
 
     if (page2.offset().top < screen.scrollTop()) {
         if (!content2.hasClass('fixed')) {
             content2.addClass('fixed');
         }
-
-    } else {
+        if (page3.offset().top < screen.scrollTop()) {
+            if (!content3.hasClass('fixed')) {
+                content3.addClass('fixed');
+            }
+            if (page4.offset().top < screen.scrollTop()) {
+                if (!content4.hasClass('fixed')) {
+                    content4.addClass('fixed');
+                }
+            } else if (content4.hasClass('fixed')) {
+                content4.removeClass('fixed')
+            }
+        } else if (content3.hasClass('fixed')) {
+            content3.removeClass('fixed')
+        }
+    }
+    else if (content2.hasClass('fixed')) {
         content2.removeClass('fixed')
     }
 }, 5);
+
+

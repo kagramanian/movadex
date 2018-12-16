@@ -16,7 +16,7 @@ html, body {
 
 /********  navbar animation  ********/
 
-.topNav {
+.top-nav {
     z-index: 100;
     opacity: 0;
     width: 100%;
@@ -48,7 +48,7 @@ html, body {
 
 /********  top  ********/
 
-.navbarTop {
+.navbar-top {
     position: fixed;
     height: 7vh;
     right: 0;
@@ -64,13 +64,13 @@ html, body {
     display: inline;
 }
 
-.movadexBar {
+.movadex-bar {
     margin-left: 4.6vw;
     display: inline;
 
 }
 
-.writeUsBar {
+.write-us-bar {
     float: right;
     display: inline;
 
@@ -83,7 +83,7 @@ html, body {
 
 /*left*/
 
-.navbarLeft {
+.navbar-left {
     position: fixed;
     top: 0;
     left: 0;
@@ -96,7 +96,7 @@ html, body {
     z-index: 5;
 }
 
-.navbarDots {
+.navbar-dots {
     clear: both;
     width: 8px;
     padding-bottom: 6vh;
@@ -161,7 +161,7 @@ html, body {
 
 /*bottom*/
 
-.navbarBottom {
+.navbar-bottom {
     position: fixed;
     right: 0;
     left: 0;
@@ -171,11 +171,11 @@ html, body {
 
 }
 
-.iconFacebook {
+.icon-facebook {
     margin-right: 3.3vw;
 }
 
-.iconsInstagram {
+.icon-instagram {
 
 }
 
@@ -279,7 +279,7 @@ html, body {
 
 .section2-description {
     font-size: 16px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;;
     color: rgb(0, 0, 0);
     line-height: 1.5;
     position: absolute;
@@ -287,7 +287,7 @@ html, body {
     top: 69vh;
     width: 666px;
     height: 14.7vh;
-    z-index: 55;
+    z-index: 20;
 }
 
 .section2-heading {
@@ -352,7 +352,7 @@ html, body {
 
 .section3-description {
     font-size: 16px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;;
     color: rgb(0, 0, 0);
     line-height: 1.5;
     position: absolute;
@@ -360,7 +360,7 @@ html, body {
     top: 36vh;
     width: 750px;
     height: 181px;
-    z-index: 55;
+    z-index: 20;
 }
 
 .section3-heading {
@@ -455,7 +455,7 @@ html, body {
     z-index: 21;
     border: 1px solid;
     font-size: 16px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;;
     color: rgb(51, 51, 51);
     font-weight: bold;
     text-transform: uppercase;
@@ -538,12 +538,13 @@ html, body {
     z-index: 21;
     border: 1px solid;
     font-size: 16px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     color: rgb(51, 51, 51);
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.2;
 }
+
 /******** SECTION END  ********/
 /*LEAFS*/
 .leaf-container {
@@ -566,7 +567,7 @@ html, body {
 .leaf1 {
     left: -5px;
     top: -27px;
-    z-index: 24;
+    z-index: 46;
     width: auto;
     height: 100%;
 }
@@ -574,7 +575,7 @@ html, body {
 .leaf2 {
     left: 6.4%;
     bottom: 0;
-    z-index: 25;
+    z-index: 47;
     width: 50%;
     height: auto;
 
@@ -585,7 +586,7 @@ html, body {
     bottom: 0;
     width: 45%;
     height: auto;
-    z-index: 26;
+    z-index: 48;
 
 }
 
@@ -595,7 +596,7 @@ html, body {
 
     width: auto;
     height: 73%;
-    z-index: 27;
+    z-index: 49;
 }
 
 .leaf5 {
@@ -603,7 +604,7 @@ html, body {
     top: 0;
     width: auto;
     height: 47%;
-    z-index: 28;
+    z-index: 50;
 
 }
 
