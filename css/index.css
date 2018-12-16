@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:500,700");
-@import url("https://fonts.googleapis.com/css?family=Spectral");
-@import url("https://fonts.googleapis.com/css?family=Roboto");
 
 html, body {
     background-color: black;
@@ -12,13 +10,20 @@ html, body {
 }
 
 h1 {
-    font-size: 75px;
+    font-size: 4em;
     color: rgb(0, 0, 0);
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1.2;
     text-align: left;
+}
+
+p {
+    font-size: 1em;
+    font-family: "Montserrat", sans-serif;;
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
 }
 
 /********  NAVBAR  ********/
@@ -275,22 +280,8 @@ h1 {
 
 }
 
-.not-fixed {
-    position: absolute;
-!important;
-}
-
-.fixed {
-    position: fixed;
-!important;
-
-}
-
 .section2-description {
-    font-size: 16px;
-    font-family: "Montserrat", sans-serif;;
-    color: rgb(0, 0, 0);
-    line-height: 1.5;
+
     position: absolute;
     left: 44vw;
     top: 69vh;
@@ -340,22 +331,8 @@ h1 {
 
 }
 
-.not-fixed {
-    position: absolute;
-!important;
-}
-
-.fixed {
-    position: fixed;
-!important;
-
-}
-
 .section3-description {
-    font-size: 16px;
-    font-family: "Montserrat", sans-serif;
-    color: rgb(0, 0, 0);
-    line-height: 1.5;
+
     position: absolute;
     left: 7.9vw;
     top: 36vh;
@@ -405,17 +382,6 @@ h1 {
 
 }
 
-.not-fixed {
-    position: absolute;
-!important;
-}
-
-.fixed {
-    position: fixed;
-!important;
-
-}
-
 .section4-heading {
     width: 37vw;
     height: 35vh;
@@ -447,8 +413,6 @@ h1 {
     line-height: 1.2;
 }
 
-
-
 /******** SECTION 5  ********/
 
 .page5 {
@@ -470,7 +434,6 @@ h1 {
     /*z-index: 11;*/
 
 }
-
 
 .section5-heading {
     position: absolute;
