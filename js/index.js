@@ -112,7 +112,9 @@ function loop() {
     let _scrollOffset = window.pageYOffset || window.scrollTop;
     let iteration = Math.floor((_scrollOffset) / _scrollHeight);
     _scrollPercent = ((_scrollOffset) / _scrollHeight - iteration) || 0;
-    updateElements(iteration);
+    if (iteration < 4) {
+        updateElements(iteration);
+    }
     requestAnimationFrame(loop);
 }
 
