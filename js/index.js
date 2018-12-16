@@ -201,9 +201,9 @@ setInterval(checkColor, 500);
 let content2 = $('.content2');
 setInterval(function () {
     if (page2.offset().top < screen.scrollTop()) {
-        content2.addClass('mask-fixed')
+        content2.addClass('fixed')
 
     }else {
-        content2.removeClass('mask-fixed')
+        content2.removeClass('fixed')
     }
 }, 5);

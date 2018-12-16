@@ -241,7 +241,7 @@ html, body {
     position: absolute;
     z-index: 4;
     background-size: 100% 100%;
-    background: url("../image/bg2.png") no-repeat fixed center center;
+    background-color: #cac8bb;
 }
 .content2 {
     position: absolute;
@@ -265,8 +265,11 @@ html, body {
 
 }
 
+.not-fixed{
+    position: absolute;!important;
+}
 
-.mask-fixed {
+.fixed {
     position: fixed;!important;
 
 }
@@ -301,16 +304,19 @@ html, body {
 /*LEAFS*/
 .containerLeaf {
     overflow: hidden;
-    position: inherit;
-    z-index: 1;
-
+    position: relative;
+    top: 0;
+height: 100vh;    left: 0;
+    right: 0;
 }
 
 .leaf {
-    display: block;
-    position: fixed;
     background-repeat: no-repeat;
+    display: block;
+
 }
+
+
 
 .leaf1 {
     left: -5px;
@@ -318,7 +324,6 @@ html, body {
     z-index: 65;
     width: auto;
     height: 100%;
-
 }
 
 .leaf2 {
@@ -327,6 +332,7 @@ html, body {
     z-index: 67;
     width: 50%;
     height: auto;
+
 }
 
 .leaf3 {
@@ -353,6 +359,7 @@ html, body {
     width: auto;
     height: 47%;
     z-index: 73;
+
 }
 
 
