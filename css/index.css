@@ -9,7 +9,16 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+}
 
+h1 {
+    font-size: 75px;
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
 }
 
 /********  NAVBAR  ********/
@@ -236,7 +245,7 @@ html, body {
 
 .page2 {
     top: 200vh;
-    height: 200vw;
+    height: 200vh;
     width: 100%;
     position: absolute;
     z-index: 4;
@@ -291,14 +300,6 @@ html, body {
 }
 
 .section2-heading {
-    font-size: 75px;
-
-    color: rgb(0, 0, 0);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1.2;
-    text-align: left;
 
     position: absolute;
     left: 20vw;
@@ -310,7 +311,7 @@ html, body {
 
 .page3 {
     top: 400vh;
-    height: 200vw;
+    height: 200vh;
     width: 100%;
     position: absolute;
     z-index: 4;
@@ -352,7 +353,7 @@ html, body {
 
 .section3-description {
     font-size: 16px;
-    font-family: "Montserrat", sans-serif;;
+    font-family: "Montserrat", sans-serif;
     color: rgb(0, 0, 0);
     line-height: 1.5;
     position: absolute;
@@ -364,14 +365,6 @@ html, body {
 }
 
 .section3-heading {
-    font-size: 75px;
-
-    color: rgb(0, 0, 0);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1.2;
-    text-align: left;
 
     position: absolute;
     left: 7.4vw;
@@ -383,7 +376,7 @@ html, body {
 
 .page4 {
     top: 600vh;
-    height: 200vw;
+    height: 200vh;
     width: 100%;
     position: absolute;
     z-index: 4;
@@ -424,14 +417,6 @@ html, body {
 }
 
 .section4-heading {
-    font-size: 75px;
-
-    color: rgb(0, 0, 0);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1.2;
-    text-align: left;
     width: 37vw;
     height: 35vh;
     position: absolute;
@@ -462,11 +447,14 @@ html, body {
     line-height: 1.2;
 }
 
+
+
 /******** SECTION 5  ********/
 
 .page5 {
     top: 800vh;
-    height: 200vw;!important;
+    height: 100vh;
+!important;
     width: 100%;
     position: absolute;
     z-index: 4;
@@ -474,44 +462,23 @@ html, body {
 }
 
 .content5 {
-    position: fixed;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 11;
+    /*position: absolute;*/
+    /*margin: auto;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*z-index: 11;*/
 
 }
 
-
-
-.not-fixed {
-    position: absolute;
-!important;
-}
-
-.fixed {
-    position: fixed;
-!important;
-
-}
 
 .section5-heading {
-    font-size: 75px;
-
-    color: rgb(0, 0, 0);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1.2;
-    text-align: left;
-    height: 937px;
-    position: fixed;
+    position: absolute;
     left: 7.4vw;
     top: 10vh;
     z-index: 21;
+    width: 37vw;
 }
-
 
 .footer {
     font-size: 14px;
@@ -523,6 +490,7 @@ html, body {
     position: absolute;
     z-index: 136;
 }
+
 .highlight {
     position: absolute;
     height: 60%;
@@ -540,7 +508,19 @@ html, body {
     margin-bottom: 45px;
 }
 
-/******** SECTION END  ********/
+/******** SECTIONS END  ********/
+
+.not-fixed {
+    position: absolute;
+!important;
+}
+
+.fixed {
+    position: fixed;
+!important;
+
+}
+
 /*LEAFS*/
 .leaf-container {
     overflow: hidden;
