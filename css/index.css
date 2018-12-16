@@ -57,7 +57,7 @@ html, body {
     padding-right: 2vw;
     padding-top: 3.7vh;
     top: 0;
-    z-index: 5;
+    z-index: 20;
 }
 
 .adidas {
@@ -93,7 +93,7 @@ html, body {
     justify-content: center;
     align-items: center;
     padding-right: 2vw;
-    z-index: 5;
+    z-index: 20;
 }
 
 .navbarDots {
@@ -166,7 +166,7 @@ html, body {
     right: 0;
     left: 0;
     bottom: 0;
-    z-index: 5;
+    z-index: 20;
     padding: 2vw 2vw 5.3vh;
 
 }
@@ -216,7 +216,7 @@ html, body {
     height: 200vh;
     background-size: 100% 100%;
     background: url("../image/bg1.png") no-repeat fixed center center;
-    position: inherit;
+    position: fixed;
     z-index: 2;
 }
 
@@ -239,17 +239,18 @@ html, body {
     height: 200vw;
     width: 100%;
     position: absolute;
-    z-index: 4;
+    z-index: 10;
     background-size: 100% 100%;
     background-color: #cac8bb;
 }
+
 .content2 {
     position: absolute;
     margin: auto;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 11;
+    z-index: 1;
 
 }
 
@@ -261,18 +262,16 @@ html, body {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 11;
+    z-index: 1;
 
-}
-
-.not-fixed{
-    position: absolute;!important;
 }
 
 .fixed {
-    position: fixed;!important;
+    position: fixed;
+!important;
 
 }
+
 .section2-description {
     font-size: 16px;
     font-family: "Montserrat";
@@ -283,45 +282,45 @@ html, body {
     top: 69vh;
     width: 666px;
     height: 14.7vh;
-    z-index: 55;
+    z-index: 1;
 }
+
 .section2-heading {
     font-size: 75px;
-
     color: rgb(0, 0, 0);
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1.2;
     text-align: left;
-
     position: absolute;
     left: 20vw;
     top: 63.0vh;
-    z-index: 21;
+    z-index: 1;
 }
 
 /*LEAFS*/
-.containerLeaf {
+.leaf-container {
     overflow: hidden;
     position: relative;
     top: 0;
-height: 100vh;    left: 0;
+    height: 100vh;
+    left: 0;
     right: 0;
 }
 
 .leaf {
     background-repeat: no-repeat;
     display: block;
+    position: absolute;
+!important;
 
 }
-
-
 
 .leaf1 {
     left: -5px;
     top: -27px;
-    z-index: 65;
+    z-index: 24;
     width: auto;
     height: 100%;
 }
@@ -329,7 +328,7 @@ height: 100vh;    left: 0;
 .leaf2 {
     left: 6.4%;
     bottom: 0;
-    z-index: 67;
+    z-index: 25;
     width: 50%;
     height: auto;
 
@@ -340,7 +339,7 @@ height: 100vh;    left: 0;
     bottom: 0;
     width: 45%;
     height: auto;
-    z-index: 69;
+    z-index: 26;
 
 }
 
@@ -350,7 +349,7 @@ height: 100vh;    left: 0;
 
     width: auto;
     height: 73%;
-    z-index: 71;
+    z-index: 27;
 }
 
 .leaf5 {
@@ -358,10 +357,9 @@ height: 100vh;    left: 0;
     top: 0;
     width: auto;
     height: 47%;
-    z-index: 73;
+    z-index: 28;
 
 }
-
 
 /******** SECTION END  ********/
 
