@@ -223,6 +223,19 @@ p {
 
 /******** NAVBAR END  ********/
 
+
+
+.content {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 11;
+    overflow: hidden;
+    background-color: inherit;
+}
+
 /******** SECTION 1  ********/
 
 .page1 {
@@ -256,16 +269,6 @@ p {
     z-index: 4;
     background-size: 100% 100%;
     background-color: #cac8bb;
-}
-
-.content2 {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 11;
-
 }
 
 .mask {
@@ -310,22 +313,12 @@ p {
     background-color: #a3cec2;
 }
 
-.content3 {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 11;
-
-}
-
 .napoleon {
     position: absolute;
-    height: 100vh;
+    height: 95vh;
     margin: auto;
     width: auto;
-    top: 0;
+    bottom: 0;
     right: 0;
     z-index: 11;
 
@@ -359,16 +352,6 @@ p {
     z-index: 4;
     background-size: 100% 100%;
     background-color: #eaeaea;
-}
-
-.content4 {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 11;
-
 }
 
 .frame {
@@ -423,16 +406,6 @@ p {
     position: absolute;
     z-index: 4;
     background-color: #e1d2ce;
-}
-
-.content5 {
-    /*position: absolute;*/
-    /*margin: auto;*/
-    /*top: 0;*/
-    /*left: 0;*/
-    /*right: 0;*/
-    /*z-index: 11;*/
-
 }
 
 .section5-heading {
@@ -884,7 +857,7 @@ p {
     }
 }
 
-.message{
+.message {
     width: 0;
     height: 0;
     padding: 0;

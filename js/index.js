@@ -25,7 +25,7 @@ var navBarCloned = false;
 
 let screen = $(document);
 let page2 = $(".page2"), page3 = $(".page3"), page4 = $(".page4");
-let content2 = $('.content2'), content3 = $('.content3'), content4 = $('.content4');
+let content2 = page2.find(".content"), content3 = page3.find(".content"), content4 = page4.find(".content");
 var _positions = [
     {
         name: 'leaf1',
@@ -115,14 +115,18 @@ function updateElements(iteration) {
     for (let i = iteration * 5; i < (iteration + 1) * 5; i++) {
         let p = _positions[i];
         if (p != null) {
-
-            if (_scrollPercent <= p.start.percent) {
-                _movingElements[i].style[_jsPrefix + 'Transform'] = 'translate3d(' + (p.start.x * _width) + 'px, ' + (p.start.y * _containerHeight) + 'px, 0px)';
-            } else if (_scrollPercent >= p.end.percent) {
-                _movingElements[i].style[_jsPrefix + 'Transform'] = 'translate3d(' + (p.end.x * _width) + 'px, ' + (p.end.y * _containerHeight) + 'px, 0px)';
-            } else {
-                _movingElements[i].style[_jsPrefix + 'Transform'] = 'translate3d(' + (p.start.x * _width + (p.diff.x * (_scrollPercent - p.start.percent) / p.diff.percent * _width)) + 'px, ' +
-                    (p.start.y * _containerHeight + (p.diff.y * (_scrollPercent - p.start.percent) / p.diff.percent * _containerHeight)) + 'px, 0px)';
+            if (_movingElements[i] != null) {
+                if (_scrollPercent <= p.start.percent) {
+                    _movingElements[i].style[_jsPrefix + 'Transform'] = 'translate3d(' + (p.start.x * _width) + 'px, ' + (p.start.y * _containerHeight) + 'px, 0px)';
+                } else if (_scrollPercent >= p.end.percent) {
+                    _movingElements[i].style[_jsPrefix + 'Transform'] = 'translate3d(' + (p.end.x * _width) + 'px, ' + (p.end.y * _containerHeight) + 'px, 0px)';
+                } else {
+                    _movingElements[i].style[_jsPrefix + 'Transform'] = 'translate3d(' + (p.start.x * _width + (p.diff.x * (_scrollPercent - p.start.percent) / p.diff.percent * _width)) + 'px, ' +
+                        (p.start.y * _containerHeight + (p.diff.y * (_scrollPercent - p.start.percent) / p.diff.percent * _containerHeight)) + 'px, 0px)';
+                }
+            }
+            else {
+                location.reload();
             }
         }
     }
@@ -237,10 +241,10 @@ function checkColor() {
 
 
 resize();
+initMovingElements();
 
 if (pcScreen.matches) {
 
-    initMovingElements();
 
     leafPositionLoop();
 }
