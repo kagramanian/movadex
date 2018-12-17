@@ -492,6 +492,8 @@ p {
     height: 100vh;
     left: 0;
     right: 0;
+    z-index: 46;
+
 }
 
 .leaf {

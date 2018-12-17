@@ -1,15 +1,13 @@
-
-
-    // var __REPLAIN_ = '4c0db722-3dae-4b0f-b3e1-f8d862b96bf7';
-    //
-    // (function (u) {
-    //     var s = document.createElement('script');
-    //     s.type = 'text/javascript';
-    //     s.async = true;
-    //     s.src = u;
-    //     var x = document.getElementsByTagName('script')[0];
-    //     x.parentNode.insertBefore(s, x);
-    // })('https://widget.replain.cc/dist/client.js');
+// var __REPLAIN_ = '4c0db722-3dae-4b0f-b3e1-f8d862b96bf7';
+//
+// (function (u) {
+//     var s = document.createElement('script');
+//     s.type = 'text/javascript';
+//     s.async = true;
+//     s.src = u;
+//     var x = document.getElementsByTagName('script')[0];
+//     x.parentNode.insertBefore(s, x);
+// })('https://widget.replain.cc/dist/client.js');
 
 
 /********  LEAF ANIMATION  ********/
@@ -121,18 +119,19 @@ function updateElements(iteration) {
     }
 }
 
-
-function loop() {
-    let _scrollOffset = window.pageYOffset || window.scrollTop;
-    let iteration = Math.floor((_scrollOffset) / _scrollHeight);
-    _scrollPercent = ((_scrollOffset) / _scrollHeight - iteration) || 0;
-    if (iteration < 4) {
-        updateElements(iteration);
-    }
-    requestAnimationFrame(loop);
-}
-
-loop();
+//
+// function loop() {
+//     let _scrollOffset = window.pageYOffset || window.scrollTop;
+//     let iteration = Math.floor((_scrollOffset) / _scrollHeight);
+//     _scrollPercent = ((_scrollOffset) / _scrollHeight - iteration) || 0;
+//     if (iteration < 4) {
+//         updateElements(iteration);
+//     }
+//     requestAnimationFrame(loop);
+//     console.log("fire");
+// }
+//
+// loop();
 
 window.addEventListener('resize', resize);
 
@@ -187,8 +186,6 @@ $('.nav-button').hover(function () {
 
 /********  NAVBAR CIRCLE ANIMATION END  ********/
 
-let page2 = $(".page2"), page3 = $(".page3"), page4 = $(".page4"),
-    screen = $(document);
 
 /********  NAVBAR COLOR CHANGE  ********/
 let navbarList = [$(".navbar-bottom"), $(".navbar-dots"), $(".navbar-top"), $(".mousey")];
@@ -211,24 +208,38 @@ function checkColor() {
     }
 }
 
-setInterval(checkColor, 500);
 /********  NAVBAR COLOR CHANGE END ********/
 /********  SECTION 2 FIX ********/
 
 
-
+let screen = $(document);
+let page2 = $(".page2"), page3 = $(".page3"), page4 = $(".page4");
 let content2 = $('.content2'), content3 = $('.content3'), content4 = $('.content4');
-setInterval(function () {
 
-    if (page2.offset().top < screen.scrollTop()) {
+
+$(document).on('scroll touchmove touchend', function (e) {
+    console.log("fire");
+
+       let _scrollOffset = window.pageYOffset || window.scrollTop;
+    let iteration = Math.floor((_scrollOffset) / _scrollHeight);
+    _scrollPercent = ((_scrollOffset) / _scrollHeight - iteration) || 0;
+    if (iteration < 4) {
+        updateElements(iteration);
+    }
+  //  requestAnimationFrame();
+
+    checkColor();
+    var offTop = screen.scrollTop();
+
+    if (page2.offset().top < offTop) {
         if (!content2.hasClass('fixed')) {
             content2.addClass('fixed');
         }
-        if (page3.offset().top < screen.scrollTop()) {
+        if (page3.offset().top < offTop) {
             if (!content3.hasClass('fixed')) {
                 content3.addClass('fixed');
             }
-            if (page4.offset().top < screen.scrollTop()) {
+            if (page4.offset().top < offTop) {
                 if (!content4.hasClass('fixed')) {
                     content4.addClass('fixed');
                 }
@@ -242,6 +253,6 @@ setInterval(function () {
     else if (content2.hasClass('fixed')) {
         content2.removeClass('fixed')
     }
-}, 5);
 
 
+});
