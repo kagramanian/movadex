@@ -9,6 +9,17 @@ html, body {
     height: 100%;
 }
 
+input {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 400px;
+    border: none;
+    border-bottom: 1px solid #757575;
+    background-color: #e1d2ce;
+}
+
+
 h1 {
     font-size: 4em;
     color: rgb(0, 0, 0);
@@ -33,8 +44,7 @@ p {
 .top-nav {
     z-index: 100;
     opacity: 0;
-    width: 100%;
-    height: 100%;
+
     position: fixed;
 
 }
@@ -232,6 +242,7 @@ p {
     z-index: 4;
     overflow: hidden;
     background-color: inherit;
+    bottom: 0;
 }
 
 /******** SECTION 1  ********/
@@ -428,10 +439,63 @@ p {
     font-family: "Montserrat", sans-serif;
     color: rgb(0, 0, 0);
     line-height: 1.2;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
+    position: absolute;!important;
+    right: 0;
+    bottom: 0;
+    left: 0;
     z-index: 136;
+    text-align: center;
+    padding-bottom: 6.5vh;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+.float-left {
+
+}
+/******** FORM  ********/
+.group {
+    margin-top: 50px;
+    margin-left: 170px;
+    position: relative;
+    margin-bottom: 45px;
+}
+input {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 400px;
+    border: none;
+    border-bottom: 1px solid #757575;
+}
+
+input:focus {
+    outline: none;
+}
+/* active state */
+input:focus ~ label, input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #5264AE;
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width: 50%;
+}
+
+/* active state */
+input:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
 }
 
 .highlight {
@@ -444,13 +508,84 @@ p {
     opacity: 0.5;
 }
 
-.group {
-    margin-top: 50px;
-    margin-left: 170px;
-    position: relative;
-    margin-bottom: 45px;
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
 }
 
+@-moz-keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 400px;
+}
+
+.bar:before, .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+wqe {
+    margin-top: 50%;
+}
+/* LABEL ======================================= */
+label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #5264AE;
+}
 /******** SECTIONS END  ********/
 
 .not-fixed {
