@@ -19,7 +19,6 @@ input {
     background-color: #e1d2ce;
 }
 
-
 h1 {
     font-size: 4em;
     color: rgb(0, 0, 0);
@@ -35,6 +34,24 @@ p {
     font-family: "Montserrat", sans-serif;;
     color: rgb(0, 0, 0);
     line-height: 1.5;
+}
+
+button {
+    background-color: inherit;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    border: 1px solid;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    height: 56px;
+    cursor: pointer;
+
 }
 
 /********  NAVBAR  ********/
@@ -306,15 +323,14 @@ p {
     position: absolute;
     left: 44vw;
     top: 69vh;
-    width: 666px;
-    height: 14.7vh;
     z-index: 20;
+    right: 2vw;
 }
 
 .section2-heading {
 
     position: absolute;
-    left: 20vw;
+    left: 18vw;
     top: 63.0vh;
     z-index: 21;
 }
@@ -347,8 +363,7 @@ p {
     position: absolute;
     left: 7.9vw;
     top: 36vh;
-    width: 750px;
-    height: 181px;
+    width: 730px;
     z-index: 20;
 }
 
@@ -388,8 +403,9 @@ p {
     height: 35vh;
     position: absolute;
     left: 7.4vw;
-    top: 19vh;
+    top: 27vh;
     z-index: 21;
+    font-size: 3.5em;
 }
 
 .yellow-text {
@@ -397,21 +413,11 @@ p {
 }
 
 .section4-button {
-    background-color: #eaeaea;
-    border-radius: 10px;
-    width: 10.7vw;
-    height: 6vh;
     position: absolute;
     left: 7.4vw;
-    top: 75vh;
+    top: 65vh;
     z-index: 21;
-    border: 1px solid;
-    font-size: 16px;
-    font-family: "Montserrat", sans-serif;;
-    color: rgb(51, 51, 51);
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.2;
+
 }
 
 /******** SECTION 5  ********/
@@ -431,7 +437,21 @@ p {
     left: 7.4vw;
     top: 10vh;
     z-index: 21;
-    width: 37vw;
+}
+
+.section5-button {
+    margin-left: 12vw;
+}
+
+.bg5 {
+    bottom: 0;
+    width: 100vw;
+    height: auto;
+}
+
+.form-bar {
+    top: 50vh;
+
 }
 
 .footer {
@@ -439,7 +459,8 @@ p {
     font-family: "Montserrat", sans-serif;
     color: rgb(0, 0, 0);
     line-height: 1.2;
-    position: absolute;!important;
+    position: absolute;
+!important;
     right: 0;
     bottom: 0;
     left: 0;
@@ -457,33 +478,46 @@ p {
     pointer-events: none;
     opacity: 0.5;
 }
+
 .float-left {
 
 }
+
 /******** FORM  ********/
+
+form {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    margin-top: 40vh;
+}
+
 .group {
     margin-top: 50px;
-    margin-left: 170px;
+    margin-left: 12vw;
     position: relative;
     margin-bottom: 45px;
 }
+
 input {
     font-size: 18px;
-    padding: 10px 10px 10px 5px;
+    padding: 10px 0 10px 0px;
     display: block;
     width: 400px;
     border: none;
-    border-bottom: 1px solid #757575;
+    border-bottom: 1px solid #000;
 }
 
 input:focus {
     outline: none;
 }
+
 /* active state */
 input:focus ~ label, input:valid ~ label {
     top: -20px;
     font-size: 14px;
-    color: #5264AE;
+    color: #000;
 }
 
 /* active state */
@@ -510,7 +544,7 @@ input:focus ~ .highlight {
 
 @-webkit-keyframes inputHighlighter {
     from {
-        background: #5264AE;
+        background: #000;
     }
     to {
         width: 0;
@@ -520,7 +554,7 @@ input:focus ~ .highlight {
 
 @-moz-keyframes inputHighlighter {
     from {
-        background: #5264AE;
+        background: #000;
     }
     to {
         width: 0;
@@ -530,7 +564,7 @@ input:focus ~ .highlight {
 
 @keyframes inputHighlighter {
     from {
-        background: #5264AE;
+        background: #000;
     }
     to {
         width: 0;
@@ -550,7 +584,7 @@ input:focus ~ .highlight {
     width: 0;
     bottom: 1px;
     position: absolute;
-    background: #5264AE;
+    background: #000;
     transition: 0.2s ease all;
     -moz-transition: 0.2s ease all;
     -webkit-transition: 0.2s ease all;
@@ -563,13 +597,15 @@ input:focus ~ .highlight {
 .bar:after {
     right: 50%;
 }
+
 wqe {
     margin-top: 50%;
 }
+
 /* LABEL ======================================= */
 label {
-    color: #999;
-    font-size: 18px;
+    color: #000;
+    font-size: 14px;
     font-weight: normal;
     position: absolute;
     pointer-events: none;
@@ -584,8 +620,9 @@ label {
 input:focus ~ label, input:valid ~ label {
     top: -20px;
     font-size: 14px;
-    color: #5264AE;
+    color: #000;
 }
+
 /******** SECTIONS END  ********/
 
 .not-fixed {
@@ -1013,7 +1050,45 @@ input:focus ~ label, input:valid ~ label {
     margin: 0;
 }
 
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1700px) {
+
+    .mask {
+        height: 63%;
+    }
+
+    .section2-heading {
+        top: 57vh;
+    }
+
+    .section2-description {
+        top: 62vh;
+    }
+
+    .napoleon {
+        margin-right: -10vw;
+    }
+
+    .section3-description {
+        width: 49vw;
+    }
+
+    .section4-heading {
+        width: 40vw;
+    }
+
+    .page4 h1 {
+        font-size: 3em;
+    }
+
+    .frame {
+        top: 14vh;
+        height: 75vh;
+    }
+
+}
+
+@media only screen and (max-width: 1366px) {
+
     .leaf1 {
         height: 90vh;
     }
@@ -1025,6 +1100,77 @@ input:focus ~ label, input:valid ~ label {
     .leaf5 {
         height: 35vh;
     }
+
+    .section2-heading {
+        left: 12vw;
+    }
+
+    .section3-description {
+        width: 43vw;
+    }
+
+    .napoleon {
+        margin-right: -11vw;
+    }
+
+    .section4-button {
+        top: 70vh;
+    }
+
+}
+
+@media only screen and (max-width: 1280px) {
+
+    .mask {
+        height: 50vh;
+    }
+
+    .section2-heading {
+        top: 50vh;
+    }
+
+    .section2-description {
+        top: 55vh;
+    }
+
+    .napoleon {
+        height: 85vh;
+        opacity: 0.95;
+        margin-right: -8vw;
+
+    }
+
+    .napoleon {
+        margin-bottom: -10vh;
+
+    }
+
+    .section3-heading {
+        left: 2vw;
+        top: 6vh;
+    }
+
+    .section3-description {
+        top: 29vh;
+    }
+
+    .frame {
+        top: 20vh;
+        height: 65vh;
+    }
+
+    .section4-heading {
+        top: 27vh;
+        width: 42vw;
+    }
+
+    .page4 h1 {
+        font-size: 2.5em;
+    }
+
+    .section4-button {
+        top: 60vh;
+    }
 }
 
 @media only screen and (max-width: 1080px) {
@@ -1033,14 +1179,70 @@ input:focus ~ label, input:valid ~ label {
         background-size: auto 75vh;
     }
 
-}
+    .page4 h1 {
+        font-size: 2.3em;
+    }
 
-@media only screen and (max-width: 965px) {
-    /*.title {*/
-    /*height: 80vh;*/
-    /*top: 0;*/
-    /*bottom: 0;*/
-    /*}*/
+    .section4-heading {
+        top: 27vh;
+        width: 40vw;
+    }
+
+    .frame {
+        opacity: 0.5;
+        top: unset;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .section2-heading {
+        width: 100vw;
+        text-align: center;
+        left: 0;
+    }
+
+    .section2-description {
+        width: 96vw;
+        top: 65vh;
+        left: unset;
+        right: unset;
+        text-align: center;
+        padding: 2vw;
+
+    }
+
+    .section3-heading {
+        width: 100vw;
+        text-align: center;
+        left: 0;
+    }
+
+    .section3-description {
+        width: 90vw;
+    }
+
+    .napoleon {
+        margin-bottom: -20vh;
+        height: 75vh;
+        margin-right: 0;
+        opacity: 0.8;
+    }
+
+    .section4-heading {
+        top: 15vh;
+        width: 100vw;
+        text-align: center;
+        left: 0;
+
+    }
+
+    .section4-button {
+        left: calc(50vw - 100px);
+        margin-bottom: 15vh;
+
+    }
+
     .leaf2 {
         width: 80vw;
     }
@@ -1051,25 +1253,31 @@ input:focus ~ label, input:valid ~ label {
     }
 }
 
+@media only screen and (max-height: 910px) {
+    .section4-button {
+        top: 65vh;
+    }
+}
+
 @media only screen and (max-height: 650px) {
     .leaf5 {
         height: 50vh;
     }
 
-    @media only screen and (max-height: 430px) {
-        .leaf5 {
-            height: 70vh;
-        }
+}
 
-        .leaf1 {
-            height: 150vh;
-        }
-
-        .leaf4 {
-            height: 100vh;
-        }
+@media only screen and (max-height: 430px) {
+    .leaf5 {
+        height: 70vh;
     }
 
+    .leaf1 {
+        height: 150vh;
+    }
+
+    .leaf4 {
+        height: 100vh;
+    }
 }
 
 /******** MOBILE DISPLAY  ********/
