@@ -276,9 +276,13 @@ $(document).on('scroll touchmove touchend', function () {
             if (page4.offset().top < offTop) {
                 if (!content4.hasClass('fixed')) {
                     content4.addClass('fixed');
+                    $('.page1').removeClass('leaf-background');
                 }
+
             } else if (content4.hasClass('fixed')) {
-                content4.removeClass('fixed')
+                content4.removeClass('fixed');
+                $('.page1').addClass('leaf-background');
+
             }
         } else if (content3.hasClass('fixed')) {
             content3.removeClass('fixed')
