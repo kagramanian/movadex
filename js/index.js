@@ -10,8 +10,6 @@
 // })('https://widget.replain.cc/dist/client.js');
 
 
-/********  LEAF ANIMATION  ********/
-
 var _containerHeight = $(window).height() * 3;
 
 var _width, _height, _scrollHeight;
@@ -21,6 +19,13 @@ var pre = prefix();
 var _jsPrefix = pre.lowercase;
 if (_jsPrefix == 'moz') _jsPrefix = 'Moz';
 var _cssPrefix = pre.css;
+var pcScreen = window.matchMedia("(min-width: 768px)");
+var listenerAttached;
+var navBarCloned = false;
+
+let screen = $(document);
+let page2 = $(".page2"), page3 = $(".page3"), page4 = $(".page4");
+let content2 = $('.content2'), content3 = $('.content3'), content4 = $('.content4');
 var _positions = [
     {
         name: 'leaf1',
@@ -69,6 +74,9 @@ var _positions = [
     }
 ];
 
+/********  LEAF ANIMATION  ********/
+
+
 function initMovingElements() {
     //4 is number of pages with leafs
     for (var ii = 0; ii < 4; ii++) {
@@ -91,11 +99,14 @@ function initMovingElements() {
 
 }
 
+
 function resize() {
     _width = window.innerWidth;
     _height = window.innerHeight;
     _containerHeight = window.innerHeight * 3;
     _scrollHeight = (_containerHeight - _height);
+    animateNavbar();
+
 }
 
 
@@ -129,14 +140,6 @@ function leafPositionLoop() {
 }
 
 
-resize();
-
-initMovingElements();
-
-leafPositionLoop();
-
-window.addEventListener('resize', resize);
-
 /* prefix detection http://davidwalsh.name/vendor-prefix */
 
 function prefix() {
@@ -158,40 +161,57 @@ function prefix() {
 /********  LEAF ANIMATION END ********/
 
 
-/********  NAVBAR ANIMATION  ********/
 
 
-$('.top-nav').append($('.navigation').clone());
+function animateNavbar() {
+    if (pcScreen.matches) {
+        if (!listenerAttached) {
+            listenerAttached = true;
+            var topNav = $('.top-nav');
 
 
-$('.top-nav .navigation').hover(function () {
-    $('.top-nav').addClass('is-not-hover').addClass('is-hover');
-}, function () {
-    $('.top-nav').removeClass('is-hover');
-});
-
-/********  NAVBAR ANIMATION END ********/
+            if (!navBarCloned) {
+                topNav.append($('.navigation').clone());
+                navBarCloned = true;
+            }
 
 
-/********  NAVBAR CIRCLE ANIMATION ********/
+            $('.top-nav .navigation').hover(function () {
+                topNav.addClass('is-not-hover').addClass('is-hover');
+            }, function () {
+                topNav.removeClass('is-hover');
+            });
 
 
-$('.nav-button').hover(function () {
-    if (!$(this).hasClass('selected')) {
-        $(this).find(">:first-child").addClass('circle-off').addClass('circle-on');
+            /********  NAVBAR CIRCLE ANIMATION ********/
+
+            $('.nav-button').hover(function () {
+                if (!$(this).hasClass('selected')) {
+                    $(this).find(">:first-child").addClass('circle-off').addClass('circle-on');
+                }
+            }, function () {
+                if (!$(this).hasClass('selected')) {
+                    $(this).find(">:first-child").removeClass('circle-on');
+                }
+            });
+            console.log('attached listener');
+        }
+
+        /********  NAVBAR CIRCLE ANIMATION END  ********/
+
+    } else {
+        if (listenerAttached) {
+            console.log('removed listener');
+            listenerAttached = false;
+            $('.top-nav .navigation').unbind("mouseenter mouseleave");
+            $('.nav-button').unbind("mouseenter mouseleave");
+            $('.top-nav').removeClass('is-hover')
+        }
     }
-}, function () {
-    if (!$(this).hasClass('selected')) {
-        $(this).find(">:first-child").removeClass('circle-on');
-    }
-});
-
-/********  NAVBAR CIRCLE ANIMATION END  ********/
+}
 
 
 /********  NAVBAR COLOR CHANGE  ********/
-let navbarList = [$(".navbar-bottom"), $(".navbar-dots"), $(".navbar-top"), $(".mousey")];
-let listSize = navbarList.length;
 
 function checkColor() {
     {
@@ -211,18 +231,34 @@ function checkColor() {
 }
 
 /********  NAVBAR COLOR CHANGE END ********/
-/********  SECTION 2 FIX ********/
 
 
-let screen = $(document);
-let page2 = $(".page2"), page3 = $(".page3"), page4 = $(".page4");
-let content2 = $('.content2'), content3 = $('.content3'), content4 = $('.content4');
+/********  CODE INIT  ********/
 
 
-$(document).on('scroll touchmove touchend', function (e) {
+resize();
+
+if (pcScreen.matches) {
+
+    initMovingElements();
 
     leafPositionLoop();
+}
+
+window.addEventListener('resize', resize);
+let navbarList = [$(".navbar-bottom"), $(".navbar-dots"), $(".navbar-top"), $(".mousey")];
+let listSize = navbarList.length;
+
+/********  FIX SECTIONS  ********/
+
+$(document).on('scroll touchmove touchend', function () {
+
+    if (pcScreen.matches) {
+        leafPositionLoop();
+    }
+
     checkColor();
+
     var offTop = screen.scrollTop();
 
     if (page2.offset().top < offTop) {
@@ -250,3 +286,4 @@ $(document).on('scroll touchmove touchend', function (e) {
 
 
 });
+
