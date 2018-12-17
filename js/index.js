@@ -198,14 +198,12 @@ function animateNavbar() {
                     $(this).find(">:first-child").removeClass('circle-on');
                 }
             });
-            console.log('attached listener');
         }
 
         /********  NAVBAR CIRCLE ANIMATION END  ********/
 
     } else {
         if (listenerAttached) {
-            console.log('removed listener');
             listenerAttached = false;
             $('.top-nav .navigation').unbind("mouseenter mouseleave");
             $('.nav-button').unbind("mouseenter mouseleave");

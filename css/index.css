@@ -229,7 +229,7 @@ p {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 11;
+    z-index: 4;
     overflow: hidden;
     background-color: inherit;
 }
@@ -243,7 +243,6 @@ p {
     position: fixed;
     z-index: 2;
     background-color: #e1d2ce;
-
 }
 
 .leaf-background {
@@ -252,15 +251,19 @@ p {
 }
 
 .title {
-    position: fixed;
+    position: absolute;
+    height: 100vh;
+    right: 0;
+    left: 0;
+    width: auto;
     margin: auto;
     top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: auto;
-    height: 100%;
     z-index: 3;
+    background: url("../image/title.png") no-repeat fixed center center;
+    padding: 20%;
+
+    background-size: auto 100vh;
+
 }
 
 /******** SECTION 2  ********/
@@ -873,6 +876,65 @@ p {
     height: 0;
     padding: 0;
     margin: 0;
+}
+
+@media only screen and (max-width: 1350px) {
+    .leaf1 {
+        height: 90vh;
+    }
+
+    .leaf2 {
+        width: 60vw;
+    }
+
+    .leaf5 {
+        height: 35vh;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+
+    .title {
+        background-size: auto 75vh;
+    }
+
+}
+
+@media only screen and (max-width: 965px) {
+    /*.title {*/
+    /*height: 80vh;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*}*/
+    .leaf2 {
+        width: 80vw;
+    }
+
+    .leaf3 {
+        width: 60vw;
+        margin-right: -10vw;
+    }
+}
+
+@media only screen and (max-height: 650px) {
+    .leaf5 {
+        height: 50vh;
+    }
+
+    @media only screen and (max-height: 430px) {
+        .leaf5 {
+            height: 70vh;
+        }
+
+        .leaf1 {
+            height: 150vh;
+        }
+
+        .leaf4 {
+            height: 100vh;
+        }
+    }
+
 }
 
 /******** MOBILE DISPLAY  ********/
