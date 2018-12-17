@@ -223,8 +223,6 @@ p {
 
 /******** NAVBAR END  ********/
 
-
-
 .content {
     position: absolute;
     margin: auto;
@@ -244,12 +242,12 @@ p {
     background-size: 100% 100%;
     position: fixed;
     z-index: 2;
-       background-color: #e1d2ce;
+    background-color: #e1d2ce;
 
 }
 
-.leaf-background{
-        background: url("../image/bg1.png") no-repeat fixed center center;
+.leaf-background {
+    background: url("../image/bg1.png") no-repeat fixed center center;
 
 }
 
@@ -553,6 +551,13 @@ p {
         border-radius: 25px;
         opacity: 0.75;
         box-sizing: content-box;
+        transition: margin 1500ms;
+
+    }
+
+    .mousey.hide {
+        margin-top: calc(55px + 20vh);
+    !important;
     }
 
     .scroller {

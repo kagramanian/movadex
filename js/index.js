@@ -295,3 +295,7 @@ $(document).on('scroll touchmove touchend', function () {
 
 });
 
+$(".mousey").click(function(){
+    $(this).toggleClass("hide");
+});
+
