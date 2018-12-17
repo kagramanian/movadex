@@ -24,7 +24,7 @@ var listenerAttached;
 var navBarCloned = false;
 
 let screen = $(document);
-let page2 = $(".page2"), page3 = $(".page3"), page4 = $(".page4");
+let page2 = $("#page2"), page3 = $("#page3"), page4 = $("#page4");
 let content2 = page2.find(".content"), content3 = page3.find(".content"), content4 = page4.find(".content");
 var _positions = [
     {
@@ -253,7 +253,17 @@ let listSize = navbarList.length;
 
 /********  FIX SECTIONS  ********/
 
-$(document).on('scroll touchmove touchend', function () {
+var a1 = $('[href="#' + 'page1' + '"]'), a2 = $('[href="#' + 'page2' + '"]'), a3 = $('[href="#' + 'page3' + '"]'),
+    a4 = $('[href="#' + 'page4' + '"]');
+
+var ap1 = a1.parent(), ap2 = a2.parent(), ap3 = a3.parent(),
+    ap4 = a4.parent();
+var ac1 = ap1.find(">:first-child"), ac2 = ap2.find(">:first-child"), ac3 = ap3.find(">:first-child"),
+    ac4 = ap4.find(">:first-child");
+
+
+$(document).on('scroll touchmove touchend', onScreenChange);
+function onScreenChange() {
 
     if (pcScreen.matches) {
         leafPositionLoop();
@@ -265,35 +275,106 @@ $(document).on('scroll touchmove touchend', function () {
 
     if (page2.offset().top < offTop) {
         if (!content2.hasClass('fixed')) {
+            ap1.removeClass('selected');
+            ac1.removeClass('circle-on');
+
+            ap2.addClass('selected');
+            ac2.addClass('circle-off').addClass('circle-on');
             content2.addClass('fixed');
         }
         if (page3.offset().top < offTop) {
             if (!content3.hasClass('fixed')) {
+                ap2.removeClass('selected');
+                ac2.removeClass('circle-on');
+
+
+                ap3.addClass('selected');
+                ac3.addClass('circle-off').addClass('circle-on');
+
                 content3.addClass('fixed');
             }
             if (page4.offset().top < offTop) {
                 if (!content4.hasClass('fixed')) {
                     content4.addClass('fixed');
-                    $('.page1').removeClass('leaf-background');
+
+                    ap3.removeClass('selected');
+                    ac3.removeClass('circle-on');
+
+
+                    ap4.addClass('selected');
+                    ac4.addClass('circle-off').addClass('circle-on');
+
+                    $('#page1').removeClass('leaf-background');
                 }
+
 
             } else if (content4.hasClass('fixed')) {
                 content4.removeClass('fixed');
-                $('.page1').addClass('leaf-background');
+                ap3.addClass('selected');
+                ac3.addClass('circle-off').addClass('circle-on');
 
+
+                ap4.removeClass('selected');
+                ac4.removeClass('circle-on');
+
+                $('#page1').addClass('leaf-background');
             }
         } else if (content3.hasClass('fixed')) {
-            content3.removeClass('fixed')
+            content3.removeClass('fixed');
+
+            ap2.addClass('selected');
+            ac2.addClass('circle-off').addClass('circle-on');
+
+
+            ap3.removeClass('selected');
+            ac3.removeClass('circle-on');
+
         }
+
     }
     else if (content2.hasClass('fixed')) {
+        ap2.addClass('selected');
+        ac1.addClass('circle-off').addClass('circle-on');
+
+        ap2.removeClass('selected');
+        ac2.removeClass('circle-on');
+
         content2.removeClass('fixed')
+
     }
 
 
-});
-
-$(".mousey").click(function(){
+}
+$(".mousey").click(function () {
     $(this).toggleClass("hide");
 });
+var $root = $('html, body');
+
+// var path = window.location.pathname.substring(1);
+//     console.log(path);
+
+$('a[href^="#"]').click(function () {
+        var href = $.attr(this, 'href');
+        console.log(href);
+        if (href === "#page1") {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 1000, function () {
+                window.location.hash = href;
+            });
+
+            return false;
+        } else {
+            $root.animate({
+                scrollTop: $(href).offset().top
+            }, 1000, function () {
+                window.location.hash = href;
+            });
+
+            return false;
+        }
+        onScreenChange()
+    }
+);
+
 

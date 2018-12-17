@@ -44,25 +44,30 @@
         <div class="navbar-dots">
 
             <div class="selected nav-button ">
-                <img class=" circle-on background-circle" src="image/circle.png"
-                     style="position:absolute;">
-                <img class="dot" src="image/roll.png"/>
+
+              <img class=" circle-on background-circle" src="image/circle.png"
+                                       style="position:absolute;">
+                     <a href="#page1">  <img class="dot" src="image/roll.png"/>
+                </a>
             </div>
 
             <div class="marg  nav-button">
-                <img class=" background-circle" src="image/circle.png"
-                     style="position:absolute;">
-                <img class="dot" src="image/roll.png"/>
+                  <img class=" background-circle" src="image/circle.png"
+                                       style="position:absolute;">
+                  <a href="#page2">  <img class="dot" src="image/roll.png"/></a>
+
+            </div>
+            <div class="marg nav-button">
+                 <img class=" background-circle" src="image/circle.png"
+                                       style="position:absolute;">
+                 <a href="#page3">   <img class="dot" src="image/roll.png"/>
+                </a>
             </div>
             <div class="marg nav-button">
                 <img class=" background-circle" src="image/circle.png"
-                     style="position:absolute;">
-                <img class="dot" src="image/roll.png"/>
-            </div>
-            <div class="marg nav-button">
-                <img class=" background-circle" src="image/circle.png"
-                     style="position:absolute;">
-                <img class="dot" src="image/roll.png"/>
+                                       style="position:absolute;">
+                   <a href="#page4">  <img class="dot" src="image/roll.png"/>
+                </a>
             </div>
 
 
@@ -82,7 +87,7 @@
 </div>
 
 
-<section class="page1 leaf-background">
+<section class="leaf-background  " id="page1">
     <div class="fixed content">
         <div class="title"></div>
 
@@ -97,7 +102,7 @@
     </div>
 </section>
 
-<section class="page2">
+<section id="page2">
     <div class="content">
         <img class="mask" src="image/mask.png"/>
         <h1 class="section2-heading">КТО МЫ?</h1>
@@ -118,7 +123,7 @@
 
 </section>
 
-<section class="page3">
+<section id="page3">
     <div class="content">
         <img class="napoleon" src="image/napoleon.png">
         <h1 class="section3-heading">ЧТО МЫ ДЕЛАЕМ?</h1>
@@ -140,7 +145,7 @@
     </div>
 
 </section>
-<section class="page4">
+<section id="page4">
     <div class="content">
         <img class="frame" src="image/frame.png">
         <h1 class="section4-heading">МЫ ИЩЕМ ТОГО САМОГО КЛИЕНТА <br/><span class="yellow-text">-50% ПЕРВЫМ 10 ЗАКАЗЧИКАМ</span>
@@ -157,7 +162,7 @@
 
 </section>
 
-<section class="page5">
+<section id="page5">
     <div class="content">
         <img src="image/bg5.png" class="bg5"/>
         <h1 class="section5-heading">СДЕЛАЕМ МИР ЛУЧШЕ</h1>
@@ -165,29 +170,30 @@
         <form target="_blank" action="https://formspree.io/nor8111@gmail.com" method="POST">
 
             <div class="wqe">
-            <div class="group" id="group">
-                <input name="name" type="text" required="">
-                <span class="highlight"></span>
-                <span class="bar"></span>
-                <label>ВАШЕ ИМЯ</label>
-            </div>
+                <div class="group" id="group">
+                    <input name="name" type="text" required="">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>ВАШЕ ИМЯ</label>
+                </div>
 
-            <div class="group">
-                <input name="email" type="text" required="">
-                <span class="highlight"></span>
-                <span class="bar"></span>
-                <label>ВАШ EMAIL</label>
-            </div>
-            <div class="group">
-                <input name="idea" type="text" required="">
-                <span class="highlight"></span>
-                <label>ВАША ИДЕЯ</label>
-            </div>
+                <div class="group">
+                    <input name="email" type="text" required="">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>ВАШ EMAIL</label>
+                </div>
+                <div class="group">
+                    <input name="idea" type="text" required="">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>ВАША ИДЕЯ</label>
+                </div>
 
-            <button class="section5-button sendBtn button-success pure-button button-xlarge">
-                <i class="fa fa-paper-plane"></i>&nbsp;СВЯЗАТЬСЯ С НАМИ
-            </button>
-        </div>
+                <button class="section5-button sendBtn button-success pure-button button-xlarge">
+                    <i class="fa fa-paper-plane"></i>&nbsp;СВЯЗАТЬСЯ С НАМИ
+                </button>
+            </div>
         </form>
     </div>
 

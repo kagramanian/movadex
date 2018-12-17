@@ -54,6 +54,14 @@ button {
 
 }
 
+.nav-button a{
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+
 /********  NAVBAR  ********/
 
 /********  navbar animation  ********/
@@ -188,8 +196,8 @@ button {
 
 .circle-on {
 
-    width: 16px;
-    height: 16px;
+    width: 16px; !important;
+    height: 16px; !important;
     display: block;
     -webkit-animation: growUp 0.5s;
     -moz-animation: growUp 0.5s;
@@ -259,20 +267,22 @@ button {
     z-index: 4;
     overflow: hidden;
     background-color: inherit;
-    bottom: 0;
+    height: 100vh;
 }
 
 /******** SECTION 1  ********/
 
-.page1 {
+#page1 {
     width: 100%;
     height: 200vh;
-    background-size: 100% 100%;
     position: fixed;
     z-index: 2;
-    background-color: #e1d2ce;
 }
+.page1{    background-size: 100% 100%;
 
+        background-color: #e1d2ce;
+
+}
 .leaf-background {
     background: url("../image/bg1.png") no-repeat fixed center center;
 
@@ -296,7 +306,7 @@ button {
 
 /******** SECTION 2  ********/
 
-.page2 {
+#page2 {
     top: 200vh;
     height: 200vh;
     width: 100%;
@@ -337,7 +347,7 @@ button {
 
 /******** SECTION 3  ********/
 
-.page3 {
+#page3 {
     top: 400vh;
     height: 200vh;
     width: 100%;
@@ -377,7 +387,7 @@ button {
 
 /******** SECTION 4  ********/
 
-.page4 {
+#page4 {
     top: 600vh;
     height: 200vh;
     width: 100%;
@@ -422,7 +432,7 @@ button {
 
 /******** SECTION 5  ********/
 
-.page5 {
+#page5 {
     top: 800vh;
     height: 100vh;
 !important;
@@ -498,7 +508,7 @@ form {
     font-family: "Montserrat", sans-serif;
     color: rgb(0, 0, 0);
     line-height: 1.2;
-    margin-top: 40vh;
+    margin-top: 25vh;
     z-index: 5;
     position: absolute;
 }
@@ -1063,7 +1073,7 @@ input:focus ~ label, input:valid ~ label {
 @media only screen and (max-width: 1700px) {
 
     .mask {
-        height: 63%;
+        height: 63vh;
     }
 
     .section2-heading {
@@ -1086,7 +1096,7 @@ input:focus ~ label, input:valid ~ label {
         width: 40vw;
     }
 
-    .page4 h1 {
+    #page4 h1 {
         font-size: 3em;
     }
 
@@ -1174,7 +1184,7 @@ input:focus ~ label, input:valid ~ label {
         width: 42vw;
     }
 
-    .page4 h1 {
+    #page4 h1 {
         font-size: 2.5em;
     }
 
@@ -1189,7 +1199,7 @@ input:focus ~ label, input:valid ~ label {
         background-size: auto 75vh;
     }
 
-    .page4 h1 {
+    #page4 h1 {
         font-size: 2.3em;
     }
 
@@ -1250,6 +1260,16 @@ input:focus ~ label, input:valid ~ label {
     .section4-button {
         left: calc(50vw - 100px);
         margin-bottom: 15vh;
+
+    }
+
+    .section5-heading {
+        width: 100vw;
+        text-align: center;
+        left: 0;
+    }
+    #page5 h1{
+               font-size: 3em;
 
     }
 
