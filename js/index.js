@@ -68,8 +68,6 @@ var _positions = [
         }
     }
 ];
-resize();
-initMovingElements();
 
 function initMovingElements() {
     //4 is number of pages with leafs
@@ -119,19 +117,23 @@ function updateElements(iteration) {
     }
 }
 
-//
-// function loop() {
-//     let _scrollOffset = window.pageYOffset || window.scrollTop;
-//     let iteration = Math.floor((_scrollOffset) / _scrollHeight);
-//     _scrollPercent = ((_scrollOffset) / _scrollHeight - iteration) || 0;
-//     if (iteration < 4) {
-//         updateElements(iteration);
-//     }
-//     requestAnimationFrame(loop);
-//     console.log("fire");
-// }
-//
-// loop();
+
+function leafPositionLoop() {
+    let _scrollOffset = window.pageYOffset || window.scrollTop;
+    let iteration = Math.floor((_scrollOffset) / _scrollHeight);
+    _scrollPercent = ((_scrollOffset) / _scrollHeight - iteration) || 0;
+    if (iteration < 4) {
+        updateElements(iteration);
+    }
+    //  requestAnimationFrame(leafPositionLoop);
+}
+
+
+resize();
+
+initMovingElements();
+
+leafPositionLoop();
 
 window.addEventListener('resize', resize);
 
@@ -218,16 +220,8 @@ let content2 = $('.content2'), content3 = $('.content3'), content4 = $('.content
 
 
 $(document).on('scroll touchmove touchend', function (e) {
-    console.log("fire");
 
-       let _scrollOffset = window.pageYOffset || window.scrollTop;
-    let iteration = Math.floor((_scrollOffset) / _scrollHeight);
-    _scrollPercent = ((_scrollOffset) / _scrollHeight - iteration) || 0;
-    if (iteration < 4) {
-        updateElements(iteration);
-    }
-  //  requestAnimationFrame();
-
+    leafPositionLoop();
     checkColor();
     var offTop = screen.scrollTop();
 
