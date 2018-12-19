@@ -198,11 +198,11 @@ $(document).ready(function () {
                     listenerAttached = true;
 
 
-                    $('.top-nav .navigation').hover(function () {
-                        topNav.addClass('is-not-hover').addClass('is-hover');
-                    }, function () {
-                        topNav.removeClass('is-hover');
-                    });
+                    // $('.top-nav .navigation').hover(function () {
+                    //     topNav.addClass('is-not-hover').addClass('is-hover');
+                    // }, function () {
+                    //     topNav.removeClass('is-hover');
+                    // });
 
 
                     /********  NAVBAR CIRCLE ANIMATION ********/
@@ -223,9 +223,10 @@ $(document).ready(function () {
             } else {
                 if (listenerAttached) {
                     listenerAttached = false;
-                    $('.top-nav .navigation').unbind("mouseenter mouseleave");
+                    //$('.top-nav .navigation').unbind("mouseenter mouseleave");
+                    //$('.top-nav').removeClass('is-hover');
+
                     $('.nav-button').unbind("mouseenter mouseleave");
-                    $('.top-nav').removeClass('is-hover')
                 }
             }
         }
@@ -261,7 +262,6 @@ $(document).ready(function () {
         if (pcScreen.matches) {
             leafPositionLoop();
         }
-        onScreenChange();
 
         window.addEventListener('resize', resize);
 
@@ -348,7 +348,10 @@ $(document).ready(function () {
                 }
             }
         );
+        onScreenChange();
 
 
     }
+
+
 );
