@@ -1428,13 +1428,13 @@ input:focus ~ label, input:valid ~ label {
     /** OPACITY  **/
 
     .telegram {
-        opacity: 0;
+        display: none;
     }
     .leaf-container {
-        opacity: 0;
+        display: none;
     }
     .write-us-bar {
-        opacity: 0;
+        display: none;
     }
     /** NAVIGATION  **/
     .navbar-top {
@@ -1447,7 +1447,7 @@ input:focus ~ label, input:valid ~ label {
         float: right;
     }
     .icon-facebook {
-        opacity: 0;
+        display: none;
         float: right;
 
     }
@@ -1515,7 +1515,7 @@ input:focus ~ label, input:valid ~ label {
         margin-top:52vh;
         height: auto;
         width: 80vw;
-        margin-left: 10vw;
+        margin-left: 14vw;
         float: left;
 
     }
@@ -1540,7 +1540,7 @@ input:focus ~ label, input:valid ~ label {
     }
     .text-wrapper5 {
         margin-top: 16vh;
-        margin-left: 10vw;
+        margin-left: 14vw;
 
     }
     .group {
@@ -1557,6 +1557,12 @@ input:focus ~ label, input:valid ~ label {
 
         text-transform: uppercase;
 
+    }
+    .bar {
+        width: 70vw;
+    }
+    form {
+        margin-top: unset;
     }
     .section5-button {
         margin-left: unset;
