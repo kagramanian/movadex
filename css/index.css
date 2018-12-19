@@ -50,6 +50,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    position: relative;
 }
 
 input {
@@ -104,7 +105,10 @@ button {
 }
 
 /********  NAVBAR  ********/
-
+.navigation {
+    position: fixed;
+    z-index: 10;
+}
 /********  navbar animation  ********/
 
 .top-nav {
@@ -139,7 +143,7 @@ nav {
     position: fixed;
 
     /*  remove this to place nav in the middle of section and leaves  */
-    z-index: 98;
+
 }
 
 /********  top  ********/
@@ -190,6 +194,7 @@ nav {
     padding-right: 2vw;
     transition: 0.5s;
     white-space: nowrap
+
 
 }
 
@@ -337,12 +342,12 @@ section {
 #page1 {
     width: 100%;
     height: 200vh;
-    position: fixed;
+    position: relative;
 }
 
 .leaf-background {
     background: url("../image/bg1.png") no-repeat fixed center center;
-
+    opacity: 0.99;
 }
 
 .title {
@@ -356,7 +361,7 @@ section {
     background: url("../image/title.png") no-repeat fixed center center;
     padding: 20%;
 
-    background-size: auto 100vh;
+    background-size: auto 100vh ;
 
 }
 
@@ -1398,32 +1403,196 @@ input:focus ~ label, input:valid ~ label {
 
 /******** MOBILE DISPLAY  ********/
 
-@media only screen and (max-width: 768px) {
-    html, body {
-        height: 100%;
-        overflow: hidden
-    }
-
-    .message {
-        background-color: black;
-        z-index: 100;
-        position: fixed;
-
-        font-size: 4em;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
+@media only screen and (max-width: 765px) {
+    h1 {
+        font-size: 1.6em;
+        color: rgb(0, 0, 0);
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         text-transform: uppercase;
         line-height: 1.2;
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
+        text-align: left;
+    }
+    p {
+        font-size: 11px;
+        line-height: 1.357;
+        width: 80vw;
+    }
+    button {
+        height: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 11px;
+        border-radius: 5px;
+    }
+    /** OPACITY  **/
+
+    .telegram {
+        opacity: 0;
+    }
+    .leaf-container {
+        opacity: 0;
+    }
+    .write-us-bar {
+        opacity: 0;
+    }
+    /** NAVIGATION  **/
+    .navbar-top {
+        margin: 2.3%;
+    }
+    .navbar-left {
+        padding-left: 5.3vw;
+    }
+    .movadex-bar {
+        float: right;
+    }
+    .icon-facebook {
+        opacity: 0;
+        float: right;
+
     }
 
+
+    .title {
+        background-size: 100vw auto;
+        background-origin: padding-box;
+
+    }
+    /** SECTION 2  **/
+    .mask {
+        height: auto;
+        width: 90.8vw;
+        top: 14vh;
+    }
+    .section2-heading {
+        left: 14vw;
+        text-align: left;
+
+    }
+
+    .section2-description {
+        padding: 0;
+        top: 59vh;
+        left: 14vw;
+        text-align: left;
+        width: 80vw;
+    }
+    /** SECTION 3  **/
+    .section3-heading {
+        top: 10vh;
+    }
+    .section3-description {
+        top: 21vh;
+        width: 72vw;
+        left: 14vw;
+    }
+    .napoleon {
+        height: auto;
+        width: 100vw;
+        margin-bottom: -10vh;
+        opacity: 1;
+    }
+    /** SECTION 4  **/
+    .frame {
+        height: auto;
+        width: 90.8vw;
+        top: 11.8%;
+        bottom: unset;
+        opacity: 1;
+    }
+    #page4 h1 {
+        font-size: 1.5em;
+        width: 80vw;
+
+        top: unset;
+        text-align: left;
+        position: relative;
+        margin-bottom: 15px;
+        height: unset;
+
+    }
+    .text-wrapper4{
+        margin-top:52vh;
+        height: auto;
+        width: 80vw;
+        margin-left: 10vw;
+        float: left;
+
+    }
+    .section4-button {
+        position: relative;
+
+        margin-bottom: unset;
+        top: unset;
+        left: unset;
+        bottom: unset;
+    }
+    /** SECTION 5  **/
+    #page5 h1 {
+        font-size: 1.5em;
+        width: 80vw;
+
+        top: unset;
+        text-align: left;
+        position: relative;
+        margin-bottom: 15px;
+        height: unset;
+    }
+    .text-wrapper5 {
+        margin-top: 16vh;
+        margin-left: 10vw;
+
+    }
+    .group {
+        margin-left: unset;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+    input {
+        width: 70vw;
+        font-size: 11px;
+        line-height: 1.357;
+        color: rgb(0, 0, 0);
+        font-family: 'Montserrat', sans-serif;
+
+        text-transform: uppercase;
+
+    }
+    .section5-button {
+        margin-left: unset;
+        margin-top: 10px;
+    }
+    .bg5 {
+        opacity: 0;
+        z-index: 0;
+    }
+    #page5 {
+
+    }
+     section {
+        height: 120vh;
+
+    }
+
+     #page1 {
+        top: 0;
+    }
+
+     #page2 {
+        top: 120vh;
+    }
+
+     #page3 {
+        top: 240vh;
+    }
+
+     #page4 {
+        top: 360vh;
+    }
+
+     #page5 {
+        top: 480vh;
+    }
 }
 
 /*DEBUG*/
