@@ -9,7 +9,7 @@
 //     x.parentNode.insertBefore(s, x);
 // })('https://widget.replain.cc/dist/client.js');
 
-document.getElementsByTagName("html")[0].id="";
+document.getElementsByTagName("html")[0].id = "";
 
 $(document).ready(function () {
 
@@ -353,6 +353,29 @@ $(document).ready(function () {
 
 
     }
-
-
 );
+
+var el = $('.navbar-left');
+var navOpened
+
+function openNav() {
+    if (!navOpened) {
+        navOpened = true;
+        sidenav = document.getElementById("sidenav");
+        sidenav.style.width = "250px";
+        sidenav.style.zIndex = '110';
+       setTimeout(function(){ el.css('margin-left', '+=170px');},20);
+
+    }
+
+
+}
+
+function closeNav() {
+    if (navOpened) {
+        navOpened = false;
+        document.getElementById("sidenav").style.width = "0";
+        sidenav.style.zIndex = '90';
+        el.css('margin-left', '-=170px');
+    }
+}
