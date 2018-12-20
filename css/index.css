@@ -1439,6 +1439,12 @@ input:focus ~ label, input:valid ~ label {
     .bg5 {
         display: none;
     }
+    .iconsInnstagram {
+        display: none;
+    }
+    .lang {
+        display: none;
+    }
     /** NAVIGATION  **/
     .navbar-top {
         margin: 2.3%;
@@ -1561,6 +1567,9 @@ input:focus ~ label, input:valid ~ label {
         text-transform: uppercase;
 
     }
+    .footer {
+        width: 100vw;
+    }
     .bar {
         width: 70vw;
     }
@@ -1600,6 +1609,41 @@ input:focus ~ label, input:valid ~ label {
         top: 480vh;
     }
 }
+
+@media only screen and (max-height: 450px) {
+    /** SECTION 2  **/
+    .mask {
+        height: 40vh;
+        width: auto;
+    }
+    .section2-heading {
+        top: 48vh;
+    }
+    /** SECTION 3  **/
+    .napoleon {
+        height: auto;
+        width: 50vw;
+    }
+    .section3-heading {
+        top: 5vh;
+        text-align: left;
+        margin-left: 14vw;
+
+    }
+    .section3-description {
+        width: 40vw;
+    }
+    /** SECTION 4  **/
+    .frame {
+        height: 40vh;
+        width: auto;
+    }
+    /** SECTION 5  **/
+
+}
+
+
+
 
 /*DEBUG*/
 
