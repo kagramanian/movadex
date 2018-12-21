@@ -247,7 +247,7 @@ nav {
 
 .nav-button {
     /*size of the actual clickable area*/
-    /*width: 22px;*/
+    width: 22px;
     height: 22px;
 }
 
