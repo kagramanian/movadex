@@ -95,7 +95,7 @@ button {
 
 }
 
-.who-we-are{
+.who-we-are {
     position: absolute;
     top: -20px;
     left: -200px;
@@ -103,7 +103,6 @@ button {
     text-align: center;
 
 }
-
 
 /********  NAVBAR  ********/
 .navigation {
@@ -217,12 +216,11 @@ nav {
     display: inline-block;
 }
 
-
 .nav-button p {
     color: #FFFFFF;
     position: relative;
     float: left;
-         display: inline-block;
+    display: inline-block;
 }
 
 .background-circle {
@@ -366,8 +364,9 @@ section {
     margin: auto;
     top: 0;
     bottom: 0;
-
-
+    background: url("../image/title.png") no-repeat fixed center center;
+    padding: 20%;
+    min-height: 100%;
     background-size: auto 100vh;
 
 }
