@@ -801,9 +801,6 @@ input:focus ~ label, input:valid ~ label {
         padding-top: 15px;
     }
 
-    .sidenav a {
-        font-size: 18px;
-    }
 }
 
 /******** SIDENAV END  ********/
