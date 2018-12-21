@@ -83,7 +83,6 @@ button {
     border-radius: 10px;
     padding-left: 20px;
     padding-right: 20px;
-
     border: 1px solid;
     font-size: 16px;
     color: rgb(51, 51, 51);
@@ -352,7 +351,8 @@ section {
 
 .leaf-background {
     background: url("../image/bg1.png") no-repeat fixed center center;
-    opacity: 0.99;
+        background-size: auto 100vh;
+
 }
 
 .title {
@@ -742,7 +742,7 @@ input:focus ~ label, input:valid ~ label {
     top: 0;
 
     width: auto;
-    height: 73%;
+    height: 73vh;
     z-index: 49;
 }
 
@@ -1276,9 +1276,26 @@ input:focus ~ label, input:valid ~ label {
 }
 
 @media only screen and (max-width: 1080px) {
+    .leaf1 {
+        height: 72vh;
+    }
+
+    .leaf2 {
+        width: 80vw;
+    }
+
+    .leaf3 {
+        width: 65vw;
+        margin-right: -10vw;
+    }
+
+    .leaf4 {
+
+    height: 60vh;
+}
 
     .title {
-        background-size: auto 75vh;
+        background-size: auto 60vh;
     }
 
     #page4 h1 {
@@ -1291,7 +1308,7 @@ input:focus ~ label, input:valid ~ label {
     }
 
     .frame {
-        opacity: 0.5;
+        opacity: 0.8;
         top: unset;
         bottom: 0;
         right: 0;
@@ -1356,14 +1373,6 @@ input:focus ~ label, input:valid ~ label {
 
     }
 
-    .leaf2 {
-        width: 80vw;
-    }
-
-    .leaf3 {
-        width: 60vw;
-        margin-right: -10vw;
-    }
 }
 
 @media only screen and (max-height: 910px) {
@@ -1461,6 +1470,11 @@ input:focus ~ label, input:valid ~ label {
         display: none;
         float: right;
 
+    }
+
+    .leaf-background {
+        background: url("../image/bg1-rotated.png") no-repeat fixed center center;
+        background-size: auto 100vh;
     }
 
     .title {
