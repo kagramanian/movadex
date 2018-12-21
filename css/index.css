@@ -365,8 +365,8 @@ section {
     width: auto;
     margin: auto;
     top: 0;
-    background: url("../image/title.png") no-repeat fixed center center;
-    padding: 20%;
+    bottom: 0;
+
 
     background-size: auto 100vh;
 
@@ -1470,11 +1470,11 @@ input:focus ~ label, input:valid ~ label {
 
     }
 
-    /*.title {*/
-        /*background-size: 100vw auto;*/
-        /*background-origin: padding-box;*/
+    .title {
+        background-size: 100vw auto;
+        background-origin: padding-box;
 
-    /*}*/
+    }
 
     /** SECTION 2  **/
     .mask {
