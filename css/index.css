@@ -156,7 +156,7 @@ nav {
     right: 0;
     left: 0;
     top: 0;
-    z-index: 99;
+    z-index: 101;
 }
 
 .adidas {
@@ -194,7 +194,6 @@ nav {
     padding-right: 2vw;
     transition: 0.5s;
     white-space: nowrap;
-    z-index: 99;
 
 }
 
