@@ -39,8 +39,8 @@ html#nojs .circle-on {
     display: none;
 !important;
 }
-
 /********  IF JS OFF END ********/
+
 
 html, body {
     background-color: black;
@@ -86,7 +86,6 @@ button {
 
     border: 1px solid;
     font-size: 16px;
-    font-family: "Montserrat", sans-serif;;
     color: rgb(51, 51, 51);
     font-weight: bold;
     text-transform: uppercase;
@@ -297,7 +296,6 @@ display:block;
 
 .lang {
     font-size: 15px;
-    font-family: "Montserrat", sans-serif;
     color: rgba(255, 255, 255, 0.4);
     font-weight: bold;
     float: right;
@@ -506,8 +504,6 @@ section {
     left: 0;
     background-size: auto 100vh;
     bottom: 0;
-    left: 0;
-    right: 0;
     margin-top: auto;
     width: 100vw;
     height: auto;
@@ -520,7 +516,6 @@ section {
 
 .footer {
     font-size: 14px;
-    font-family: "Montserrat", sans-serif;
     color: rgb(0, 0, 0);
     line-height: 1.2;
     position: absolute;
@@ -550,7 +545,6 @@ section {
 
 form {
     font-size: 14px;
-    font-family: "Montserrat", sans-serif;
     color: rgb(0, 0, 0);
     line-height: 1.2;
     margin-top: 25vh;
@@ -566,7 +560,7 @@ form {
 
 input {
     font-size: 18px;
-    padding: 10px 0 10px 0px;
+    padding: 10px 0 10px 0;
     display: block;
     width: 400px;
     border: none;
@@ -662,9 +656,7 @@ input:focus ~ .highlight {
     right: 50%;
 }
 
-wqe {
-    margin-top: 50%;
-}
+
 
 /*************** LABEL ***************/
 label {
@@ -765,7 +757,7 @@ input:focus ~ label, input:valid ~ label {
 /******** SIDENAV ********/
 .sidenav {
     height: 100%;
-    width: 0px;
+    width: 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -1407,7 +1399,6 @@ input:focus ~ label, input:valid ~ label {
     h1 {
         font-size: 1.6em;
         color: rgb(0, 0, 0);
-        font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         text-transform: uppercase;
         line-height: 1.2;
@@ -1562,8 +1553,6 @@ input:focus ~ label, input:valid ~ label {
         font-size: 11px;
         line-height: 1.357;
         color: rgb(0, 0, 0);
-        font-family: 'Montserrat', sans-serif;
-
         text-transform: uppercase;
 
     }
