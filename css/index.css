@@ -95,12 +95,12 @@ button {
 }
 
 .who-we-are {
-    position: absolute;
-    top: -20px;
-    left: -200px;
-    width: 200px;
-    text-align: center;
-
+    /*position: absolute;*/
+    /*top: -20px;*/
+    /*left: -200px;*/
+    /*width: 200px;*/
+    /*text-align: center;*/
+    margin-left: -100px;
 }
 
 /********  NAVBAR  ********/
@@ -218,9 +218,7 @@ nav {
 .nav-button p {
     color: #FFFFFF;
     position: relative;
-    float: left;
-    display: inline-block;
-}
+ }
 
 .background-circle {
     position: relative;
@@ -1421,9 +1419,7 @@ input:focus ~ label, input:valid ~ label {
 
     p {
         font-size: 14px;
-        line-height: 1.357;
-        width: 80vw;
-    }
+     }
 
     button {
         height: 30px;
