@@ -9,7 +9,8 @@
 //     x.parentNode.insertBefore(s, x);
 // })('https://widget.replain.cc/dist/client.js');
 
-// document.getElementsByTagName("html")[0].id = "";
+document.getElementsByTagName("html")[0].id = "";
+var sidenav = document.getElementById("sidenav");
 
 $(document).ready(function () {
 
@@ -51,6 +52,7 @@ $(document).ready(function () {
 
         var alist = [[ac1, ap1], [ac2, ap2], [ac3, ap3], [ac4, ap4], [ac5, ap5]];
 
+        var colors = ["#000", "#cac8bb", "#a3cec2", "#eaeaea", "#e1d2ce"];
 
         var _positions = [
             {
@@ -291,7 +293,7 @@ $(document).ready(function () {
                 if (page.offset().top < offTop) {
                     if (!content.hasClass('fixed')) {
                         content.addClass('fixed');
-
+                        sidenav.style.backgroundColor = colors[i];
                         changeNavItem(NEXT, i);
                         if (i === 1) page1.removeClass('leaf-background');
                         else if (i === 2) animatedMouse.addClass("hide");
@@ -299,6 +301,8 @@ $(document).ready(function () {
                 } else if (content.hasClass('fixed')) {
 
                     content.removeClass('fixed');
+                    sidenav.style.backgroundColor = colors[i-1];
+
                     if (i === 1) page1.addClass('leaf-background');
                     else if (i === 2) animatedMouse.removeClass("hide");
                     changeNavItem(PREV, i);
@@ -356,15 +360,17 @@ $(document).ready(function () {
 );
 
 var el = $('.navbar-left');
-var navOpened
+var navOpened;
+
 
 function openNav() {
     if (!navOpened) {
         navOpened = true;
-        sidenav = document.getElementById("sidenav");
         sidenav.style.width = "250px";
         sidenav.style.zIndex = '200';
-       setTimeout(function(){ el.css('margin-left', '+=170px');},20);
+        setTimeout(function () {
+            el.css('margin-left', '+=170px');
+        }, 20);
 
     }
 
@@ -374,7 +380,7 @@ function openNav() {
 function closeNav() {
     if (navOpened) {
         navOpened = false;
-        document.getElementById("sidenav").style.width = "0";
+        sidenav.style.width = "0";
         sidenav.style.zIndex = '90';
         el.css('margin-left', '-=170px');
     }
