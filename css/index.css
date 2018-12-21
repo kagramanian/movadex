@@ -580,11 +580,7 @@ input:focus {
 }
 
 /* active state */
-input:focus ~ label, input:valid ~ label {
-    top: -20px;
-    font-size: 14px;
-    color: #000;
-}
+
 
 /* active state */
 input:focus ~ .bar:before, input:focus ~ .bar:after {
@@ -681,8 +677,6 @@ label {
 /* active state */
 input:focus ~ label, input:valid ~ label {
     top: -20px;
-    font-size: 14px;
-    color: #000;
 }
 
 /******** SECTIONS END  ********/
@@ -1570,6 +1564,12 @@ input:focus ~ label, input:valid ~ label {
         margin-left: 14vw;
 
     }
+    label {
+        font-size: 12px;
+    }
+    input:focus ~ label, input:valid ~ label {
+        top: -10px;
+    }
 
     .group {
         margin-left: unset;
@@ -1588,6 +1588,7 @@ input:focus ~ label, input:valid ~ label {
 
     .footer {
         width: 100vw;
+        padding-bottom: 0;
     }
 
     .bar {
@@ -1636,8 +1637,9 @@ input:focus ~ label, input:valid ~ label {
 @media only screen and (max-height: 450px) {
     /** SECTION 2  **/
     .mask {
-        height: 40vh;
+        height: 50vh;
         width: auto;
+        top: 0;
     }
 
     .section2-heading {
@@ -1668,7 +1670,14 @@ input:focus ~ label, input:valid ~ label {
     }
 
     /** SECTION 5  **/
+    .text-wrapper5 {
+        margin-top: 7vh;
+    }
+    .group {
+        margin-bottom: 10px;
+        margin-top: 20px;
 
+    }
 }
 
 /*DEBUG*/
