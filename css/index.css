@@ -1570,7 +1570,11 @@ input:focus ~ label, input:valid ~ label {
     input:focus ~ label, input:valid ~ label {
         top: -10px;
     }
+    .group {
+        margin-bottom: 10px;
+        margin-top: 20px;
 
+    }
     .group {
         margin-left: unset;
         margin-bottom: 20px;
@@ -1673,11 +1677,7 @@ input:focus ~ label, input:valid ~ label {
     .text-wrapper5 {
         margin-top: 7vh;
     }
-    .group {
-        margin-bottom: 10px;
-        margin-top: 20px;
 
-    }
 }
 
 /*DEBUG*/
