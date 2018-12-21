@@ -9,7 +9,7 @@
 //     x.parentNode.insertBefore(s, x);
 // })('https://widget.replain.cc/dist/client.js');
 
-// document.getElementsByTagName("html")[0].id = "";
+document.getElementsByTagName("html")[0].id = "";
 
 $(document).ready(function () {
 
