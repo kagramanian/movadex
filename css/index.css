@@ -508,7 +508,7 @@ section {
 
 .section5-button {
     margin-left: 12vw;
-        background-color: #FFFFFF00;
+    background-color: #FFFFFF00;
 
 }
 
@@ -1312,8 +1312,10 @@ input:focus ~ label, input:valid ~ label {
 
     .frame {
         opacity: 0.8;
+        width: auto;
+        height: 50vh;
+        bottom: 5vh;
         top: unset;
-        bottom: 0;
         right: 0;
         left: 0;
     }
@@ -1418,7 +1420,7 @@ input:focus ~ label, input:valid ~ label {
     }
 
     p {
-        font-size: 11px;
+        font-size: 14px;
         line-height: 1.357;
         width: 80vw;
     }
@@ -1447,10 +1449,11 @@ input:focus ~ label, input:valid ~ label {
     .bg5 {
 
         height: auto;
-width: 200vw;
+        width: 200vw;
         right: -40vw;
         bottom: 10vh;
-    left: unset;}
+        left: unset;
+    }
 
     .iconsInnstagram {
         display: none;
@@ -1494,7 +1497,7 @@ width: 200vw;
     .mask {
         height: auto;
         width: 90.8vw;
-        top: 14vh;
+        top: 12vh;
     }
 
     .section2-heading {
