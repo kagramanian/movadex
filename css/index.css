@@ -39,8 +39,8 @@ html#nojs .circle-on {
     display: none;
 !important;
 }
-/********  IF JS OFF END ********/
 
+/********  IF JS OFF END ********/
 
 html, body {
     background-color: black;
@@ -95,19 +95,13 @@ button {
 
 }
 
-.nav-button a {
-    width: 26px;
-    height: 26px;
-    position: absolute;
-    padding: 0;
-    margin: 0;
-}
 
 /********  NAVBAR  ********/
 .navigation {
     position: fixed;
     z-index: 10;
 }
+
 /********  navbar animation  ********/
 
 .top-nav {
@@ -194,31 +188,38 @@ nav {
     transition: 0.5s;
     white-space: nowrap
 
-
 }
 
 .navbar-dots {
     position: relative;
-
     clear: both;
-
-    width: 8px;
     padding-bottom: 6vh;
     color: #FFFFFF;
-display:block;
- float:left;}
+    display: block;
+    float: left;
+}
+
+.nav-button a {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
 
 .nav-button p {
     color: #FFFFFF;
     position: relative;
-display:block;
- float:left;
+    float: left;
+         display: inline-block;
 }
 
-.background-circle {    position: relative;
-
-    width: 16px;    display: inline-block;
-
+.background-circle {
+    position: relative;
+    width: 16px;
+    display: inline-block;
     height: 16px;
 }
 
@@ -239,9 +240,8 @@ display:block;
 
 .nav-button {
     /*size of the actual clickable area*/
-    width: 22px;
+    /*width: 22px;*/
     height: 22px;
-
 }
 
 .background-circle {
@@ -359,7 +359,7 @@ section {
     background: url("../image/title.png") no-repeat fixed center center;
     padding: 20%;
 
-    background-size: auto 100vh ;
+    background-size: auto 100vh;
 
 }
 
@@ -656,8 +656,6 @@ input:focus ~ .highlight {
     right: 50%;
 }
 
-
-
 /*************** LABEL ***************/
 label {
     color: #000;
@@ -787,7 +785,7 @@ input:focus ~ label, input:valid ~ label {
     color: #FFF;
     display: block;
     transition: 0.5s;
-    z-index: 99;
+    z-index: 101;
 }
 
 @media screen and (max-height: 450px) {
@@ -1184,7 +1182,7 @@ input:focus ~ label, input:valid ~ label {
 
     .frame {
         top: 14vh;
-        height: 75vh;
+        height: 70vh;
     }
 
 }
@@ -1404,11 +1402,13 @@ input:focus ~ label, input:valid ~ label {
         line-height: 1.2;
         text-align: left;
     }
+
     p {
         font-size: 11px;
         line-height: 1.357;
         width: 80vw;
     }
+
     button {
         height: 30px;
         padding-left: 15px;
@@ -1416,54 +1416,64 @@ input:focus ~ label, input:valid ~ label {
         font-size: 11px;
         border-radius: 5px;
     }
-    /** OPACITY  **/
 
+    /** OPACITY  **/
     .telegram {
         display: none;
     }
+
     .leaf-container {
         display: none;
     }
+
     .write-us-bar {
         display: none;
     }
+
     .bg5 {
         display: none;
     }
+
     .iconsInnstagram {
         display: none;
     }
+
     .lang {
         display: none;
     }
+
     /** NAVIGATION  **/
     .navbar-top {
         margin: 2.3%;
     }
+
     .navbar-left {
         padding-left: 5.3vw;
     }
+
     .movadex-bar {
         float: right;
     }
+
     .icon-facebook {
         display: none;
         float: right;
 
     }
 
-
     .title {
         background-size: 100vw auto;
         background-origin: padding-box;
 
     }
+
     /** SECTION 2  **/
     .mask {
         height: auto;
         width: 90.8vw;
         top: 14vh;
     }
+
     .section2-heading {
         left: 14vw;
         text-align: left;
@@ -1477,21 +1487,25 @@ input:focus ~ label, input:valid ~ label {
         text-align: left;
         width: 80vw;
     }
+
     /** SECTION 3  **/
     .section3-heading {
         top: 10vh;
     }
+
     .section3-description {
         top: 21vh;
         width: 72vw;
         left: 14vw;
     }
+
     .napoleon {
         height: auto;
         width: 100vw;
         margin-bottom: -10vh;
         opacity: 1;
     }
+
     /** SECTION 4  **/
     .frame {
         height: auto;
@@ -1500,6 +1514,7 @@ input:focus ~ label, input:valid ~ label {
         bottom: unset;
         opacity: 1;
     }
+
     #page4 h1 {
         font-size: 1.5em;
         width: 80vw;
@@ -1511,14 +1526,16 @@ input:focus ~ label, input:valid ~ label {
         height: unset;
 
     }
-    .text-wrapper4{
-        margin-top:52vh;
+
+    .text-wrapper4 {
+        margin-top: 52vh;
         height: auto;
         width: 80vw;
         margin-left: 14vw;
         float: left;
 
     }
+
     .section4-button {
         position: relative;
 
@@ -1527,6 +1544,7 @@ input:focus ~ label, input:valid ~ label {
         left: unset;
         bottom: unset;
     }
+
     /** SECTION 5  **/
     #page5 h1 {
         font-size: 1.5em;
@@ -1538,16 +1556,19 @@ input:focus ~ label, input:valid ~ label {
         margin-bottom: 15px;
         height: unset;
     }
+
     .text-wrapper5 {
         margin-top: 16vh;
         margin-left: 14vw;
 
     }
+
     .group {
         margin-left: unset;
         margin-bottom: 20px;
         margin-top: 30px;
     }
+
     input {
         width: 70vw;
         font-size: 11px;
@@ -1556,15 +1577,19 @@ input:focus ~ label, input:valid ~ label {
         text-transform: uppercase;
 
     }
+
     .footer {
         width: 100vw;
     }
+
     .bar {
         width: 70vw;
     }
+
     form {
         margin-top: unset;
     }
+
     .section5-button {
         margin-left: unset;
         margin-top: 10px;
@@ -1573,28 +1598,29 @@ input:focus ~ label, input:valid ~ label {
     #page5 {
 
     }
-     section {
+
+    section {
         height: 120vh;
 
     }
 
-     #page1 {
+    #page1 {
         top: 0;
     }
 
-     #page2 {
+    #page2 {
         top: 120vh;
     }
 
-     #page3 {
+    #page3 {
         top: 240vh;
     }
 
-     #page4 {
+    #page4 {
         top: 360vh;
     }
 
-     #page5 {
+    #page5 {
         top: 480vh;
     }
 }
@@ -1605,34 +1631,37 @@ input:focus ~ label, input:valid ~ label {
         height: 40vh;
         width: auto;
     }
+
     .section2-heading {
         top: 48vh;
     }
+
     /** SECTION 3  **/
     .napoleon {
         height: auto;
         width: 50vw;
     }
+
     .section3-heading {
         top: 5vh;
         text-align: left;
         margin-left: 14vw;
 
     }
+
     .section3-description {
         width: 40vw;
     }
+
     /** SECTION 4  **/
     .frame {
         height: 40vh;
         width: auto;
     }
+
     /** SECTION 5  **/
 
 }
-
-
-
 
 /*DEBUG*/
 

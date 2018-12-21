@@ -363,7 +363,7 @@ function openNav() {
         navOpened = true;
         sidenav = document.getElementById("sidenav");
         sidenav.style.width = "250px";
-        sidenav.style.zIndex = '110';
+        sidenav.style.zIndex = '200';
        setTimeout(function(){ el.css('margin-left', '+=170px');},20);
 
     }
