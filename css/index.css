@@ -95,6 +95,15 @@ button {
 
 }
 
+.who-we-are{
+    position: absolute;
+    top: -20px;
+    left: -200px;
+    width: 200px;
+    text-align: center;
+
+}
+
 
 /********  NAVBAR  ********/
 .navigation {
@@ -1461,11 +1470,11 @@ input:focus ~ label, input:valid ~ label {
 
     }
 
-    .title {
-        background-size: 100vw auto;
-        background-origin: padding-box;
+    /*.title {*/
+        /*background-size: 100vw auto;*/
+        /*background-origin: padding-box;*/
 
-    }
+    /*}*/
 
     /** SECTION 2  **/
     .mask {
