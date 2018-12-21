@@ -60,7 +60,7 @@ input {
     width: 400px;
     border: none;
     border-bottom: 1px solid #757575;
-    background-color: #e1d2ce;
+    background-color: #e1d2ce00;
 }
 
 h1 {
@@ -370,7 +370,7 @@ section {
     background: url("../image/title.png") no-repeat fixed center center;
     padding: 20%;
     min-height: 100%;
-    background-size: auto 100vh;
+    background-size: cover;
     z-index: 0;
 
 }
@@ -508,6 +508,8 @@ section {
 
 .section5-button {
     margin-left: 12vw;
+        background-color: #FFFFFF00;
+
 }
 
 .bg5 {
@@ -1446,8 +1448,12 @@ input:focus ~ label, input:valid ~ label {
     }
 
     .bg5 {
-        display: none;
-    }
+
+        height: auto;
+width: 200vw;
+        right: -40vw;
+        bottom: 10vh;
+    left: unset;}
 
     .iconsInnstagram {
         display: none;
