@@ -93,7 +93,7 @@ button {
     line-height: 1.2;
     height: 56px;
     cursor: pointer;
-
+    outline: 0 !important;
 }
 
 .footer-mobile {
@@ -176,7 +176,7 @@ nav {
     float: right;
     display: inline;
     margin-top: -4.5px;
-    font-weight: 700;
+    font-weight: 500;
 
 }
 
@@ -384,9 +384,9 @@ section {
     top: 0;
     bottom: 0;
     background: url("../image/title.png") no-repeat fixed center center;
-    min-height: 100%;
-    background-size: cover;
+    background-size: 80vw;
     z-index: 0;
+
 
 }
 
@@ -804,10 +804,11 @@ input:focus ~ label, input:valid ~ label {
 
 .movadex-bar-sidenav {
     transition: 0.2s;
-    margin-left: -110px;
+    margin-left: -115px;
     width: 148px;
     height: 25px;
     position: absolute;
+    top: 29vh;
 }
 
 .sidenav-text {
