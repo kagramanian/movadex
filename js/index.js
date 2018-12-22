@@ -13,6 +13,28 @@ document.getElementsByTagName("html")[0].id = "";
 var sidenav = document.getElementById("sidenav");
 var pcScreen = window.matchMedia("(min-width: 768px)");
 var navbarDots;
+var language;
+
+
+function getLanguage() {
+    (localStorage.getItem('language') == null) ? setLanguage('en') : false;
+    $.ajax({
+        url: 'language/' + localStorage.getItem('language') + '.json',
+        dataType: 'json',
+        async: false,
+        success: function (lang) {
+            language = lang
+        }
+    });
+}
+
+function setLanguage(lang) {
+
+    localStorage.setItem('language', lang);
+    return false;
+}
+
+
 $(document).ready(function () {
 
         var _containerHeight = $(window).height() * 3;
@@ -23,10 +45,11 @@ $(document).ready(function () {
         var pre = prefix();
         var _jsPrefix = pre.lowercase;
         if (_jsPrefix === 'moz') _jsPrefix = 'Moz';
-    var listenerAttached;
+        var listenerAttached;
         let screen = $(document);
 
         var topNav = $('.top-nav');
+
 
         topNav.append($('.navigation').clone());
 
@@ -102,6 +125,25 @@ $(document).ready(function () {
                 }
             }
         ];
+
+
+        getLanguage();
+        $('.section2-heading').html(language.page2h);
+        $('.section2-description').html(language.page2p);
+        $('.section3-heading').text(language.page3h);
+        $('.section3-description').html(language.page3p);
+        $('.section4-heading').html(language.page4h);
+        $('.section4-button').text(language.writeUs);
+        $('.section5-heading').text(language.page5h);
+        $('#group label').text(language.page5Name);
+        $('#group2 label').text(language.page5Email);
+        $('#group3 label').text(language.page5Idea);
+        $('.section5-button').text(language.writeUs);
+        $('.write-us-bar').text(language.writeUs);
+        $('.write-us-text').text(language.writeUs);
+        $('.who-are-we-text').text(language.page2h);
+        $('.what-we-do-text').text(language.page3h);
+        $('.our-works-text').text(language.ourWorks);
 
         /********  LEAF ANIMATION  ********/
 
@@ -357,17 +399,20 @@ $(document).ready(function () {
 
         $('a[href^="#"]').click(function () {
                 var href = $.attr(this, 'href');
-                console.log(href);
-                if (href === "#page1") {
-                    $root.animate({
-                        scrollTop: 0
-                    }, 1000);
-                    return false;
-                } else {
-                    $root.animate({
-                        scrollTop: $(href).position().top + 1
-                    }, 1000);
-                    return false;
+                try {
+                    if (href === "#page1") {
+                        $root.animate({
+                            scrollTop: 0
+                        }, 1000);
+                        return false;
+                    } else {
+                        $root.animate({
+                            scrollTop: $(href).position().top + 1
+                        }, 1000);
+                        return false;
+                    }
+                }
+                catch (error) {
                 }
             }
         );
@@ -434,3 +479,4 @@ function vw(v) {
     var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
     return (v * w) / 100;
 }
+

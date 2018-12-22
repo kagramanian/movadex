@@ -72,6 +72,11 @@ h1 {
     text-align: left;
 }
 
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
 p {
     font-size: 1em;
     color: rgb(0, 0, 0);
@@ -338,7 +343,6 @@ nav {
 
 .dis-invert {
     transition: 0.5s, -webkit-filter 0.5s, -ms-filter 0.5s, filter 0.5s;
-
 
 }
 
@@ -1138,11 +1142,11 @@ input:focus ~ label, input:valid ~ label {
     }
 
     .section3-description {
-        width: 49vw;
+        width: 38vw;
     }
 
     .section4-heading {
-        width: 40vw;
+        width: 39vw;
     }
 
     #page4 h1 {
@@ -1195,7 +1199,7 @@ input:focus ~ label, input:valid ~ label {
     }
 
     .section2-heading {
-        top: 50vh;
+        top: 45vh;
     }
 
     .section2-description {
@@ -1326,7 +1330,8 @@ input:focus ~ label, input:valid ~ label {
     }
 
     .section4-button {
-        left: calc(50vw - 100px);
+        width: 180px;
+        left: calc(50vw - 90px);
         margin-bottom: 15vh;
 
     }

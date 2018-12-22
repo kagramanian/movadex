@@ -47,13 +47,13 @@
 <section id="page2">
     <div class="content">
         <img class="mask" src="image/mask.png"/>
-        <h1 class="section2-heading">КТО МЫ?</h1>
-        <p class="section2-description">Мы — команда опытных дизайнеров, маркетологов, фотографов, копирайтеров
-            и разработчиков. Нам надоели скучные и обычные дизайны, которые совсем
-            не привлекают пользователей, и смешиваються у них в голове с массой других конкурентов.
-            <br/><br/>
-            Мы хотим изменить это, создавая необычные и уникальные продукты, даже
-            если имеем дело с чем-то очень привычным и приевшимся.</p>
+        <h1 class="section2-heading">WHO ARE WE?</h1>
+        <p class="section2-description">We are the team of experienced designers, marketers, photographers, copywriters,
+            and developers. We are tired of dull and ordinary designs which are easy to forget, that don't attract users
+            at all.<br/><br/>
+            We want to change this by creating unusual and unique products, even if we are dealing with something so
+            familiar and common.
+        </p>
         <div class="leaf-container">
             <img class="leaf leaf1" src="image/leaf21.png">
             <img class="leaf leaf2" src="image/leaf22.png">
@@ -67,14 +67,15 @@
 
 <section id="page3">
     <div class="content">
-        <h1 class="section3-heading">ЧТО МЫ ДЕЛАЕМ?</h1>
-        <p class="section3-description">В первую очередь, мы делаем ваш продукт лучше. Мы создаём бренд, который
-            запомнится. Мы делаем проекты живыми, заставляем их вести диалог с пользователями, а не просто
-            перечислять список продукции или описывать характеристики товара.
+        <h1 class="section3-heading">WHAT WE DO?</h1>
+        <p class="section3-description">First of all, we make your product greater. We create memorable brands. We make
+            products live, leading users to engage with them.
             <br/><br/>
-            Так что же мы делаем? Мы можем помочь вам создать продукт с самого нуля, будь то сайт, необычная реклама,
-            обёртка нового шоколадного батончика или же обложка книги. Мы не работаем на вас. Мы работаем с
-            вами. Кстати, сверстать сайт мы вам тоже поможем. </p>
+            So what exactly do we do? We can help
+            you to create something from scratch, whether it's a website, unusual ad, a chocolate bar wrap or a book
+            cover. We don't work for you. We work with you. By the way, we will also help you with software
+            development.
+        </p>
         <img class="napoleon" src="image/napoleon.png">
 
         <div class="leaf-container">
@@ -90,10 +91,12 @@
 <section id="page4">
     <div class="content">
         <img class="frame" src="image/frame.png">
-        <div class="text-wrapper4"><h1 class="section4-heading">МЫ ИЩЕМ ТОГО САМОГО КЛИЕНТА <br/><span
-                class="yellow-text">-50% ПЕРВЫМ 10 ЗАКАЗЧИКАМ</span>
+        <div class="text-wrapper4"><h1 class="section4-heading">WE ARE LOOKING FOR YOU <br/><span
+                class="yellow-text">-50% OFF TILL FEB.</span>
         </h1>
-            <div><a href="#page5"><button class="section4-button">НАПИСАТЬ НАМ</button></a></div>
+            <div><a href="#page5">
+                <button class="section4-button">WRITE US</button>
+            </a></div>
         </div>
         <div class="leaf-container">
             <img class="leaf leaf1 " src="image/leaf41.png">
@@ -110,7 +113,7 @@
     <div class="content">
         <img src="image/bg5.png" class="bg5"/>
         <div class="text-wrapper5">
-            <h1 class="section5-heading">СДЕЛАЕМ МИР ЛУЧШЕ</h1>
+            <h1 class="section5-heading">MAKE THE WORLD A BETTER PLACE</h1>
             <p class="footer ">© 2018 MOVADEX. All rights reserved. Terms & Conditions.</p>
             <form target="_blank" action="https://formspree.io/nor8111@gmail.com" method="POST">
 
@@ -118,24 +121,24 @@
                     <input name="name" type="text" required="">
                     <span class="highlight"></span>
                     <span class="bar"></span>
-                    <label>ВАШЕ ИМЯ</label>
+                    <label>NAME</label>
                 </div>
 
-                <div class="group">
+                <div class="group" id="group2">
                     <input name="email" type="text" required="">
                     <span class="highlight"></span>
                     <span class="bar"></span>
-                    <label>ВАШ EMAIL</label>
+                    <label>EMAIL</label>
                 </div>
-                <div class="group">
+                <div class="group" id="group3">
                     <input name="idea" type="text" required="">
                     <span class="highlight"></span>
                     <span class="bar"></span>
-                    <label>ВАША ИДЕЯ</label>
+                    <label>IDEA</label>
                 </div>
 
-                <button class="section5-button sendBtn button-success pure-button button-xlarge">
-                    <i class="fa fa-paper-plane"></i>&nbsp;СВЯЗАТЬСЯ С НАМИ
+                <button class="section5-button sendBtn button-success">
+                    WRITE US
                 </button>
 
 
@@ -145,9 +148,9 @@
         <div class="footer-mobile">
             <img class="icon-mobile" src="image/icon-facebook.svg">
             <img class="icon-mobile" src="image/icon-instagram.svg">
-            <a class="lang-mobile">ENG</a>
-            <a class="lang-mobile">УКР</a>
-            <a class="lang-mobile">РУС</a>
+            <a class="lang-mobile" href="disabled" onclick="event.preventDefault();setLanguage('en');location.reload();">ENG</a>
+            <a class="lang-mobile" href="disabled" onclick="event.preventDefault();setLanguage('ukr');location.reload();">УКР</a>
+            <a class="lang-mobile" href="disabled" onclick="event.preventDefault();setLanguage('rus');location.reload();">РУС</a>
             <p class="footer ">© 2018 MOVADEX. All rights reserved.<br class="br-mob"><br class="br-mob"></p>
         </div>
     </div>
@@ -158,7 +161,7 @@
     <img class="adidas" src="image/burger-menu.svg" onclick="openNav()">
     <img class="movadex-bar" src="image/movadex.svg">
     <img class="telegram" src="image/telegram.svg">
-    <p class="write-us-bar">НАПИСАТЬ НАМ</p>
+    <p class="write-us-bar">WRITE US</p>
 
 </nav>
 
@@ -171,9 +174,9 @@
             <img class="iconsInnstagram-sidenav" src="image/icon-instagram.svg">
         </div>
         <div class="languages-sidenav">
-            <a class="lang-sidenav">ENG</a>
-            <a class="lang-sidenav">УКР</a>
-            <a class="">РУС</a>
+            <a class="lang-sidenav" href="disabled" onclick="event.preventDefault();setLanguage('en');location.reload();">ENG</a>
+            <a class="lang-sidenav" href="disabled" onclick="event.preventDefault();setLanguage('ukr');location.reload();">УКР</a>
+            <a class="" href="disabled" onclick="event.preventDefault();setLanguage('rus');location.reload();">РУС</a>
         </div>
         <img class="movadex-bar-sidenav" src="image/movadex.svg">
 
@@ -189,7 +192,7 @@
                 <img class=" background-circle" src="image/circle.svg"
                      style="position:absolute;">
                 <a href="#page2"> <img class="dot" src="image/dot.svg"/></a>
-                <p class="sidenav-text">КТО МЫ</p>
+              <a href="#page2">   <p class="sidenav-text who-are-we-text">WHO ARE WE</p></a>
             </div>
             <div class="marg nav-button">
 
@@ -197,7 +200,7 @@
                      style="position:absolute;">
                 <a href="#page3"> <img class="dot" src="image/dot.svg"/>
                 </a>
-                <p class="sidenav-text">ЧТО МЫ ДЕЛАЕМ</p>
+              <a href="#page3">  <p class="sidenav-text what-we-do-text">WHAT WE DO</p> </a>
             </div>
             <div class="marg nav-button">
 
@@ -205,7 +208,7 @@
                      style="position:absolute;">
                 <a href="#page4"><img class="dot" src="image/dot.svg"/>
                 </a>
-                                <p class="sidenav-text">НАШИ РАБОТЫ</p>
+                <a href="#page4"> <p class="sidenav-text our-works-text">OUR WORKS</p></a>
 
             </div>
 
@@ -215,7 +218,7 @@
                      style="position:absolute;">
                 <a href="#page5"> <img class="dot" src="image/dot.svg"/>
                 </a>
-                <p class="sidenav-text">НАПИСАТЬ НАМ</p>
+                <a href="#page5"> <p class="sidenav-text write-us-text">WRITE US</p></a>
             </div>
         </div>
     </nav>
@@ -228,9 +231,9 @@
     <img class="icon-instagram" src="image/icon-instagram.svg">
 
     <div class="languages">
-        <a class="lang">ENG</a>
-        <a class="lang">УКР</a>
-        <a class="lang">РУС</a>
+        <a class="lang" href="disabled" onclick="event.preventDefault();setLanguage('en');location.reload();">ENG</a>
+        <a class="lang" href="disabled" onclick="event.preventDefault();setLanguage('ukr');location.reload();">УКР</a>
+        <a class="lang" href="disabled" onclick="event.preventDefault();setLanguage('rus');location.reload();">РУС</a>
     </div>
 
 </nav>
