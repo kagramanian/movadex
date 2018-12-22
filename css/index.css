@@ -289,6 +289,9 @@ nav {
 /*left end*/
 
 /*bottom*/
+.telegram-mob {
+    display: none;
+}
 
 .navbar-bottom {
     right: 0;
@@ -787,6 +790,21 @@ input:focus ~ label, input:valid ~ label {
     -moz-box-shadow: 7px 0 43px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 7px 0 43px 0 rgba(0, 0, 0, 0.2);
 
+}
+.languages-sidenav {
+    display: none;
+}
+.icon-facebook-sidenav, .iconsInnstagram-sidenav  {
+    display: none;
+}
+
+.movadex-bar-sidenav {
+    transition: 0.2s;
+    margin-left: -174px;
+    width: 147.5px;
+    height: 25px;
+    position: absolute;
+    top: -4px;
 }
 
 .sidenav-text {
@@ -1455,7 +1473,7 @@ input:focus ~ label, input:valid ~ label {
     }
 
     p {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     button {
@@ -1491,7 +1509,9 @@ input:focus ~ label, input:valid ~ label {
     .iconsInnstagram {
         display: none;
     }
-
+    .icon-facebook {
+        display: none;
+    }
     .lang {
         display: none;
     }
@@ -1502,7 +1522,17 @@ input:focus ~ label, input:valid ~ label {
         bottom: 0;
 
     }
-
+    .navbar-bottom {
+        z-index: 50;
+    }
+    .telegram-mob{
+        display: unset;
+        bottom: 0;
+        width: 18.46px;
+        height: 16px;
+        float: right;
+        margin-right: 1.3vh;
+    }
     .adidas {
 
         width: auto;
@@ -1525,14 +1555,39 @@ input:focus ~ label, input:valid ~ label {
         padding-right: 20px;
     }
 
-    .navbar-bottom {
-        display: none;
-    }
+
 
     .movadex-bar {
         float: right;
     }
 
+    /** icon-facebook-sidenav 1  **/
+
+    .icon-facebook-sidenav, .iconsInnstagram-sidenav   {
+        display: unset;
+    }
+    .languages-sidenav {
+        display: unset;
+        position: absolute;
+        margin-left: -105px;
+        top: 80px;
+    }
+    .lang-sidenav {
+        margin-right: 20px;
+    }
+
+
+    .sidenav-icons {
+        margin-left: -145px;
+        position: absolute;
+        top: 33px;
+
+    }
+    .icon-facebook-sidenav {
+        margin-right: 36px;
+    }
+
+    /** SECTION 1  **/
     .leaf-background {
         background: url("../image/bg1-rotated.png") no-repeat fixed center center;
         background-size: 100vw auto;
