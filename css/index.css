@@ -1503,8 +1503,20 @@ input:focus ~ label, input:valid ~ label {
 
     }
 
+    .adidas {
+
+        width: auto;
+        height: 16px;
+    }
+
+    .movadex-bar {
+
+        width: auto;
+        height: 17px;
+    }
 
     .navbar-top {
+            padding-top: 3vh;
         margin: 2.3%;
     }
 
@@ -1516,10 +1528,10 @@ input:focus ~ label, input:valid ~ label {
     .navbar-bottom {
         display: none;
     }
+
     .movadex-bar {
         float: right;
     }
-
 
     .leaf-background {
         background: url("../image/bg1-rotated.png") no-repeat fixed center center;
