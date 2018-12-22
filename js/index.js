@@ -303,7 +303,7 @@ $(document).ready(function () {
                 } else if (content.hasClass('fixed')) {
 
                     content.removeClass('fixed');
-                    sidenav.style.backgroundColor = colors[i-1];
+                    sidenav.style.backgroundColor = colors[i - 1];
 
                     if (i === 1) page1.addClass('leaf-background');
                     else if (i === 2) animatedMouse.removeClass("hide");
@@ -362,6 +362,8 @@ $(document).ready(function () {
 );
 
 var el = $('.navbar-left');
+var fade = $('#darkness')
+
 var navOpened;
 
 
@@ -370,6 +372,7 @@ function openNav() {
         navOpened = true;
         sidenav.style.width = "250px";
         sidenav.style.zIndex = '200';
+        fade.fadeTo(200, 1);
         setTimeout(function () {
             el.css('margin-left', '+=170px');
         }, 20);
@@ -384,6 +387,9 @@ function closeNav() {
         navOpened = false;
         sidenav.style.width = "0";
         sidenav.style.zIndex = '90';
+        fade.fadeTo(200, 0, function () {
+            $(this).hide();
+        });
         el.css('margin-left', '-=170px');
     }
 }
