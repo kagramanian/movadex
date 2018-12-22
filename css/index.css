@@ -345,15 +345,20 @@ section {
     height: 200vh;
     position: relative;
     z-index: 1;
+    overflow: unset; !important;
 }
 
 .leaf-background {
     background: url("../image/bg1.png") no-repeat fixed center center;
     background-size: auto 100vh;
+        overflow: unset; !important;
+
 
 }
 
 .title {
+        overflow: unset; !important;
+
     position: absolute;
     height: 100vh;
     right: 0;
@@ -754,14 +759,13 @@ input:focus ~ label, input:valid ~ label {
 }
 
 /******** SIDENAV ********/
-.sidenav {
+#sidenav {
     height: 100%;
     width: 0;
     position: fixed;
     top: 0;
     left: 0;
     background-color: #111;
-    overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
     z-index: 99;
@@ -780,15 +784,15 @@ input:focus ~ label, input:valid ~ label {
     margin-left: -200px;
 }
 
-.sidenav a {
+#sidenav a {
     transition: 0.3s;
 }
 
-.sidenav a:hover {
+#sidenav a:hover {
     color: #f1f1f1;
 }
 
-.sidenav .closebtn {
+#sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 15px;
@@ -803,7 +807,7 @@ input:focus ~ label, input:valid ~ label {
 }
 
 @media screen and (max-height: 450px) {
-    .sidenav {
+    #sidenav {
         padding-top: 15px;
     }
 
