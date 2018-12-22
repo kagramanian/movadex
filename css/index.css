@@ -157,14 +157,20 @@ nav {
 
 .adidas {
     display: inline;
-    cursor: pointer
+    cursor: pointer;
+     width: 28px;
+    height: 19px;
 }
 
 .movadex-bar {
     margin-left: 4.6vw;
     display: inline;
 
+    width: 118px;
+    height: 20px;
 }
+
+
 
 .write-us-bar {
     float: right;
@@ -175,6 +181,8 @@ nav {
 .telegram {
     float: right;
     margin-left: 0.9vw;
+    width: 15px;
+    height: 13px;
 }
 
 /*left*/
@@ -229,8 +237,8 @@ nav {
 }
 
 .dot {
-    margin: 5px;
-    left: 5px;
+    margin: 6px;
+    left: 6px;
     width: 6px;
     height: 6px;
     -moz-border-radius: 50px;
@@ -252,8 +260,8 @@ nav {
 
 .circle-off {
     /*need this for animation to work*/
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     -webkit-animation: growDown 0.5s forwards;
     -moz-animation: growDown 0.5s forwards;
     -ms-animation: growDown 0.5s forwards;
@@ -263,9 +271,9 @@ nav {
 
 .circle-on {
 
-    width: 16px;
+    width: 18px;
 !important;
-    height: 16px;
+    height: 18px;
 !important;
     display: block;
     -webkit-animation: growUp 0.5s;
