@@ -333,12 +333,11 @@ nav {
 !important;
     -ms-filter: invert(100%);
 !important;
-        transition: 0.5s;
 
 }
 
 .dis-invert {
-    transition: 0.5s;
+    transition: 0.5s, -webkit-filter 0.5s, -ms-filter 0.5s, filter 0.5s;
 
 
 }
