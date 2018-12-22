@@ -209,6 +209,8 @@ nav {
     color: #FFFFFF;
     display: block;
     float: left;
+        transition: 0.5s;
+
 }
 
 .nav-button a {
@@ -1495,6 +1497,13 @@ input:focus ~ label, input:valid ~ label {
     }
 
     /** NAVIGATION  **/
+
+    .navbar-dots {
+    position: absolute;
+        bottom: 0;
+
+}
+
     .navbar-top {
         margin: 2.3%;
     }
@@ -1665,10 +1674,10 @@ input:focus ~ label, input:valid ~ label {
         display: unset;
         position: absolute;
         width: 100vw;
-        height: 15vh;
+        height: 90px;
         background-color: #fff;
         bottom: 0;
-        z-index: 100;
+         z-index: 100;
     }
 
     .icon-mobile {
@@ -1694,7 +1703,6 @@ input:focus ~ label, input:valid ~ label {
         padding-bottom: unset;
         text-align: right;
         width: 96vw;
-        font-family: 'Montserrat';
 
     }
 

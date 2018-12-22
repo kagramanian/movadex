@@ -32,7 +32,8 @@ $(document).ready(function () {
         topNav.append($('.navigation').clone());
 
         var animatedMouse = $(".mousey");
-        let navbarList = [$(".navbar-bottom"), $(".navbar-dots"), $(".navbar-top"), animatedMouse, $('.closebtn')];
+        var navbarDots = $(".navbar-dots");
+        let navbarList = [$(".navbar-bottom"), navbarDots, $(".navbar-top"), animatedMouse, $('.closebtn')];
         let listSize = navbarList.length;
         let page1 = $('#page1'), page2 = $("#page2"), page3 = $("#page3"), page4 = $("#page4"), page5 = $("#page5");
         let content1 = page1.find(".content"), content2 = page2.find(".content"), content3 = page3.find(".content"),
@@ -299,6 +300,7 @@ $(document).ready(function () {
                         changeNavItem(NEXT, i);
                         if (i === 1) page1.removeClass('leaf-background');
                         else if (i === 2) animatedMouse.addClass("hide");
+                        else if (i === 4) navbarDots.css('margin-bottom', '90px');
                     }
                 } else if (content.hasClass('fixed')) {
 
@@ -307,6 +309,8 @@ $(document).ready(function () {
 
                     if (i === 1) page1.addClass('leaf-background');
                     else if (i === 2) animatedMouse.removeClass("hide");
+                        else if (i === 4) navbarDots.css('margin-bottom', '0');
+
                     changeNavItem(PREV, i);
                     break;
 
