@@ -12,7 +12,7 @@
 document.getElementsByTagName("html")[0].id = "";
 var sidenav = document.getElementById("sidenav");
 var pcScreen = window.matchMedia("(min-width: 768px)");
-
+var navbarDots;
 $(document).ready(function () {
 
         var _containerHeight = $(window).height() * 3;
@@ -32,8 +32,8 @@ $(document).ready(function () {
         topNav.append($('.navigation').clone());
 
         var animatedMouse = $(".mousey");
-        var navbarDots = $(".navbar-dots");
-        let navbarList = [$(".navbar-bottom"), navbarDots, $(".navbar-top"), animatedMouse, $('.closebtn')];
+        navbarDots = $(".navbar-dots");
+        let navbarList = [$(".navbar-bottom"), navbarDots, $(".navbar-top"), animatedMouse, $('.closebtn'), $('.sidenav-icons'), $('.languages-sidenav'), $('.movadex-bar-sidenav')];
         let listSize = navbarList.length;
         let page1 = $('#page1'), page2 = $("#page2"), page3 = $("#page3"), page4 = $("#page4"), page5 = $("#page5");
         let content1 = page1.find(".content"), content2 = page2.find(".content"), content3 = page3.find(".content"),
@@ -294,7 +294,7 @@ $(document).ready(function () {
                 var page = pages[i];
                 var content = contents[i];
                 if (page.offset().top < offTop) {
-                    if (!content.hasClass('fixed') ) {
+                    if (!content.hasClass('fixed')) {
                         content.addClass('fixed');
                         sidenav.style.backgroundColor = colors[i];
                         changeNavItem(NEXT, i);
@@ -385,6 +385,7 @@ function openNav() {
             var wid = 170 + 16 + pad;
             sidenav.style.width = wid + "px";
         }
+        navbarDots.find(">:first-child").css('opacity', '0');
         sidenav.style.zIndex = '200';
         text.css('margin-left', '-170px');
         fade.fadeTo(200, 1);
@@ -405,7 +406,7 @@ function closeNav() {
         navOpened = false;
         sidenav.style.width = "0";
         sidenav.style.zIndex = '90';
-
+        navbarDots.find('>:first-child').css('opacity', '1');
         text.css('margin-left', '-200px');
 
         fade.fadeTo(200, 0, function () {

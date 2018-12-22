@@ -221,6 +221,7 @@ nav {
     margin: 0;
     display: inline-block;
     z-index: 10;
+
 }
 
 .nav-button p {
@@ -254,6 +255,8 @@ nav {
     /*size of the actual clickable area*/
     width: 22px;
     height: 22px;
+    transition: 0.5s;
+
 }
 
 .background-circle {
@@ -788,21 +791,22 @@ input:focus ~ label, input:valid ~ label {
     box-shadow: 7px 0 43px 0 rgba(0, 0, 0, 0.2);
 
 }
+
 .languages-sidenav {
     color: #FFFFFF;
     display: none;
 }
-.icon-facebook-sidenav, .iconsInnstagram-sidenav  {
+
+.icon-facebook-sidenav, .iconsInnstagram-sidenav {
     display: none;
 }
 
 .movadex-bar-sidenav {
     transition: 0.2s;
-    margin-left: -174px;
-    width: 147.5px;
+    margin-left: -110px;
+    width: 148px;
     height: 25px;
     position: absolute;
-    top: -4px;
 }
 
 .sidenav-text {
@@ -1512,9 +1516,11 @@ input:focus ~ label, input:valid ~ label {
     .iconsInnstagram {
         display: none;
     }
+
     .icon-facebook {
         display: none;
     }
+
     .lang {
         display: none;
     }
@@ -1525,10 +1531,19 @@ input:focus ~ label, input:valid ~ label {
         bottom: 0;
 
     }
+
+    .movadex-bar-sidenav {
+    transition: 0.2s;
+    margin-left: -110px;
+    width: 148px;
+    height: 25px;
+    position: absolute;
+}
     .navbar-bottom {
         z-index: 50;
     }
-    .telegram-mob{
+
+    .telegram-mob {
         display: unset;
         bottom: 0;
         width: 18.46px;
@@ -1536,6 +1551,7 @@ input:focus ~ label, input:valid ~ label {
         float: right;
         margin-right: 1.3vh;
     }
+
     .adidas {
 
         width: auto;
@@ -1558,8 +1574,6 @@ input:focus ~ label, input:valid ~ label {
         padding-right: 20px;
     }
 
-
-
     .movadex-bar {
         float: right;
     }
@@ -1575,22 +1589,21 @@ input:focus ~ label, input:valid ~ label {
         z-index: unset;
     }
 
-
     /** icon-facebook-sidenav 1  **/
-
-    .icon-facebook-sidenav, .iconsInnstagram-sidenav   {
+    .icon-facebook-sidenav, .iconsInnstagram-sidenav {
         display: unset;
     }
+
     .languages-sidenav {
         display: unset;
         position: absolute;
         margin-left: -105px;
         top: 80px;
     }
+
     .lang-sidenav {
         margin-right: 20px;
     }
-
 
     .sidenav-icons {
         margin-left: -145px;
@@ -1598,11 +1611,12 @@ input:focus ~ label, input:valid ~ label {
         top: 33px;
 
     }
+
     .icon-facebook-sidenav {
         margin-right: 36px;
     }
 
-     /** SECTION 1  **/
+    /** SECTION 1  **/
     #page1 {
         height: 100vh;
     !important;
