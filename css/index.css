@@ -94,6 +94,8 @@ button {
     height: 56px;
     cursor: pointer;
     outline: 0 !important;
+    -webkit-tap-highlight-color: transparent;
+
 }
 
 .footer-mobile {
@@ -334,6 +336,7 @@ nav {
 }
 
 .dis-invert {
+        -webkit-filter: invert(0%); !important;
     -webkit-animation: goWhite 0.5s ease-out forwards;
     -moz-animation: goWhite 0.5s ease-out forwards;
     -o-animation: goWhite 0.5s ease-out forwards;
