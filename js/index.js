@@ -22,9 +22,8 @@ $(document).ready(function () {
         var _scrollPercent = 0;
         var pre = prefix();
         var _jsPrefix = pre.lowercase;
-        if (_jsPrefix == 'moz') _jsPrefix = 'Moz';
-        var _cssPrefix = pre.css;
-        var listenerAttached;
+        if (_jsPrefix === 'moz') _jsPrefix = 'Moz';
+    var listenerAttached;
         let screen = $(document);
 
         var topNav = $('.top-nav');
@@ -55,6 +54,7 @@ $(document).ready(function () {
 
         var colors = ["#000", "#cac8bb", "#a3cec2", "#eaeaea", "#e1d2ce"];
 
+        var telegramMob = $('.telegram-mob');
         var _positions = [
             {
                 name: 'leaf1',
@@ -239,7 +239,7 @@ $(document).ready(function () {
         /********  NAVBAR COLOR CHANGE  ********/
         for (var i = 0; i < listSize; i++) {
             var navBarItem = navbarList[i];
-                navBarItem.addClass('dis-invert');
+            navBarItem.addClass('dis-invert');
         }
 
         function checkColor() {
@@ -301,7 +301,10 @@ $(document).ready(function () {
                         changeNavItem(NEXT, i);
                         if (i === 1) page1.removeClass('leaf-background');
                         else if (i === 2) animatedMouse.addClass("hide");
-                        else if (i === 4 && !pcScreen.matches) navbarDots.css('margin-bottom', '90px');
+                        else if (i === 4 && !pcScreen.matches) {
+                            navbarDots.css('margin-bottom', '90px');
+                            telegramMob.css('margin-bottom', '90px');
+                        }
                     }
                 } else if (content.hasClass('fixed')) {
 
@@ -310,7 +313,10 @@ $(document).ready(function () {
 
                     if (i === 1) page1.addClass('leaf-background');
                     else if (i === 2) animatedMouse.removeClass("hide");
-                    else if (i === 4 && !pcScreen.matches) navbarDots.css('margin-bottom', '0');
+                    else if (i === 4 && !pcScreen.matches) {
+                        navbarDots.css('margin-bottom', '0');
+                        telegramMob.css('margin-bottom', '0');
+                    }
 
                     changeNavItem(PREV, i);
                     break;
