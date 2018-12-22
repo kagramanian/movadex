@@ -33,7 +33,7 @@ $(document).ready(function () {
 
         var animatedMouse = $(".mousey");
         navbarDots = $(".navbar-dots");
-        let navbarList = [$(".navbar-bottom"), navbarDots, $(".navbar-top"), animatedMouse, $('.closebtn'), $('.sidenav-icons'), $('.languages-sidenav'), $('.movadex-bar-sidenav')];
+        let navbarList = [$(".navbar-bottom"), navbarDots, $(".navbar-top"), $(".scroll-downs"), $('.closebtn'), $('.sidenav-icons'), $('.languages-sidenav'), $('.movadex-bar-sidenav')];
         let listSize = navbarList.length;
         let page1 = $('#page1'), page2 = $("#page2"), page3 = $("#page3"), page4 = $("#page4"), page5 = $("#page5");
         let content1 = page1.find(".content"), content2 = page2.find(".content"), content3 = page3.find(".content"),
