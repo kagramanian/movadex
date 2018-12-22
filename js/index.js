@@ -372,6 +372,7 @@ var text = $('.sidenav-text');
 var navOpened;
 
 
+
 function openNav() {
     if (!navOpened) {
         navOpened = true;
@@ -382,7 +383,7 @@ function openNav() {
             sidenav.style.width = wid + "px";
         }
         sidenav.style.zIndex = '200';
-        text.css('margin-left', '-170px');
+         text.css('margin-left', '-170px');
         fade.fadeTo(200, 1);
         fade.click(function () {
             closeNav()
@@ -401,6 +402,7 @@ function closeNav() {
         navOpened = false;
         sidenav.style.width = "0";
         sidenav.style.zIndex = '90';
+
 text.css('margin-left', '-200px');
 
         fade.fadeTo(200, 0, function () {
