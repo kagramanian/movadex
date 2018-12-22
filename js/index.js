@@ -11,6 +11,7 @@
 
 document.getElementsByTagName("html")[0].id = "";
 var sidenav = document.getElementById("sidenav");
+var pcScreen = window.matchMedia("(min-width: 768px)");
 
 $(document).ready(function () {
 
@@ -23,7 +24,6 @@ $(document).ready(function () {
         var _jsPrefix = pre.lowercase;
         if (_jsPrefix == 'moz') _jsPrefix = 'Moz';
         var _cssPrefix = pre.css;
-        var pcScreen = window.matchMedia("(min-width: 768px)");
         var listenerAttached;
         let screen = $(document);
 
@@ -316,8 +316,13 @@ $(document).ready(function () {
 
             function changeNavItem(nextOrPrev, i) {
                 if (nextOrPrev === NEXT) {
-                    alist[i - 1][0].removeClass('circle-on');
-                    alist[i - 1][1].removeClass('selected');
+                    if (i !== 0) {
+                        alist[i - 1][0].removeClass('circle-on');
+                        alist[i - 1][1].removeClass('selected');
+                    } else {
+                        alist[0][0].removeClass('circle-on');
+                        alist[0][1].removeClass('selected');
+                    }
                     alist[i][0].addClass('circle-off').addClass('circle-on');
                     alist[i][1].addClass('selected');
 
@@ -328,8 +333,8 @@ $(document).ready(function () {
                         alist[i - 1][0].addClass('circle-off').addClass('circle-on');
                         alist[i - 1][1].addClass('selected');
                     } else {
-                        alist[i][0].addClass('circle-off').addClass('circle-on');
-                        alist[i][1].addClass('selected');
+                        alist[0][0].addClass('circle-off').addClass('circle-on');
+                        alist[0][1].addClass('selected');
                     }
                 }
 
@@ -362,16 +367,22 @@ $(document).ready(function () {
 );
 
 var el = $('.navbar-left');
-var fade = $('#darkness')
-
+var fade = $('#darkness');
+var text = $('.sidenav-text');
 var navOpened;
 
 
 function openNav() {
     if (!navOpened) {
         navOpened = true;
-        sidenav.style.width = "230px";
+        if (!pcScreen.matches) sidenav.style.width = "226px";
+        else {
+            var pad = vw(4);
+            var wid = 170 + 16 + pad;
+            sidenav.style.width = wid + "px";
+        }
         sidenav.style.zIndex = '200';
+        text.css('margin-left', '-170px');
         fade.fadeTo(200, 1);
         fade.click(function () {
             closeNav()
@@ -390,6 +401,8 @@ function closeNav() {
         navOpened = false;
         sidenav.style.width = "0";
         sidenav.style.zIndex = '90';
+text.css('margin-left', '-200px');
+
         fade.fadeTo(200, 0, function () {
             $(this).hide();
         });
@@ -397,5 +410,14 @@ function closeNav() {
     }
 
 
+}
 
+function vh(v) {
+    var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    return (v * h) / 100;
+}
+
+function vw(v) {
+    var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    return (v * w) / 100;
 }
