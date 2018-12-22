@@ -102,7 +102,9 @@ button {
     /*text-align: center;*/
     margin-left: -180px;
 }
-
+.footer-mobile {
+    display: none;
+}
 /********  NAVBAR  ********/
 .navigation {
     position: fixed;
@@ -1593,15 +1595,11 @@ input:focus ~ label, input:valid ~ label {
     input:focus ~ label, input:valid ~ label {
         top: -10px;
     }
-    .group {
-        margin-bottom: 10px;
-        margin-top: 20px;
 
-    }
     .group {
         margin-left: unset;
         margin-bottom: 20px;
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     input {
@@ -1610,13 +1608,8 @@ input:focus ~ label, input:valid ~ label {
         line-height: 1.357;
         color: rgb(0, 0, 0);
         text-transform: uppercase;
-
     }
 
-    .footer {
-        width: 100vw;
-        padding-bottom: 0;
-    }
 
     .bar {
         width: 70vw;
@@ -1631,14 +1624,45 @@ input:focus ~ label, input:valid ~ label {
         margin-top: 10px;
     }
 
-    #page5 {
-
-    }
 
     section {
         height: 120vh;
 
     }
+    .footer-mobile {
+        display: unset;
+        position: absolute;
+        width: 100vw;
+        height: 15vh;
+        background-color: #fff;
+        bottom: 0;
+        z-index: 100;
+    }
+    .icon-mobile {
+        margin-top: 4.4vh;
+        -webkit-filter: invert(100%);
+        margin-left: 6vw;
+
+    }
+    .lang-mobile {
+        float: right;
+        margin-top: 4.4vh;
+        margin-right: 4vw;
+        font-size: 14px;
+
+    }
+    .footer {
+        font-size: 10px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding-bottom: unset;
+        text-align: right;
+        width: 96vw;
+        font-family: 'Montserrat';
+
+    }
+
 
     #page1 {
         top: 0;
@@ -1659,6 +1683,7 @@ input:focus ~ label, input:valid ~ label {
     #page5 {
         top: 480vh;
     }
+
 }
 
 @media only screen and (max-height: 450px) {
@@ -1700,7 +1725,14 @@ input:focus ~ label, input:valid ~ label {
     .text-wrapper5 {
         margin-top: 7vh;
     }
-
+    .br-mob {
+        display: none;
+    }
+    .footer {
+        margin-bottom: 1vh;
+        width: 100vw;
+        text-align: center;
+    }
 }
 
 /*DEBUG*/
