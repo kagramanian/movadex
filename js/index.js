@@ -300,7 +300,7 @@ $(document).ready(function () {
                         changeNavItem(NEXT, i);
                         if (i === 1) page1.removeClass('leaf-background');
                         else if (i === 2) animatedMouse.addClass("hide");
-                        else if (i === 4) navbarDots.css('margin-bottom', '90px');
+                        else if (i === 4 && !pcScreen.matches) navbarDots.css('margin-bottom', '90px');
                     }
                 } else if (content.hasClass('fixed')) {
 
@@ -309,7 +309,7 @@ $(document).ready(function () {
 
                     if (i === 1) page1.addClass('leaf-background');
                     else if (i === 2) animatedMouse.removeClass("hide");
-                        else if (i === 4) navbarDots.css('margin-bottom', '0');
+                    else if (i === 4 && !pcScreen.matches) navbarDots.css('margin-bottom', '0');
 
                     changeNavItem(PREV, i);
                     break;
@@ -376,7 +376,6 @@ var text = $('.sidenav-text');
 var navOpened;
 
 
-
 function openNav() {
     if (!navOpened) {
         navOpened = true;
@@ -387,7 +386,7 @@ function openNav() {
             sidenav.style.width = wid + "px";
         }
         sidenav.style.zIndex = '200';
-         text.css('margin-left', '-170px');
+        text.css('margin-left', '-170px');
         fade.fadeTo(200, 1);
         fade.click(function () {
             closeNav()
@@ -407,7 +406,7 @@ function closeNav() {
         sidenav.style.width = "0";
         sidenav.style.zIndex = '90';
 
-text.css('margin-left', '-200px');
+        text.css('margin-left', '-200px');
 
         fade.fadeTo(200, 0, function () {
             $(this).hide();

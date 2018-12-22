@@ -209,7 +209,7 @@ nav {
     color: #FFFFFF;
     display: block;
     float: left;
-        transition: 0.5s;
+    transition: 0.5s;
 
 }
 
@@ -1497,12 +1497,12 @@ input:focus ~ label, input:valid ~ label {
     }
 
     /** NAVIGATION  **/
-
     .navbar-dots {
-    position: absolute;
+        position: absolute;
         bottom: 0;
 
-}
+    }
+
 
     .navbar-top {
         margin: 2.3%;
@@ -1513,15 +1513,13 @@ input:focus ~ label, input:valid ~ label {
         padding-right: 20px;
     }
 
+    .navbar-bottom {
+        display: none;
+    }
     .movadex-bar {
         float: right;
     }
 
-    .icon-facebook {
-        display: none;
-        float: right;
-
-    }
 
     .leaf-background {
         background: url("../image/bg1-rotated.png") no-repeat fixed center center;
@@ -1677,7 +1675,7 @@ input:focus ~ label, input:valid ~ label {
         height: 90px;
         background-color: #fff;
         bottom: 0;
-         z-index: 100;
+        z-index: 100;
     }
 
     .icon-mobile {
