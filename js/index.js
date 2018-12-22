@@ -294,7 +294,7 @@ $(document).ready(function () {
                 var page = pages[i];
                 var content = contents[i];
                 if (page.offset().top < offTop) {
-                    if (!content.hasClass('fixed')) {
+                    if (!content.hasClass('fixed') ) {
                         content.addClass('fixed');
                         sidenav.style.backgroundColor = colors[i];
                         changeNavItem(NEXT, i);

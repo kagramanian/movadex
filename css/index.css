@@ -365,15 +365,12 @@ section {
 
 .leaf-background {
     background: url("../image/bg1.png") no-repeat fixed center center;
-    background-size: auto 100vh;
     overflow: unset;
 !important;
 
 }
 
 .title {
-    overflow: unset;
-!important;
     position: absolute;
     height: 100vh;
     right: 0;
@@ -383,7 +380,6 @@ section {
     top: 0;
     bottom: 0;
     background: url("../image/title.png") no-repeat fixed center center;
-    padding: 20%;
     min-height: 100%;
     background-size: cover;
     z-index: 0;
@@ -441,6 +437,7 @@ section {
 }
 
 .napoleon {
+    z-index: -1;
     position: absolute;
     height: 95vh;
     margin: auto;
@@ -782,7 +779,7 @@ input:focus ~ label, input:valid ~ label {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #000;
     transition: 0.5s;
     padding-top: 60px;
     z-index: 99;
@@ -792,6 +789,7 @@ input:focus ~ label, input:valid ~ label {
 
 }
 .languages-sidenav {
+    color: #FFFFFF;
     display: none;
 }
 .icon-facebook-sidenav, .iconsInnstagram-sidenav  {
@@ -1463,6 +1461,7 @@ input:focus ~ label, input:valid ~ label {
 /******** MOBILE DISPLAY  ********/
 
 @media only screen and (max-width: 765px) {
+
     h1 {
         font-size: 1.6em;
         color: rgb(0, 0, 0);
@@ -1484,7 +1483,11 @@ input:focus ~ label, input:valid ~ label {
         border-radius: 5px;
     }
 
-    /** OPACITY  **/
+    .fixed {
+        position: inherit;
+    }
+
+    /**  OPACITY  **/
     .telegram {
         display: none;
     }
@@ -1546,7 +1549,7 @@ input:focus ~ label, input:valid ~ label {
     }
 
     .navbar-top {
-            padding-top: 3vh;
+        padding-top: 3vh;
         margin: 2.3%;
     }
 
@@ -1560,6 +1563,18 @@ input:focus ~ label, input:valid ~ label {
     .movadex-bar {
         float: right;
     }
+
+    .content {
+        position: unset;
+        margin: auto;
+        top: unset;
+        left: unset;
+        right: unset;
+        background-color: inherit;
+        height: auto;
+        z-index: unset;
+    }
+
 
     /** icon-facebook-sidenav 1  **/
 
@@ -1587,102 +1602,153 @@ input:focus ~ label, input:valid ~ label {
         margin-right: 36px;
     }
 
-    /** SECTION 1  **/
+     /** SECTION 1  **/
+    #page1 {
+        height: 100vh;
+    !important;
+        position: unset;
+    }
+
     .leaf-background {
-        background: url("../image/bg1-rotated.png") no-repeat fixed center center;
-        background-size: 100vw auto;
+        background: url("../image/bg1-rotated.png") no-repeat center center;
+        background-size: 100vw 100vh;
     }
 
     .title {
+        position: unset;
+        background: url("../image/title.png") no-repeat center center;
         background-size: 100vw auto;
         background-origin: padding-box;
 
     }
 
     /** SECTION 2  **/
+    #page2 {
+        height: auto;
+        top: unset;
+        position: unset;
+
+    }
+
     .mask {
+        position: unset;
         height: auto;
         width: 90.8vw;
-        top: 12vh;
+        margin-top: 12vh;
+        margin-left: 4.6vw;
     }
 
     .section2-heading {
-        left: 14vw;
+        position: unset;
+
+        margin-left: 14vw;
         text-align: left;
+        width: unset;
 
     }
 
     .section2-description {
+        position: unset;
         padding: 0;
         top: 59vh;
-        left: 14vw;
+        margin-left: 14vw;
         text-align: left;
         width: 80vw;
+        margin-bottom: 14vw;
+
     }
 
     /** SECTION 3  **/
+    #page3 {
+        height: auto;
+    !important;
+        position: unset;
+        top: unset;
+    }
+
     .section3-heading {
-        top: 10vh;
+        position: unset;
+        margin-top: 12vh;
     }
 
     .section3-description {
-        top: 21vh;
+        position: unset;
+        margin-top: 5vh;
         width: 72vw;
-        left: 14vw;
+        margin-left: 14vw;
     }
 
     .napoleon {
+        position: unset;
         height: auto;
         width: 100vw;
-        margin-bottom: -10vh;
         opacity: 1;
+        margin-bottom: -10px;
     }
 
     /** SECTION 4  **/
+    #page4 {
+        height: 105vh;
+    !important;
+        position: unset;
+        top: unset;
+    }
+
     .frame {
+        position: unset;
         height: auto;
         width: 90.8vw;
-        top: 11.8%;
         bottom: unset;
         opacity: 1;
+        margin-top: 12vh;
+        margin-left: 4.7vw;
     }
 
     #page4 h1 {
+        position: unset;
         font-size: 1.5em;
         width: 80vw;
-
         top: unset;
         text-align: left;
-        position: relative;
+        margin-left: 14vw;
+        margin-top: unset;
+        padding-top: unset;
         margin-bottom: 15px;
         height: unset;
 
     }
 
-    .text-wrapper4 {
-        margin-top: 52vh;
-        height: auto;
-        width: 80vw;
-        margin-left: 14vw;
-        float: left;
-
-    }
-
     .section4-button {
-        position: relative;
-
+        position: unset;
         margin-bottom: unset;
         top: unset;
         left: unset;
         bottom: unset;
+        margin-left: 14vw;
+
     }
 
     /** SECTION 5  **/
+    #page5 {
+        height: inherit;
+    !important;
+        position: unset;
+        top: unset;
+    }
+
+    #page5 .content {
+        height: 105vh;
+        width: 100vw;
+        position: absolute;
+        overflow: hidden;
+    }
+
     #page5 h1 {
         font-size: 1.5em;
-        width: 80vw;
-
         top: unset;
+        width: 80vw;
+        margin-top: unset;
+        padding-top: unset;
         text-align: left;
         position: relative;
         margin-bottom: 15px;
@@ -1730,11 +1796,6 @@ input:focus ~ label, input:valid ~ label {
         margin-top: 10px;
     }
 
-    section {
-        height: 120vh;
-
-    }
-
     .footer-mobile {
         display: unset;
         position: absolute;
@@ -1769,26 +1830,6 @@ input:focus ~ label, input:valid ~ label {
         text-align: right;
         width: 96vw;
 
-    }
-
-    #page1 {
-        top: 0;
-    }
-
-    #page2 {
-        top: 120vh;
-    }
-
-    #page3 {
-        top: 240vh;
-    }
-
-    #page4 {
-        top: 360vh;
-    }
-
-    #page5 {
-        top: 480vh;
     }
 
 }
