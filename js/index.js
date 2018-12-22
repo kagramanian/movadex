@@ -32,7 +32,7 @@ $(document).ready(function () {
         topNav.append($('.navigation').clone());
 
         var animatedMouse = $(".mousey");
-        let navbarList = [$(".navbar-bottom"), $(".navbar-dots"), $(".navbar-top"), animatedMouse];
+        let navbarList = [$(".navbar-bottom"), $(".navbar-dots"), $(".navbar-top"), animatedMouse, $('.closebtn')];
         let listSize = navbarList.length;
         let page1 = $('#page1'), page2 = $("#page2"), page3 = $("#page3"), page4 = $("#page4"), page5 = $("#page5");
         let content1 = page1.find(".content"), content2 = page2.find(".content"), content3 = page3.find(".content"),
@@ -237,6 +237,7 @@ $(document).ready(function () {
 
         /********  NAVBAR COLOR CHANGE  ********/
 
+
         function checkColor() {
             {
                 for (var i = 0; i < listSize; i++) {
@@ -246,6 +247,7 @@ $(document).ready(function () {
                     if (navBarItem.offset().top + 50 > page2.position().top) {
 
                         navBarItem.removeClass('dis-invert').addClass('invert');
+
                     } else {
                         if (navBarItem.hasClass('invert')) navBarItem.removeClass('invert').addClass('dis-invert');
                     }

@@ -100,7 +100,7 @@ button {
     /*left: -200px;*/
     /*width: 200px;*/
     /*text-align: center;*/
-    margin-left: -100px;
+    margin-left: -180px;
 }
 
 /********  NAVBAR  ********/
@@ -213,12 +213,13 @@ nav {
     padding: 0;
     margin: 0;
     display: inline-block;
+    z-index: 10;
 }
 
 .nav-button p {
     color: #FFFFFF;
     position: relative;
- }
+}
 
 .background-circle {
     position: relative;
@@ -1419,7 +1420,7 @@ input:focus ~ label, input:valid ~ label {
 
     p {
         font-size: 14px;
-     }
+    }
 
     button {
         height: 30px;
