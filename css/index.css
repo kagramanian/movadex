@@ -94,13 +94,13 @@ button {
 
 }
 
-.who-we-are {
+.sidenav-text {
     /*position: absolute;*/
     /*top: -20px;*/
     /*left: -200px;*/
     /*width: 200px;*/
     /*text-align: center;*/
-    margin-left: -180px;
+    margin-left: -170px;
 }
 .footer-mobile {
     display: none;
@@ -788,7 +788,7 @@ input:focus ~ label, input:valid ~ label {
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 15px;
     font-size: 36px;
     margin-left: 50px;
     padding: 8px 8px 8px 32px;

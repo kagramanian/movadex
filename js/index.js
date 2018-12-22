@@ -370,9 +370,12 @@ var navOpened;
 function openNav() {
     if (!navOpened) {
         navOpened = true;
-        sidenav.style.width = "250px";
+        sidenav.style.width = "230px";
         sidenav.style.zIndex = '200';
         fade.fadeTo(200, 1);
+        fade.click(function () {
+            closeNav()
+        });
         setTimeout(function () {
             el.css('margin-left', '+=170px');
         }, 20);
@@ -392,4 +395,7 @@ function closeNav() {
         });
         el.css('margin-left', '-=170px');
     }
+
+
+
 }
