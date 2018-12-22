@@ -237,7 +237,10 @@ $(document).ready(function () {
 
 
         /********  NAVBAR COLOR CHANGE  ********/
-
+        for (var i = 0; i < listSize; i++) {
+            var navBarItem = navbarList[i];
+                navBarItem.addClass('dis-invert');
+        }
 
         function checkColor() {
             {
@@ -246,9 +249,7 @@ $(document).ready(function () {
 
 
                     if (navBarItem.offset().top + 50 > page2.position().top) {
-
-                        navBarItem.removeClass('dis-invert').addClass('invert');
-
+                        navBarItem.addClass('invert');
                     } else {
                         if (navBarItem.hasClass('invert')) navBarItem.removeClass('invert').addClass('dis-invert');
                     }

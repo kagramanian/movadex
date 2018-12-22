@@ -15,7 +15,6 @@ html#nojs #page1 {
     top: 0;
 }
 
-
 html#nojs #page2 {
     top: 100vh;
 }
@@ -328,19 +327,20 @@ nav {
 /*navbar change color*/
 
 .invert {
-    -webkit-filter: invert(100%); !important;
-    -webkit-animation: goBlack 0.5s ease-out ;
-    -moz-animation: goBlack 0.5s ease-out ;
-    -o-animation: goBlack 0.5s ease-out ;
-    animation: goBlack 0.5s ease-out ;
+    -webkit-filter: invert(100%);
+!important;
+    filter: invert(100%);
+!important;
+    -ms-filter: invert(100%);
+!important;
+        transition: 0.5s;
+
 }
 
 .dis-invert {
-        -webkit-filter: invert(0%); !important;
-    -webkit-animation: goWhite 0.5s ease-out ;
-    -moz-animation: goWhite 0.5s ease-out ;
-    -o-animation: goWhite 0.5s ease-out ;
-    animation: goWhite 0.5s ease-out ;
+    transition: 0.5s;
+
+
 }
 
 /******** NAVBAR END  ********/
@@ -389,7 +389,6 @@ section {
     background: url("../image/title.png") no-repeat fixed center center;
     background-size: 80vw;
     z-index: 0;
-
 
 }
 
@@ -1114,100 +1113,6 @@ input:focus ~ label, input:valid ~ label {
     }
 }
 
-@-webkit-keyframes goBlack {
-    0% {
-        -webkit-filter: invert(0%);
-
-    }
-
-    100% {
-        -webkit-filter: invert(100%);
-    }
-}
-
-@-moz-keyframes goBlack {
-    0% {
-        -webkit-filter: invert(0%);
-
-    }
-
-    100% {
-        -webkit-filter: invert(100%);
-
-    }
-}
-
-@-o-keyframes goBlack {
-    0% {
-        -webkit-filter: invert(0%);
-
-    }
-
-    100% {
-        -webkit-filter: invert(100%);
-
-    }
-}
-
-@keyframes goBlack {
-    0% {
-        -webkit-filter: invert(0%);
-
-    }
-
-    100% {
-        -webkit-filter: invert(100%);
-
-    }
-}
-
-@-webkit-keyframes goWhite {
-    0% {
-        -webkit-filter: invert(100%);
-
-    }
-
-    100% {
-        -webkit-filter: invert(0%);
-    }
-}
-
-@-moz-keyframes goWhite {
-    0% {
-        -webkit-filter: invert(100%);
-
-    }
-
-    100% {
-        -webkit-filter: invert(0%);
-
-    }
-}
-
-@-o-keyframes goWhite {
-    0% {
-        -webkit-filter: invert(100%);
-
-    }
-
-    100% {
-        -webkit-filter: invert(0%);
-
-    }
-}
-
-@keyframes goWhite {
-    0% {
-        -webkit-filter: invert(100%);
-
-    }
-
-    100% {
-        -webkit-filter: invert(0%);
-
-    }
-}
-
 .message {
     width: 0;
     height: 0;
@@ -1538,12 +1443,13 @@ input:focus ~ label, input:valid ~ label {
     }
 
     .movadex-bar-sidenav {
-    transition: 0.2s;
-    margin-left: -110px;
-    width: 148px;
-    height: 25px;
-    position: absolute;
-}
+        transition: 0.2s;
+        margin-left: -110px;
+        width: 148px;
+        height: 25px;
+        position: absolute;
+    }
+
     .navbar-bottom {
         z-index: 50;
     }
