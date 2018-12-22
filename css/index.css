@@ -358,7 +358,6 @@ section {
 
 .title {
         overflow: unset; !important;
-
     position: absolute;
     height: 100vh;
     right: 0;
@@ -1504,7 +1503,7 @@ input:focus ~ label, input:valid ~ label {
 
     .leaf-background {
         background: url("../image/bg1-rotated.png") no-repeat fixed center center;
-        background-size: auto 100vh;
+        background-size:  100vw auto;
     }
 
     .title {
