@@ -325,18 +325,18 @@ nav {
 /*navbar change color*/
 
 .invert {
-    -webkit-filter: invert(100%);
-    -webkit-animation: goBlack 0.5s ease-out;
-    -moz-animation: goBlack 0.5s ease-out;
-    -o-animation: goBlack 0.5s ease-out;
-    animation: goBlack 0.5s ease-out;
+    -webkit-filter: invert(100%); !important;
+    -webkit-animation: goBlack 0.5s ease-out forwards;
+    -moz-animation: goBlack 0.5s ease-out forwards;
+    -o-animation: goBlack 0.5s ease-out forwards;
+    animation: goBlack 0.5s ease-out forwards;
 }
 
 .dis-invert {
-    -webkit-animation: goWhite 0.5s ease-out;
-    -moz-animation: goWhite 0.5s ease-out;
-    -o-animation: goWhite 0.5s ease-out;
-    animation: goWhite 0.5s ease-out;
+    -webkit-animation: goWhite 0.5s ease-out forwards;
+    -moz-animation: goWhite 0.5s ease-out forwards;
+    -o-animation: goWhite 0.5s ease-out forwards;
+    animation: goWhite 0.5s ease-out forwards;
 }
 
 /******** NAVBAR END  ********/
