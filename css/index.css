@@ -374,7 +374,7 @@ section {
 }
 
 .leaf-background {
-    background: url("../image/bg1.png") no-repeat fixed center center;
+    background: url("../image/bg1.gif") no-repeat fixed center center;
     overflow: unset;
 !important;
 
@@ -808,7 +808,8 @@ input:focus ~ label, input:valid ~ label {
 }
 
 .movadex-bar-sidenav {
-    transition: 0.2s;
+    opacity: 0;
+    transition: 0.6s;
     margin-left: -115px;
     width: 148px;
     height: 25px;
@@ -1447,11 +1448,7 @@ input:focus ~ label, input:valid ~ label {
     }
 
     .movadex-bar-sidenav {
-        transition: 0.2s;
         margin-left: -110px;
-        width: 148px;
-        height: 25px;
-        position: absolute;
     }
 
     .navbar-bottom {
@@ -1541,7 +1538,7 @@ input:focus ~ label, input:valid ~ label {
     }
 
     .leaf-background {
-        background: url("../image/bg1-rotated.png") no-repeat center center;
+        background: url("../image/bg1-rotated.gif") no-repeat center center;
         background-size: 100vw 100vh;
     }
 

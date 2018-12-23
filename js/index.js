@@ -14,7 +14,7 @@ var sidenav = document.getElementById("sidenav");
 var pcScreen = window.matchMedia("(min-width: 768px)");
 var navbarDots;
 var language;
-
+var movadexBarSidenav;
 
 function getLanguage() {
     (localStorage.getItem('language') == null) ? setLanguage('en') : false;
@@ -54,8 +54,9 @@ $(document).ready(function () {
         topNav.append($('.navigation').clone());
 
         var animatedMouse = $(".mousey");
+        movadexBarSidenav = $('.movadex-bar-sidenav');
         navbarDots = $(".navbar-dots");
-        let navbarList = [$(".navbar-bottom"), navbarDots, $(".navbar-top"), $(".scroll-downs"), $('.closebtn'), $('.sidenav-icons'), $('.languages-sidenav'), $('.movadex-bar-sidenav')];
+        let navbarList = [$(".navbar-bottom"), navbarDots, $(".navbar-top"), $(".scroll-downs"), $('.closebtn'), $('.sidenav-icons'), $('.languages-sidenav'), movadexBarSidenav];
         let listSize = navbarList.length;
         let page1 = $('#page1'), page2 = $("#page2"), page3 = $("#page3"), page4 = $("#page4"), page5 = $("#page5");
         let content1 = page1.find(".content"), content2 = page2.find(".content"), content3 = page3.find(".content"),
@@ -425,6 +426,7 @@ $(document).ready(function () {
 var el = $('.navbar-left');
 var fade = $('#darkness');
 var text = $('.sidenav-text');
+
 var navOpened;
 
 
@@ -438,6 +440,7 @@ function openNav() {
             sidenav.style.width = wid + "px";
         }
         navbarDots.find(">:first-child").css('opacity', '0');
+        movadexBarSidenav.css('opacity', '1');
         sidenav.style.zIndex = '200';
         text.css('margin-left', '-170px');
         fade.fadeTo(200, 1);
@@ -459,6 +462,7 @@ function closeNav() {
         sidenav.style.width = "0";
         sidenav.style.zIndex = '90';
         navbarDots.find('>:first-child').css('opacity', '1');
+        movadexBarSidenav.css('opacity', '0');
         text.css('margin-left', '-200px');
 
         fade.fadeTo(200, 0, function () {
