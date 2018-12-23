@@ -141,7 +141,7 @@ $(document).ready(function () {
         $('.section5-button').text(language.writeUs);
         $('.write-us-bar').text(language.writeUs);
         $('.write-us-text').text(language.writeUs);
-        $('.who-are-we-text').text(language.page2h);
+        $('.who-are-we-text').text(language.whoAreWe);
         $('.what-we-do-text').text(language.page3h);
         $('.our-works-text').text(language.ourWorks);
 
