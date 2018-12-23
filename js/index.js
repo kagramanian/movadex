@@ -1,14 +1,3 @@
-// var __REPLAIN_ = '4c0db722-3dae-4b0f-b3e1-f8d862b96bf7';
-//
-// (function (u) {
-//     var s = document.createElement('script');
-//     s.type = 'text/javascript';
-//     s.async = true;
-//     s.src = u;
-//     var x = document.getElementsByTagName('script')[0];
-//     x.parentNode.insertBefore(s, x);
-// })('https://widget.replain.cc/dist/client.js');
-
 document.getElementsByTagName("html")[0].id = "";
 var sidenav = document.getElementById("sidenav");
 var pcScreen = window.matchMedia("(min-width: 768px)");
@@ -16,8 +5,19 @@ var navbarDots;
 var language;
 var movadexBarSidenav;
 
+function detectLanguage() {
+    var userLang = navigator.language;
+    if (userLang != null && userLang.length >= 2) userLang = userLang.substring(0, 2);
+    if (userLang === "uk") setLanguage("ukr");
+    else if (userLang === "ru") setLanguage("rus");
+    else setLanguage("en");
+    alert(userLang);
+
+    return false;
+}
+
 function getLanguage() {
-    (localStorage.getItem('language') == null) ? setLanguage('en') : false;
+    (localStorage.getItem('language') == null) ? detectLanguage() : false;
     $.ajax({
         url: 'language/' + localStorage.getItem('language') + '.json',
         dataType: 'json',
@@ -128,6 +128,8 @@ $(document).ready(function () {
         ];
 
 
+
+        /********  SETTING AND DETECTING LANGUAGE & TEXT  ********/
         getLanguage();
         $('.section2-heading').html(language.page2h);
         $('.section2-description').html(language.page2p);
@@ -146,9 +148,9 @@ $(document).ready(function () {
         $('.what-we-do-text').text(language.page3h);
         $('.our-works-text').text(language.ourWorks);
 
+
+
         /********  LEAF ANIMATION  ********/
-
-
         function initMovingElements() {
             //4 is number of pages with leafs
             for (var ii = 0; ii < 4; ii++) {
