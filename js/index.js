@@ -10,8 +10,7 @@ function detectLanguage() {
     if (userLang != null && userLang.length >= 2) userLang = userLang.substring(0, 2);
     if (userLang === "uk") setLanguage("ukr");
     else if (userLang === "ru") setLanguage("rus");
-    else setLanguage("en");
-    alert(userLang);
+    else setLanguage("en"); alert(userLang);
 
     return false;
 }
