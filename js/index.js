@@ -127,7 +127,6 @@ $(document).ready(function () {
         ];
 
 
-
         /********  SETTING AND DETECTING LANGUAGE & TEXT  ********/
         getLanguage();
         $('.section2-heading').html(language.page2h);
@@ -146,7 +145,6 @@ $(document).ready(function () {
         $('.who-are-we-text').text(language.whoAreWe);
         $('.what-we-do-text').text(language.page3h);
         $('.our-works-text').text(language.ourWorks);
-
 
 
         /********  LEAF ANIMATION  ********/
@@ -427,6 +425,7 @@ $(document).ready(function () {
 var el = $('.navbar-left');
 var fade = $('#darkness');
 var text = $('.sidenav-text');
+var langSide = $('.languages-sidenav');
 
 var navOpened;
 
@@ -440,9 +439,12 @@ function openNav() {
             var wid = 170 + 16 + pad;
             sidenav.style.width = wid + "px";
         }
+        sidenav.style.zIndex = '200';
+
         navbarDots.find(">:first-child").css('opacity', '0');
         movadexBarSidenav.css('opacity', '1');
-        sidenav.style.zIndex = '200';
+        langSide.css('opacity', '1');
+
         text.css('margin-left', '-170px');
         fade.fadeTo(200, 1);
         fade.click(function () {
@@ -462,8 +464,11 @@ function closeNav() {
         navOpened = false;
         sidenav.style.width = "0";
         sidenav.style.zIndex = '90';
+
         navbarDots.find('>:first-child').css('opacity', '1');
         movadexBarSidenav.css('opacity', '0');
+        langSide.css('opacity', '0');
+
         text.css('margin-left', '-200px');
 
         fade.fadeTo(200, 0, function () {

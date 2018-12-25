@@ -314,10 +314,12 @@ nav {
 
 .icon-facebook {
     margin-right: 3.3vw;
+    width: 17px;
+    height: 17px;
 }
 
 .icon-instagram {
-
+    display: none; !important;
 }
 
 .lang {
@@ -801,9 +803,14 @@ input:focus ~ label, input:valid ~ label {
 .languages-sidenav {
     color: #FFFFFF;
     display: none;
+    opacity: 0;
 }
 
-.icon-facebook-sidenav, .iconsInnstagram-sidenav {
+.icon-facebook-sidenav {
+    display: none;
+}
+
+.icon-instagram-sidenav {
     display: none;
 }
 
@@ -1504,8 +1511,12 @@ input:focus ~ label, input:valid ~ label {
     }
 
     /** icon-facebook-sidenav 1  **/
-    .icon-facebook-sidenav, .iconsInnstagram-sidenav {
+    .icon-facebook-sidenav {
         display: unset;
+    }
+
+    .icon-instagram-sidenav {
+        /*display: unset;*/
     }
 
     .languages-sidenav {
@@ -1735,6 +1746,7 @@ input:focus ~ label, input:valid ~ label {
     }
 
     .icon-mobile {
+        display: unset;
         margin-top: 4.4vh;
         -webkit-filter: invert(100%);
         margin-left: 6vw;
