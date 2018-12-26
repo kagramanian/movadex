@@ -1745,7 +1745,8 @@ input:focus ~ label, input:valid ~ label {
         z-index: 100;
     }
 
-    .icon-mobile {
+    /*remove icon facebook to add instagram*/
+    .icon-facebook.icon-mobile {
         display: unset;
         margin-top: 4.4vh;
         -webkit-filter: invert(100%);
