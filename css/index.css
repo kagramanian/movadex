@@ -1592,7 +1592,7 @@ input:focus ~ label, input:valid ~ label {
         top: 59vh;
         margin-left: 14vw;
         text-align: left;
-        width: 80vw;
+        width: 72vw;
         margin-bottom: 14vw;
 
     }
@@ -1775,41 +1775,25 @@ input:focus ~ label, input:valid ~ label {
 }
 
 @media only screen and (max-height: 450px) {
-    /** SECTION 2  **/
-    .mask {
-        height: 50vh;
-        width: auto;
-        top: 0;
-    }
 
-    .section2-heading {
-        top: 48vh;
-    }
 
-    /** SECTION 3  **/
-    .napoleon {
-        height: auto;
-        width: 50vw;
-    }
-
-    .section3-heading {
-        top: 5vh;
-        text-align: left;
-        margin-left: 14vw;
-
-    }
-
-    .section3-description {
-        width: 40vw;
-    }
 
     /** SECTION 4  **/
     .frame {
-        height: 40vh;
-        width: auto;
+        height: auto;
+        width: 30vw;
+        margin-left: 35vw;
     }
 
     /** SECTION 5  **/
+
+      #page5 .content {
+        height: 150vh;
+        width: 100vw;
+        position: absolute;
+        overflow: hidden;
+    }
+
     .text-wrapper5 {
         margin-top: 7vh;
     }
