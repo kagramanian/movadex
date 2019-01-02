@@ -1253,7 +1253,7 @@ input:focus ~ label, input:valid ~ label {
 }
 
 @media only screen and (max-width: 1080px) {
-  
+
 
     .leaf2 {
         width: 80vw;
