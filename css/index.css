@@ -319,7 +319,8 @@ nav {
 }
 
 .icon-instagram {
-    display: none; !important;
+    display: none;
+!important;
 }
 
 .lang {
@@ -1162,8 +1163,8 @@ input:focus ~ label, input:valid ~ label {
     }
 
     .frame {
-        top: 14vh;
-        height: 70vh;
+        top: 21vh;
+        height: 60vh;
     }
 
 }
@@ -1178,10 +1179,6 @@ input:focus ~ label, input:valid ~ label {
         width: 60vw;
     }
 
-    .leaf5 {
-        height: 35vh;
-    }
-
     .section2-heading {
         left: 12vw;
     }
@@ -1191,7 +1188,8 @@ input:focus ~ label, input:valid ~ label {
     }
 
     .napoleon {
-        margin-right: -11vw;
+        margin-right: -12vw;
+        height: 85vh;
     }
 
     .section4-button {
@@ -1255,9 +1253,7 @@ input:focus ~ label, input:valid ~ label {
 }
 
 @media only screen and (max-width: 1080px) {
-    .leaf1 {
-        height: 72vh;
-    }
+  
 
     .leaf2 {
         width: 80vw;
@@ -1361,11 +1357,12 @@ input:focus ~ label, input:valid ~ label {
     .section4-button {
         top: 65vh;
     }
+
 }
 
 @media only screen and (max-height: 650px) {
     .leaf5 {
-        height: 50vh;
+        height: 55vh;
     }
 
 }
@@ -1777,8 +1774,6 @@ input:focus ~ label, input:valid ~ label {
 
 @media only screen and (max-height: 450px) {
 
-
-
     /** SECTION 4  **/
     .frame {
         height: auto;
@@ -1787,8 +1782,7 @@ input:focus ~ label, input:valid ~ label {
     }
 
     /** SECTION 5  **/
-
-      #page5 .content {
+    #page5 .content {
         height: 150vh;
         width: 100vw;
         position: absolute;
