@@ -1546,7 +1546,7 @@ input:focus ~ label, input:valid ~ label {
     }
 
     .leaf-background {
-        background: url("../image/bg1-rotated.gif") no-repeat center center;
+        background: url("../image/bg1-rotated.jpg") no-repeat center center;
         background-size: 100vw 100vh;
     }
 
