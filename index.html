@@ -30,8 +30,20 @@
     <link rel="apple-touch-icon-precomposed" href="image/logo/movadex-logo180.png">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130203260-1"></script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130203260-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-130203260-1');
+    </script>
 </head>
 <body>
 
@@ -99,7 +111,7 @@
     <div class="content">
         <img class="frame" src="image/frame.png">
         <div class="text-wrapper4"><h1 class="section4-heading">WE ARE LOOKING FOR YOU <br/><span
-                class="yellow-text">-50% OFF TILL FEB.</span>
+                class="yellow-text">-30% OFF TILL FEB.</span>
         </h1>
             <div><a href="#page5">
                 <button class="section4-button">WRITE US</button>
