@@ -178,6 +178,9 @@ $(document).ready(function () {
             _scrollHeight = (_containerHeight - _height);
             animateNavbar();
 
+
+           if (pcScreen.matches) loadAllTheImages();
+
         }
 
 
@@ -302,6 +305,11 @@ $(document).ready(function () {
 
         /********  NAVBAR COLOR CHANGE END ********/
 
+        function loadAllTheImages() {
+            $("img").each(function () {
+                $(this).attr('src', $(this).attr('data-src'));
+            });
+        }
 
         /********  CODE INIT  ********/
 
@@ -310,7 +318,10 @@ $(document).ready(function () {
         initMovingElements();
         if (pcScreen.matches) {
             leafPositionLoop();
+            loadAllTheImages();
+
         }
+
 
         window.addEventListener('resize', resize);
 
