@@ -20,7 +20,7 @@ function getLanguage() {
     $.ajax({
         url: 'language/' + localStorage.getItem('language') + '.json',
         dataType: 'json',
-        async: false,
+        async: true,
         success: function (lang) {
             language = lang
         }
