@@ -22,7 +22,24 @@ function getLanguage() {
         dataType: 'json',
         async: true,
         success: function (lang) {
-            language = lang
+            language = lang;
+            $('.section2-heading').html(language.page2h);
+            $('.section2-description').html(language.page2p);
+            $('.section3-heading').text(language.page3h);
+            $('.section3-description').html(language.page3p);
+            $('.section4-heading').html(language.page4h);
+            $('.section4-button').text(language.writeUs);
+            $('.section5-heading').text(language.page5h);
+            $('#group label').text(language.page5Name);
+            $('#group2 label').text(language.page5Email);
+            $('#group3 label').text(language.page5Idea);
+            $('.section5-button').text(language.writeUs);
+            $('.write-us-bar').text(language.writeUs);
+            $('.write-us-text').text(language.writeUs);
+            $('.who-are-we-text').text(language.whoAreWe);
+            $('.what-we-do-text').text(language.page3h);
+            $('.our-works-text').text(language.ourWorks);
+
         }
     });
 }
@@ -129,22 +146,6 @@ $(document).ready(function () {
 
         /********  SETTING AND DETECTING LANGUAGE & TEXT  ********/
         getLanguage();
-        $('.section2-heading').html(language.page2h);
-        $('.section2-description').html(language.page2p);
-        $('.section3-heading').text(language.page3h);
-        $('.section3-description').html(language.page3p);
-        $('.section4-heading').html(language.page4h);
-        $('.section4-button').text(language.writeUs);
-        $('.section5-heading').text(language.page5h);
-        $('#group label').text(language.page5Name);
-        $('#group2 label').text(language.page5Email);
-        $('#group3 label').text(language.page5Idea);
-        $('.section5-button').text(language.writeUs);
-        $('.write-us-bar').text(language.writeUs);
-        $('.write-us-text').text(language.writeUs);
-        $('.who-are-we-text').text(language.whoAreWe);
-        $('.what-we-do-text').text(language.page3h);
-        $('.our-works-text').text(language.ourWorks);
 
 
         /********  LEAF ANIMATION  ********/
@@ -179,7 +180,7 @@ $(document).ready(function () {
             animateNavbar();
 
 
-           if (pcScreen.matches) loadAllTheImages();
+            if (pcScreen.matches) loadAllTheImages();
 
         }
 
