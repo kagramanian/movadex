@@ -1393,7 +1393,7 @@ input:focus ~ label, input:valid ~ label {
     }
 
     p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     button {
