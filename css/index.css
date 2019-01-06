@@ -1358,9 +1358,19 @@ input:focus ~ label, input:valid ~ label {
 
 }
 
-@media only screen and (max-height: 650px) {
+@media only screen and (max-height: 760px) {
+    .section3-heading {
+        top: 10vh;
+    }
+
+
+}
+
+@media only screen and (max-height: 700px) {
     .leaf5 {
         height: 55vh;
+    }     .section4-button {
+        top: 75vh;
     }
 
 }
@@ -1377,6 +1387,11 @@ input:focus ~ label, input:valid ~ label {
     .leaf4 {
         height: 100vh;
     }
+
+     .section3-heading {
+        top: 5vh;
+    }
+
 }
 
 /******** MOBILE DISPLAY  ********/
