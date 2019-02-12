@@ -15,10 +15,9 @@ function detectLanguage() {
 function setLanguage(lang) {
     // localStorage.setItem('language', lang);
     if (lang === "en") {lang = ""}
-    window.open("http://localhost:63342/movadex-web/" + lang, "_self");
+    window.open("https://www.movadex.com/" + lang, "_self");
     return false;
 }
-
 
 
 $(document).ready(function () {
