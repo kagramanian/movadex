@@ -12,12 +12,11 @@ function detectLanguage() {
     return false;
 }
 
-function setLanguage(lang) {
-    // localStorage.setItem('language', lang);
-    if (lang === "en") {lang = ""}
-    window.open("https://www.movadex.com/" + lang, "_self");
-    return false;
-}
+// function setLanguage(lang) {
+//     // localStorage.setItem('language', lang);
+//
+//     return false;
+// }
 
 
 $(document).ready(function () {
