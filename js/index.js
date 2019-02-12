@@ -8,47 +8,17 @@ var movadexBarSidenav;
 function detectLanguage() {
     var userLang = navigator.language;
     if (userLang != null && userLang.length >= 2) userLang = userLang.substring(0, 2);
-    if (userLang === "uk") setLanguage("ukr");
-    else if (userLang === "ru") setLanguage("rus");
-    else setLanguage("en");
-
+    setLanguage(userLang);
     return false;
-}
-
-function getLanguage() {
-    (localStorage.getItem('language') == null) ? detectLanguage() : false;
-    $.ajax({
-        url: 'language/' + localStorage.getItem('language') + '.json',
-        dataType: 'json',
-        async: true,
-        success: function (lang) {
-            language = lang;
-            $('.section2-heading').html(language.page2h);
-            $('.section2-description').html(language.page2p);
-            $('.section3-heading').text(language.page3h);
-            $('.section3-description').html(language.page3p);
-            $('.section4-heading').html(language.page4h);
-            $('.section4-button').text(language.writeUs);
-            $('.section5-heading').text(language.page5h);
-            $('#group label').text(language.page5Name);
-            $('#group2 label').text(language.page5Email);
-            $('#group3 label').text(language.page5Idea);
-            $('.section5-button').text(language.writeUs);
-            $('.write-us-bar').text(language.writeUs);
-            $('.write-us-text').text(language.writeUs);
-            $('.who-are-we-text').text(language.whoAreWe);
-            $('.what-we-do-text').text(language.page3h);
-            $('.our-works-text').text(language.ourWorks);
-
-        }
-    });
 }
 
 function setLanguage(lang) {
-
-    localStorage.setItem('language', lang);
+    // localStorage.setItem('language', lang);
+    if (lang === "en") {lang = ""}
+    window.open("http://localhost:63342/movadex-web/" + lang, "_self");
     return false;
 }
+
 
 
 $(document).ready(function () {
@@ -143,9 +113,6 @@ $(document).ready(function () {
             }
         ];
 
-
-        /********  SETTING AND DETECTING LANGUAGE & TEXT  ********/
-        getLanguage();
 
 
         /********  LEAF ANIMATION  ********/
