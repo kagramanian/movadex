@@ -1466,7 +1466,7 @@ input:focus ~ label, input:valid ~ label {
     }
 
     .movadex-bar-sidenav {
-        margin-left: -110px;
+        margin-left: -100px;
     }
 
     .navbar-bottom {
@@ -1533,7 +1533,7 @@ input:focus ~ label, input:valid ~ label {
     .languages-sidenav {
         display: unset;
         position: absolute;
-        margin-left: -105px;
+        margin-left: -87px;
         top: 80px;
     }
 

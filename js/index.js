@@ -422,13 +422,13 @@ function openNav() {
         movadexBarSidenav.css('opacity', '1');
         langSide.css('opacity', '1');
 
-        text.css('margin-left', '-170px');
+        text.css('margin-left', '-160px');
         fade.fadeTo(200, 1);
         fade.click(function () {
             closeNav()
         });
         setTimeout(function () {
-            el.css('margin-left', '+=170px');
+            el.css('margin-left', '+=160px');
         }, 20);
 
     }
@@ -451,7 +451,7 @@ function closeNav() {
         fade.fadeTo(200, 0, function () {
             $(this).hide();
         });
-        el.css('margin-left', '-=170px');
+        el.css('margin-left', '-=160px');
     }
 
 
