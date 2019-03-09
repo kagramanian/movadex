@@ -816,7 +816,7 @@ input:focus ~ label, input:valid ~ label {
 .movadex-bar-sidenav {
     opacity: 0;
     transition: 0.6s;
-    margin-left: -115px;
+    margin-left: -100px;
     width: 148px;
     height: 25px;
     position: absolute;
