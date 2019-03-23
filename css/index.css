@@ -1193,8 +1193,10 @@ input:focus ~ label, input:valid ~ label {
     .section4-button {
         top: 70vh;
     }
-.section5-heading{
-        font-size: 3em;}
+
+    .section5-heading {
+        font-size: 3em;
+    }
 }
 
 @media only screen and (max-width: 1280px) {
@@ -1275,6 +1277,7 @@ input:focus ~ label, input:valid ~ label {
         font-size: 2.3em;
     }
 
+
     .section4-heading {
         top: 27vh;
         width: 40vw;
@@ -1345,7 +1348,7 @@ input:focus ~ label, input:valid ~ label {
     }
 
     #page5 h1 {
-        font-size: 3em;
+        font-size: 2.5em;
 
     }
 
@@ -1358,23 +1361,30 @@ input:focus ~ label, input:valid ~ label {
 
 }
 
-@media only screen and (max-height: 760px) {
-    .section3-heading {
-        top: 10vh;
-    }
-
-
-}
 
 @media only screen and (max-height: 700px) {
     .leaf5 {
         height: 55vh;
-    }     .section4-button {
+    }
+
+    .section4-button {
         top: 75vh;
     }
 
 }
 
+@media only screen and (max-width: 1080px) and (max-height: 850px) {
+    .section2-heading br {
+        display: none;
+    }
+    .section4-button {
+    top: 65vh;
+}
+    .section4-heading{
+        top: 7vh;
+    }
+
+}
 @media only screen and (max-height: 430px) {
     .leaf5 {
         height: 70vh;
@@ -1388,7 +1398,7 @@ input:focus ~ label, input:valid ~ label {
         height: 100vh;
     }
 
-     .section3-heading {
+    .section3-heading {
         top: 5vh;
     }
 
