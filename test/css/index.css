@@ -413,8 +413,7 @@ section {
     margin: auto;
     width: auto;
     top: 0;
-    left: 0;
-    right: 0;
+    right: 15.4vw;
 
 }
 
@@ -427,7 +426,21 @@ section {
     margin-top: 16px;
 
 }
+.section33-description{
+    margin-bottom: 20px;
+    margin-left: 52px;
 
+}
+.advantages{
+    width: 410px;
+    margin-left: 50px;
+    margin-top: 11vh;
+}
+
+.badges3{
+    float: left;
+    margin-right: 1vw;
+}
 .section2-heading {
 
     position: absolute;

@@ -5,22 +5,34 @@ var navbarDots;
 var language;
 var movadexBarSidenav;
 
-function detectLanguage() {
-    var userLang = navigator.language;
-    if (userLang != null && userLang.length >= 2) userLang = userLang.substring(0, 2);
-    setLanguage(userLang);
-    return false;
-}
-
-// function setLanguage(lang) {
-//     // localStorage.setItem('language', lang);
+// function detectLanguage() {
+//     var savedLang = localStorage.getItem('language');
+//     if (savedLang == null) {
+//         var userLang = navigator.language;
+//         if (userLang != null && userLang.length >= 2) userLang = userLang.substring(0, 2);
+//         setLanguage(userLang);
+//     } else setLanguage(savedLang);
+// }
 //
-//     return false;
+// function setLanguage(lang) {
+//     if (lang === "en") {
+//         localStorage.setItem('language', lang);
+//         lang = ""
+//     } else {
+//         localStorage.setItem('language', lang);
+//         lang = "/" + lang
+//     }
+//
+//     let link = "http://medianads.tilda.ws" + lang;
+//     let currentLink = window.location.href;
+//     if (currentLink !== link) {
+//         window.open(link, "_self");
+//     }
 // }
 
 
 $(document).ready(function () {
-
+ //       detectLanguage();
         var _containerHeight = $(window).height() * 3;
         var $root = $('html, body');
         var _width, _height, _scrollHeight;
@@ -110,7 +122,6 @@ $(document).ready(function () {
                 }
             }
         ];
-
 
 
         /********  LEAF ANIMATION  ********/
