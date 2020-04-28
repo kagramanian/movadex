@@ -1,55 +1,28 @@
 document.getElementsByTagName("html")[0].id = "";
-var sidenav = document.getElementById("sidenav");
-var pcScreen = window.matchMedia("(min-width: 768px)");
-var navbarDots;
-var language;
-var movadexBarSidenav;
-
-// function detectLanguage() {
-//     var savedLang = localStorage.getItem('language');
-//     if (savedLang == null) {
-//         var userLang = navigator.language;
-//         if (userLang != null && userLang.length >= 2) userLang = userLang.substring(0, 2);
-//         setLanguage(userLang);
-//     } else setLanguage(savedLang);
-// }
-//
-// function setLanguage(lang) {
-//     if (lang === "en") {
-//         localStorage.setItem('language', lang);
-//         lang = ""
-//     } else {
-//         localStorage.setItem('language', lang);
-//         lang = "/" + lang
-//     }
-//
-//     let link = "http://medianads.tilda.ws" + lang;
-//     let currentLink = window.location.href;
-//     if (currentLink !== link) {
-//         window.open(link, "_self");
-//     }
-// }
+let sidenav = document.getElementById("sidenav");
+let pcScreen = window.matchMedia("(min-width: 768px)");
+let navbarDots;
+let movadexBarSidenav;
 
 
 $(document).ready(function () {
- //       detectLanguage();
-        var _containerHeight = $(window).height() * 3;
-        var $root = $('html, body');
-        var _width, _height, _scrollHeight;
-        var _movingElements = [];
-        var _scrollPercent = 0;
-        var pre = prefix();
-        var _jsPrefix = pre.lowercase;
+        let _containerHeight = $(window).height() * 3;
+        let $root = $('html, body');
+        let _width, _height, _scrollHeight;
+        let _movingElements = [];
+        let _scrollPercent = 0;
+        let pre = prefix();
+        let _jsPrefix = pre.lowercase;
         if (_jsPrefix === 'moz') _jsPrefix = 'Moz';
-        var listenerAttached;
+        let listenerAttached;
         let screen = $(document);
 
-        var topNav = $('.top-nav');
+        let topNav = $('.top-nav');
 
 
         topNav.append($('.navigation').clone());
 
-        var animatedMouse = $(".mousey");
+        let animatedMouse = $(".mousey");
         movadexBarSidenav = $('.movadex-bar-sidenav');
         navbarDots = $(".navbar-dots");
         let navbarList = [$(".navbar-bottom"), navbarDots, $(".navbar-top"), $(".scroll-downs"), $('.closebtn'), $('.sidenav-icons'), $('.languages-sidenav'), movadexBarSidenav];
@@ -62,20 +35,20 @@ $(document).ready(function () {
         let pages = [page1, page2, page3, page4, page5];
         let contents = [content1, content2, content3, content4, content5];
 
-        var a1 = $('[href="#' + 'page1' + '"]'), a2 = $('[href="#' + 'page2' + '"]'), a3 = $('[href="#' + 'page3' + '"]'),
+        let a1 = $('[href="#' + 'page1' + '"]'), a2 = $('[href="#' + 'page2' + '"]'), a3 = $('[href="#' + 'page3' + '"]'),
             a4 = $('[href="#' + 'page4' + '"]'), a5 = $('[href="#' + 'page5' + '"]');
 
-        var ap1 = a1.parent(), ap2 = a2.parent(), ap3 = a3.parent(),
+        let ap1 = a1.parent(), ap2 = a2.parent(), ap3 = a3.parent(),
             ap4 = a4.parent(), ap5 = a5.parent();
-        var ac1 = ap1.find(">:first-child"), ac2 = ap2.find(">:first-child"), ac3 = ap3.find(">:first-child"),
+        let ac1 = ap1.find(">:first-child"), ac2 = ap2.find(">:first-child"), ac3 = ap3.find(">:first-child"),
             ac4 = ap4.find(">:first-child"), ac5 = ap5.find(">:first-child");
 
-        var alist = [[ac1, ap1], [ac2, ap2], [ac3, ap3], [ac4, ap4], [ac5, ap5]];
+        let alist = [[ac1, ap1], [ac2, ap2], [ac3, ap3], [ac4, ap4], [ac5, ap5]];
 
-        var colors = ["#000", "#cac8bb", "#a3cec2", "#eaeaea", "#e1d2ce"];
+        let colors = ["#000", "#cac8bb", "#a3cec2", "#eaeaea", "#e1d2ce"];
 
-        var telegramMob = $('.telegram-mob');
-        var _positions = [
+        let telegramMob = $('.telegram-mob');
+        let _positions = [
             {
                 name: 'leaf1',
                 start: {
@@ -127,15 +100,15 @@ $(document).ready(function () {
         /********  LEAF ANIMATION  ********/
         function initMovingElements() {
             //4 is number of pages with leafs
-            for (var ii = 0; ii < 4; ii++) {
-                for (var i = 0; i < _positions.length; i++) {
+            for (let ii = 0; ii < 4; ii++) {
+                for (let i = 0; i < _positions.length; i++) {
 
                     _positions[i].diff = {
                         percent: _positions[i].end.percent - _positions[i].start.percent,
                         x: _positions[i].end.x - _positions[i].start.x,
                         y: _positions[i].end.y - _positions[i].start.y,
                     };
-                    var el = document.getElementsByClassName('leaf ' + _positions[i].name)[ii];
+                    let el = document.getElementsByClassName('leaf ' + _positions[i].name)[ii];
                     _movingElements.push(el);
 
                 }
@@ -198,7 +171,7 @@ $(document).ready(function () {
         /* prefix detection http://davidwalsh.name/vendor-prefix */
 
         function prefix() {
-            var styles = window.getComputedStyle(document.documentElement, ''),
+            let styles = window.getComputedStyle(document.documentElement, ''),
                 pre = (Array.prototype.slice
                         .call(styles)
                         .join('')
@@ -259,15 +232,15 @@ $(document).ready(function () {
 
 
         /********  NAVBAR COLOR CHANGE  ********/
-        for (var i = 0; i < listSize; i++) {
-            var navBarItem = navbarList[i];
+        for (let i = 0; i < listSize; i++) {
+            let navBarItem = navbarList[i];
             navBarItem.addClass('dis-invert');
         }
 
         function checkColor() {
             {
-                for (var i = 0; i < listSize; i++) {
-                    var navBarItem = navbarList[i];
+                for (let i = 0; i < listSize; i++) {
+                    let navBarItem = navbarList[i];
 
 
                     if (navBarItem.offset().top + 50 > page2.position().top) {
@@ -316,14 +289,14 @@ $(document).ready(function () {
             checkColor();
 
             // console.log(page3.position().top());
-            var offTop = screen.scrollTop();
-            var NEXT = 1;
-            var PREV = 0;
+            let offTop = screen.scrollTop();
+            let NEXT = 1;
+            let PREV = 0;
 
 
-            for (var i = 0; i < pages.length; i++) {
-                var page = pages[i];
-                var content = contents[i];
+            for (let i = 0; i < pages.length; i++) {
+                let page = pages[i];
+                let content = contents[i];
                 if (page.offset().top < offTop) {
                     if (!content.hasClass('fixed')) {
                         content.addClass('fixed');
@@ -386,7 +359,7 @@ $(document).ready(function () {
 
 
         $('a[href^="#"]').click(function () {
-                var href = $.attr(this, 'href');
+                let href = $.attr(this, 'href');
                 try {
                     if (href === "#page1") {
                         $root.animate({
@@ -410,12 +383,12 @@ $(document).ready(function () {
     }
 );
 
-var el = $('.navbar-left');
-var fade = $('#darkness');
-var text = $('.sidenav-text');
-var langSide = $('.languages-sidenav');
+let el = $('.navbar-left');
+let fade = $('#darkness');
+let text = $('.sidenav-text');
+let langSide = $('.languages-sidenav');
 
-var navOpened;
+let navOpened;
 
 
 function openNav() {
@@ -423,8 +396,8 @@ function openNav() {
         navOpened = true;
         if (!pcScreen.matches) sidenav.style.width = "226px";
         else {
-            var pad = vw(4);
-            var wid = 170 + 16 + pad;
+            let pad = vw(4);
+            let wid = 170 + 16 + pad;
             sidenav.style.width = wid + "px";
         }
         sidenav.style.zIndex = '200';
@@ -468,13 +441,8 @@ function closeNav() {
 
 }
 
-function vh(v) {
-    var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-    return (v * h) / 100;
-}
-
 function vw(v) {
-    var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    let w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
     return (v * w) / 100;
 }
 

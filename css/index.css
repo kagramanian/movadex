@@ -84,7 +84,7 @@ p {
 
 button {
     background-color: inherit;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
     padding-left: 20px;
     padding-right: 20px;
     border: 1px solid;
@@ -423,7 +423,7 @@ section {
     position: absolute;
     left: 44vw;
     top: 69vh;
-    right: 2vw;
+    right: 10vw;
     margin-top: 16px;
 
 }
@@ -499,9 +499,14 @@ section {
     position: absolute;
     left: 7.4vw;
     top: 27vh;
-    font-size: 3.5em;
+    font-size: 2em;
+    line-height: 1.5;
 }
 
+.section4-heading br {
+    display: block;
+    margin: 10px 0;
+}
 .yellow-text {
     color: #e6cc00;
 }
@@ -1156,9 +1161,9 @@ input:focus ~ label, input:valid ~ label {
         width: 39vw;
     }
 
-    #page4 h1 {
-        font-size: 3em;
-    }
+    /*#page4 h1 {*/
+    /*    font-size: 3em;*/
+    /*}*/
 
     .frame {
         top: 21vh;
@@ -1277,7 +1282,9 @@ input:focus ~ label, input:valid ~ label {
         font-size: 2.3em;
     }
 
-
+    .section4-button-new{
+        display: none;
+    }
     .section4-heading {
         top: 27vh;
         width: 40vw;
@@ -1426,7 +1433,7 @@ input:focus ~ label, input:valid ~ label {
         padding-left: 15px;
         padding-right: 15px;
         font-size: 11px;
-        border-radius: 5px;
+        /*border-radius: 5px;*/
     }
 
     .fixed {
@@ -1664,6 +1671,9 @@ input:focus ~ label, input:valid ~ label {
         margin-left: 4.7vw;
     }
 
+    .section4-button-new{
+        display: block;
+    }
     #page4 h1 {
         position: unset;
         font-size: 1.5em;
