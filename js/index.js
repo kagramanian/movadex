@@ -15,8 +15,6 @@ $(document).ready(function () {
         let _jsPrefix = pre.lowercase;
         if (_jsPrefix === 'moz') _jsPrefix = 'Moz';
         let listenerAttached;
-        let screen = $(document);
-
         let topNav = $('.top-nav');
 
 
@@ -288,8 +286,7 @@ $(document).ready(function () {
 
             checkColor();
 
-            // console.log(page3.position().top());
-            let offTop = screen.scrollTop();
+            let offTop =  window.pageYOffset
             let NEXT = 1;
             let PREV = 0;
 
