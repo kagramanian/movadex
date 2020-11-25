@@ -1432,7 +1432,7 @@ input:focus ~ label, input:valid ~ label {
         height: 30px;
         padding-left: 15px;
         padding-right: 15px;
-        font-size: 11px;
+        font-size: 12px;
         /*border-radius: 5px;*/
     }
 
@@ -1747,7 +1747,7 @@ input:focus ~ label, input:valid ~ label {
 
     input {
         width: 70vw;
-        font-size: 11px;
+        font-size: 12px;
         line-height: 1.357;
         color: rgb(0, 0, 0);
         text-transform: uppercase;
@@ -1794,7 +1794,7 @@ input:focus ~ label, input:valid ~ label {
     }
 
     .footer {
-        font-size: 10px;
+        font-size: 12px;
         position: absolute;
         right: 0;
         bottom: 0;
